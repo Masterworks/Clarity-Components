@@ -1,27 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title> 
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        body {
+        body { /*-- Just presentational css --*/ 
+            display: flex;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
             position: absolute;
             top: 0;
             right: 0;
             bottom: 0;
             left: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
         }
     </style> 
 </head>
+
 <body>
-    
-    <a href="#" class="button" >Create new request</a>
+    <div class="input-wrap">
+        <label class="input-label">Label</label>
+        <img class="input-icon" src="Search Icon.svg" alt="search">
+        <input class="input-box" type="text">
+    </div>
 </body>
+
 </html>
