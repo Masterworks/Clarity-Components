@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+a.button {
+    background: linear-gradient(102.52deg, rgba(17, 0, 209, 0.3) -18.15%, rgba(255, 255, 255, 0.3) 111.87%), #059CAF;
+    background-blend-mode: overlay, normal;
+    box-shadow: 0px 3px 7px rgba(5, 136, 152, 0.2), 0px 1px 1px rgba(15, 60, 66, 0.1), inset 0px -1px 0px rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+    padding-top: 13px;
+    padding-bottom: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+height: 21px;
+left: 15px;
+right: 15px;
+top: calc(50% - 21px/2);
+
+font-family: Source Sans Pro;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+font-size: 16px;
+text-align: center;
+
+color: #FFFFFF;
+text-decoration: none;
+}
+a.button{
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+   }
