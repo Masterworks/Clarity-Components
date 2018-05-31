@@ -1,0 +1,33 @@
+.tag {
+  font-family: 'Proxima Nova';
+  font-weight: bold;
+  font-size: 11px;
+  text-align: center;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  border: 1px solid;
+  box-sizing: border-box;
+  border-radius: 3px;
+  padding: 4px 8px; }
+
+.tag-received {
+  color: #FFA179;
+  background: #FFFAF7;
+  border-color: #F69F8A; }
+
+.tag-select-underway {
+  color: #2080B7;
+  background: #F7FCFF;
+  border-color: #2080B7; }
+
+.tag-modeling-underway {
+  color: #11545F;
+  background: #F1FDFF;
+  border-color: #096A7A; }
+
+.tag-prep-underway {
+  color: #CC9036;
+  background: #FFFDF5;
+  border-color: #E3AF62; }
+
+/*# sourceMappingURL=style.css.map */
