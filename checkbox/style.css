@@ -1,0 +1,30 @@
+.input-wrap {
+  display: flex;
+  flex-direction: row; }
+
+.input-wrap .input-label {
+  font-family: Lato;
+  font-size: 16px;
+  color: #273A4B;
+  margin-bottom: 5px;
+  display: block; }
+
+.check-box {
+  margin-right: 12px; }
+
+.description-container {
+  width: 363px;
+  height: 58px;
+  position: relative;
+  bottom: 1px; }
+
+.check-box-description {
+  margin-top: 0px;
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 20px;
+  font-size: 14px;
+  color: #717A83; }
+
+/*# sourceMappingURL=style.css.map */
