@@ -25,15 +25,14 @@
 </head>
 
 <body>
-    <div class="settings-button">
-        <div class="dropdown-arrow"></div>
-        <button onclick="myFunction()" class="button">
-            <img src="../images/gear-icon.svg" alt="#" class="gear-icon">
+    <div class="settings-container">
+        <button class="settings-button">
+            <img src="../images/gear-icon.svg" alt="image-icon" class="gear-icon">
         </button>
-        <ul class="dropdown-content">
+        <ul class="dropdown-content level-1-dropdown">
             <li>
-                <a  href="#">Apply Select Codes Template</a>
-                <ul class="dropdown-content2">
+                <a class="level-1-dropdown-link" href="#">Apply Select Codes Template</a>
+                <ul class="dropdown-content level-2-dropdown">
                     <li>
                         <div class="input-wrap">
                             <img class="input-icon" src="../../Clarity-Components/images/search-icon.svg" alt="search">
@@ -42,36 +41,45 @@
                         </div>
                     </li>
                     <li>
-                        <a href="#">July Jubilee</a>
+                        <a class="level-2-dropdown-link" href="#">July Jubilee</a>
                     </li>
                     <li>
-                        <a href="#">Let Freedom Ring</a>
+                        <a class="level-2-dropdown-link" href="#">Let Freedom Ring</a>
                     </li>
                     <li>
-                        <a href="#">Camp O the Pines</a>
+                        <a class="level-2-dropdown-link" href="#">Camp O the Pines</a>
                     </li>
                     <li>
-                        <a href="#">Blue Mtn Parkway</a>
+                        <a class="level-2-dropdown-link" href="#">Blue Mtn Parkway</a>
                     </li>
                     <li>
-                        <a href="#">Outreach Retreat</a>
+                        <a class="level-2-dropdown-link" href="#">Outreach Retreat</a>
                     </li>
                     <li>
-                        <a href="#">Reaching Creatures Conference</a>
+                        <a class="level-2-large-dropdown-link" href="#">Reaching Creatures Conference</a>
                     </li>
                     <li>
-                        <a href="#">Hearts of Hope</a>
+                        <a class="level-2-dropdown-link" href="#">Hearts of Hope</a>
                     </li>
                 </ul>
             </li>
-            <li>
-                <a href="#">Create Select Codes Template</a>
+            <li class="create-codes-hover">
+                <a class="level-1-large-dropdown-link" href="#">Create Select Codes Template</a>
+                <ul>
+                    <div class="create-codes-dropdown"> 
+                        <h5>Create Select Codes Template</h5>
+                        <div class="input-wrap">
+                            <input class="input-box create-codes-box" type="text" required>
+                            <label class="create-codes-input">Template Title</label>
+                            <a href="#" class="button">Save Template</a>
+                        </div>
+                    </div>
+                </ul>
             </li>
             <li>
-                <a href="#">Download Request as PDF</a>
+                <a class="level-1-dropdown-link" href="#">Download Request as PDF</a>
             </li>
         </ul>
     </div>
 </body>
-
 </html>
