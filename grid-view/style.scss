@@ -1,10 +1,86 @@
-.grid-square {
-    position: relative;
-    width: 353px;
-    height: 303px;
-    background: #E4E9ED;
+@import "../tags/style.scss";
+
+.grid-view-item {
+    display: block;
+    height: 300px;
     border: 1px solid #D5DCE3;
     box-sizing: border-box;
     box-shadow: 0px 1px 4px rgba(19, 53, 84, 0.04), 0px 8px 13px rgba(0, 52, 101, 0.03);
     border-radius: 3px;
+    font-family: 'source sans pro';
+    text-decoration: none;
+}
+
+.grid-view-item-preview {
+    display: block;
+    height: 50%;
+    position: relative;
+    background-color: #F4F6F7;
+    background-image: url(images/faux-docs.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center bottom 0px;
+    box-shadow: 0 1px 0 #D5DCE3;
+}
+
+.grid-view-item-preview-number {
+    font-family: 'fira code';
+    color: #c73030;
+    position: absolute;
+    right: 29px;
+    top: 62px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.grid-view-item-hover-container {
+    display: none;
+}
+
+.grid-view-item-primary-content {
+    display: flex;
+    flex-direction: column;
+    align-item: center;
+    justify-content: center;
+    height: 105px;
+}
+
+.grid-view-item-title {
+    font-family: 'Source Sans Pro';
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+    color: #273A4B;
+    margin: 0;
+}
+
+.grid-view-item-subtitle {
+    font-family: Proxima Nova;
+    font-weight: 500;
+    font-size: 13px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    color: #9DAAB5;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.grid-view-item-secondary-content {
+    display: flex;
+    justify-content: space-between;
+    height: 45px;
+    padding: 0 15px;
+    border-top: 1px dotted rgba(190, 198, 206, 0.5);
+}
+
+.grid-view-item-secondary-info {
+    font-family: Source Sans Pro;
+    font-size: 14px;
+    line-height: 45px;
+    font-weight: normal;
+    color: #9DAAB5;
+}
+
+.tag {
+    display: inline;
 }
