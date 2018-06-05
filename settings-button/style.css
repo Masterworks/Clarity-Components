@@ -104,12 +104,12 @@
       border-radius: 3px 3px 0 0;
       background-color: #fff; }
     .level-1-dropdown > li:first-child:hover {
-      border-top: 1px solid #E4E9ED;
-      border-right: 1px solid #E4E9ED;
-      border-left: 1px solid #E4E9ED;
-      border-bottom: 1px solid #E4E9ED;
+      border-top: 1px solid #BAD0E5;
+      border-right: 1px solid #BAD0E5;
+      border-left: 1px solid #BAD0E5;
+      border-bottom: 1px solid #BAD0E5;
       border-radius: 3px 3px 0 0;
-      background-color: #fff; }
+      background-color: #EDF8FE; }
 
 .level-1-dropdown-link {
   cursor: pointer; }
@@ -210,6 +210,9 @@
   .input-box:focus {
     outline: none; }
 
+.input-box2 {
+  padding-left: 15px; }
+
 .input-icon {
   position: absolute;
   right: 14px;
@@ -260,7 +263,9 @@
   transform: translate(2px, -13px) scale(0.75);
   color: #9DAAB5;
   background-color: #fff;
-  line-height: 13px; }
+  line-height: 13px;
+  text-transform: uppercase;
+  letter-spacing: 2px; }
 
 .input-box:valid + .create-codes-input {
   padding: 0 5px;
@@ -268,7 +273,9 @@
   transform: translate(2px, -13px) scale(0.75);
   color: #9DAAB5;
   background-color: #fff;
-  line-height: 13px; }
+  line-height: 13px;
+  text-transform: uppercase;
+  letter-spacing: 2px; }
 
 h5 {
   font-family: 'Source Sans Pro';
