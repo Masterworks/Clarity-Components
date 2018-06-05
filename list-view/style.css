@@ -67,6 +67,11 @@
   list-style-type: none; }
   .list-view-item-info li {
     display: inline; }
+    .list-view-item-info li:not(.tag) {
+      font-style: normal;
+      line-height: 21px;
+      font-size: 14px;
+      color: #9DAAB5; }
     .list-view-item-info li:after {
       content: "";
       display: inline-block;
@@ -76,22 +81,17 @@
       position: relative;
       top: 12px;
       border-right: 1px dotted rgba(0, 0, 0, 0.2); }
-    .list-view-item-info li span {
-      font-style: normal;
-      line-height: 21px;
-      font-size: 14px;
-      color: #9DAAB5; }
     .list-view-item-info li.tag:after {
       display: none; }
     .list-view-item-info li.tag {
       position: relative;
       bottom: 2px; }
 
-.list-view-item-preview-number {
+.list-view-item-preview-number span {
   font-family: 'Fira Code';
   line-height: 21px;
   font-size: 16px;
-  color: #059CAF; }
+  color: #08acc2; }
 
 .tag {
   display: inline; }

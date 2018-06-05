@@ -45,6 +45,13 @@
     li {
         display: inline;
 
+        &:not(.tag) {
+            font-style: normal;
+            line-height: 21px;
+            font-size: 14px;
+            color: #9DAAB5;
+        }
+
         &:after {
             content: "";
             display: inline-block;
@@ -54,14 +61,6 @@
             position: relative;
             top: 12px;
             border-right: 1px dotted rgba(0,0,0, .2);
-        }
-        
-
-        span {
-            font-style: normal;
-            line-height: 21px;
-            font-size: 14px;
-            color: #9DAAB5;
         }
 
         &.tag:after {
@@ -75,11 +74,11 @@
     }
 }
 
-.list-view-item-preview-number {
+.list-view-item-preview-number span {
     font-family: 'Fira Code';
     line-height: 21px;
     font-size: 16px;
-    color: #059CAF;
+    color: rgb(8, 172, 194);
 }
 
 .tag {
