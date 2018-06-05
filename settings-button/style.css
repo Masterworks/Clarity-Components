@@ -8,9 +8,9 @@
   pointer-events: none; }
 
 .settings-button {
+  position: relative;
   width: 52px;
   height: 33px;
-  position: relative;
   border: none;
   border-radius: 3px;
   cursor: pointer;
@@ -245,10 +245,10 @@
   display: block; }
 
 .create-codes-input {
+  position: absolute;
   left: 30px;
   top: -5px;
   font-size: 14px;
-  position: absolute;
   font-family: 'Source Sans Pro';
   color: #9DAAB5;
   transition: .2s all ease-out;
@@ -278,6 +278,7 @@
   letter-spacing: 2px; }
 
 h5 {
+  position: relative;
   font-family: 'Source Sans Pro';
   font-style: normal;
   font-weight: normal;
@@ -285,13 +286,12 @@ h5 {
   font-size: 20px;
   text-align: center;
   color: #273A4B;
-  top: -15px;
-  position: relative; }
+  top: -15px; }
 
 .create-codes-box {
+  position: absolute;
   width: 248px;
   height: 33px;
-  position: absolute;
   top: -12px;
   left: 19px;
   font-size: 14px; }
