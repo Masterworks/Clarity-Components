@@ -25,18 +25,25 @@
     display: block; }
 
 .dropdown-content a {
+  display: inline-block;
   text-decoration: none;
   font-family: 'Source Sans Pro';
-  line-height: 20px;
   font-size: 14px;
-  color: #717A83; }
+  color: #717A83;
+  width: 93%;
+  height: 100%;
+  padding-left: 15px; }
 
 .dropdown-content {
   display: none;
+  min-width: 200px;
+  list-style-type: none;
+  border-radius: 3px;
   box-shadow: 0px 1px 4px rgba(19, 53, 84, 0.04), 0px 8px 13px rgba(0, 52, 101, 0.03), 0px 11px 20px rgba(0, 0, 0, 0.05);
-  position: absolute;
-  top: 17px;
-  left: 0px; }
+  padding-left: 0;
+  position: relative; }
+  .dropdown-content:hover {
+    display: block; }
   .dropdown-content li {
     box-sizing: border-box;
     width: 100%;
@@ -77,33 +84,43 @@
     .dropdown-content li:hover {
       background-color: #EDF8FE; }
 
+.level-1-dropdown {
+  top: -18px;
+  left: 0px;
+  z-index: 0; }
+  .level-1-dropdown li {
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    line-height: 45px;
+    border-bottom: 1px solid #E4E9ED; }
+    .level-1-dropdown li:first-child {
+      border-top: 1px solid #E4E9ED;
+      border-right: 1px solid #E4E9ED;
+      border-left: 1px solid #E4E9ED;
+      border-radius: 3px 3px 0 0;
+      background-color: #fff; }
+    .level-1-dropdown li:first-child:hover {
+      border-top: 1px solid #E4E9ED;
+      border-right: 1px solid #E4E9ED;
+      border-left: 1px solid #E4E9ED;
+      border-bottom: 1px solid #E4E9ED;
+      border-radius: 3px 3px 0 0;
+      background-color: #fff; }
+
 .level-1-dropdown-link {
-  padding: 11px 38px 7px 17px;
-  cursor: pointer; }
-
-.level-2-dropdown-link {
-  padding: 11px 38px 7px 17px; }
-
-li {
   cursor: pointer; }
 
 .level-2-large-dropdown-link {
-  padding: 11px 27px 7px 16px;
   cursor: pointer; }
 
 .level-1-large-dropdown-link {
-  padding: 11px 36px 7px 16px;
   cursor: pointer; }
 
 .level-2-dropdown {
-  display: none;
-  position: absolute;
-  top: 0px;
-  left: -227px;
-  box-shadow: 0px 1px 4px rgba(19, 53, 84, 0.04), 0px 8px 13px rgba(0, 52, 101, 0.03), 0px 11px 20px rgba(0, 0, 0, 0.05);
-  width: 228px;
-  list-style-type: none;
-  border-radius: 3px; }
+  top: -120%;
+  left: -100%;
+  z-index: 100; }
   .level-2-dropdown li {
     box-sizing: border-box;
     width: 100%;
@@ -115,7 +132,7 @@ li {
       border-right: 1px solid #E4E9ED;
       border-left: 1px solid #E4E9ED;
       border-radius: 3px 3px 0 0;
-      padding: 30px;
+      padding: 28px 16px 28px 16px;
       background-color: #fff; }
     .level-2-dropdown li:first-child:hover {
       border-top: 1px solid #E4E9ED;
@@ -123,20 +140,11 @@ li {
       border-left: 1px solid #E4E9ED;
       border-bottom: 1px solid #E4E9ED;
       border-radius: 3px 3px 0 0;
-      padding: 30px;
+      padding: 28px 16px 28px 16px;
       background-color: #fff; }
 
 .settings-container:focus .dropdown-content {
   display: block; }
-
-ul {
-  width: 228px;
-  list-style-type: none;
-  border-radius: 3px;
-  padding-left: 0;
-  position: relative; }
-  ul:hover {
-    display: block; }
 
 .input-wrap {
   position: relative;
@@ -146,7 +154,6 @@ ul {
 
 .input-label {
   letter-spacing: 2px;
-  text-transform: uppercase;
   left: 22px;
   top: -2px;
   font-size: 16px;
@@ -165,7 +172,8 @@ ul {
   transform: translate(-10px, 2px) scale(0.75);
   color: #9DAAB5;
   background-color: #fff;
-  line-height: 13px; }
+  line-height: 13px;
+  text-transform: uppercase; }
 
 .input-box:valid + .input-label {
   padding: 0 5px;
@@ -195,7 +203,7 @@ ul {
   top: 16px; }
 
 .create-codes-dropdown {
-  width: 288px;
+  min-width: 288px;
   height: 179px;
   background-color: #fff;
   border-radius: 3px;
@@ -208,10 +216,9 @@ ul {
   color: #273A4B;
   display: none;
   position: absolute;
-  top: -46px;
-  left: -288px;
+  top: 32.5%;
+  left: -143.5%;
   box-shadow: 0px 1px 4px rgba(19, 53, 84, 0.04), 0px 8px 13px rgba(0, 52, 101, 0.03), 0px 11px 20px rgba(0, 0, 0, 0.05);
-  width: 288px;
   background: #FFFFFF;
   border: 1px solid #D5DCE3;
   box-sizing: border-box; }
@@ -272,7 +279,7 @@ a.button {
   left: 63px;
   height: 13px;
   width: 125px;
-  padding: 11px 18px 18px 17px;
+  padding: 9px 18px 17px 17px;
   font-family: 'Source Sans Pro';
   font-style: normal;
   font-weight: 600;
