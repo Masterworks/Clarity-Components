@@ -1,0 +1,77 @@
+header {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'source sans pro';
+  color: #273A4B;
+  border-bottom: 1px solid #E4E9ED; }
+
+.logo {
+  display: block;
+  width: 122px;
+  height: 26px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background-image: url("../images/clarity-logo.svg");
+  background-size: 100%;
+  background-repeat: no-repeat; }
+
+.primary-nav {
+  display: flex;
+  height: 20px;
+  justify-content: flex-end;
+  flex-grow: 3;
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+  .primary-nav:after {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 34px;
+    margin: 0 23px;
+    position: relative;
+    bottom: 6px;
+    border-right: 1px dotted #BEC6CE; }
+
+.primary-nav-item {
+  display: inline;
+  font-size: 16px;
+  margin-right: 25px; }
+  .primary-nav-item:last-child {
+    margin-right: 0; }
+
+.primary-nav-link {
+  text-decoration: none;
+  color: #273A4B; }
+
+.btn-notifications {
+  display: inline-block;
+  margin-right: 18px;
+  line-height: 0; }
+
+.btn-user-account {
+  display: block;
+  position: relative;
+  width: 32px;
+  height: 32px;
+  margin-right: 19px;
+  background-image: url(../images/avatar.jpg);
+  background-size: 100%;
+  border-radius: 50%; }
+  .btn-user-account:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: -18px;
+    top: 13px;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid #273A4B; }
+
+/*# sourceMappingURL=style.css.map */
