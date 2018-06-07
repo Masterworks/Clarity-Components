@@ -23,14 +23,18 @@
   font-size: 16px;
   transform: translate(-1px, -22px) scale(0.75);
   color: #9DAAB5;
-  background-color: #fff; }
+  background-color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px; }
 
 .input-box:valid + .input-label {
   padding: 0 5px;
   font-size: 16px;
   transform: translate(-1px, -22px) scale(0.75);
   color: #9DAAB5;
-  background-color: #fff; }
+  background-color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px; }
 
 .input-box {
   width: 100%;
