@@ -23,7 +23,13 @@
 </head>
 
 <body>
-    <div class="input-wrap has-alert alert-success">
+    <!-- 
+    In order to display an input notice/alert you need to add two classes 
+    to .input-wrap (first, `.has-alert` and then `.alert-success` or 
+    `.alert-error` respectively). Then be sure to add in the alert text as
+    the last child of `.input-wrap` as a <p> tag with a class of `.alert-text`. 
+    -->
+    <div class="input-wrap">
         <img class="input-icon" src="../../images/search-icon.svg" alt="search">
         <input class="input-box" type="text" required>
         <label class="input-label">Label</label>
