@@ -11,6 +11,12 @@ a.button {
   box-sizing: border-box;
   box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.05);
   border-radius: 3px;
-  text-decoration: none; }
+  text-decoration: none;
+  transition: all .15s ease-in-out;
+  -webkit-font-smoothing: antialiased; }
+  a.button:hover {
+    transform: translateY(-1px); }
+  a.button:active {
+    transform: translateY(1px); }
 
 /*# sourceMappingURL=style.css.map */
