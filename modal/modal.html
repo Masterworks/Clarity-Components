@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            /*-- Just presentational css --*/
+            display: flex;
+            height: 100%;
+            margin: 0;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+    </style>
+
+</head>
+
+<body class="modal-active">
+    <div class="modal-container">
+        <div class="modal-content">        
+            <a href="#" class="btn-close-modal"></a>
+            <h5 class="modal-subheader">Subheader</h5>
+            <h3 class="modal-header">Modal Header</h3>
+            <p class="modal-description">Before we begin entering cost data, please choose the client and job number for this project.</p>
+            
+            <div class="modal-primary-content">
+                <div class="input-wrap">
+                    <input class="input-box" type="text" required>
+                    <label class="input-label">Input Label 1</label>
+                    <p class="alert-text">I am an input notice. Be sure to read me.</p>
+                </div>
+
+                <div class="input-wrap">
+                    <input class="input-box" type="text" required>
+                    <label class="input-label">Input Label 2</label>
+                    <p class="alert-text">I am an input notice. Be sure to read me.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-cta-container">
+            <a href="#" class="button">Primary CTA</a>
+        </div>
+    </div>
+</body>
+
+</html>
