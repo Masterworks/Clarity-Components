@@ -1,0 +1,182 @@
+// utility all partial
+// dimension
+.u-width-100 {
+    max-width: $page-grid-width-100;
+    width: $page-grid-width-100;
+}
+
+.u-height-100 {
+    height: $page-grid-height-100;
+}
+
+.u-height-100vh {
+    height: $page-grid-height-100vh;
+}
+
+// alignment
+.u-valign-middle {
+    display: table;
+    width: $page-grid-width-100;
+    .u-valign-middle-inner {
+        display: table-cell;
+        vertical-align: middle;
+    }
+}
+
+// block element alignment
+.u-block-elm-center {
+    margin: $all-zero auto;
+}
+
+
+// display
+.u-display-block {
+    display: block;
+}
+
+.u-display-in-block {
+    display: inline-block;
+}
+
+// valign
+.u-txt-valign-middle {
+    vertical-align: middle;
+}
+
+
+// background image styles
+// cover / contain
+.u-bg-cover {
+    background-size: cover;
+}
+
+.u-bg-contain {
+    background-size: contain;
+}
+
+// positions
+.u-bg-pos-center-middle {
+    background-position: $page-grid-width-100 / 2 $page-grid-width-100 / 2;
+}
+
+.u-bg-pos-bottom-right {
+    background-position: $page-grid-width-100 $page-grid-width-100;
+}
+
+// repeatation
+.u-bg-norepeat {
+    background-repeat: no-repeat;
+}
+
+.u-bg-repeat-x {
+    background-repeat: repeat-x;
+}
+
+.u-bg-repeat-y {
+    background-repeat: repeat-y;
+}
+
+.u-bg-repeat-xy {
+    background-repeat: repeat;
+}
+
+// fixed
+.u-bg-fixed {
+    background-attachment: fixed;
+}
+
+// background color
+.u-bg-color-fff {
+    background-color: $white;
+}
+
+
+// img object styles
+// object fit cover / contain
+.u-objfit-cover {
+    object-fit: cover !important;
+}
+
+.u-objfit-contain {
+    object-fit: contain;
+}
+
+// object positions
+.u-obj-pos-center-middle {
+    object-position: $page-grid-width-100 / 2 $page-grid-width-100 / 2;
+}
+
+
+// transform / translate
+// position
+.u-absolute {
+    position: absolute;
+    &.u-top-0 {
+        top: $all-zero;
+    }
+    &.u-bot-0 {
+        bottom: $all-zero;
+    }
+    &.u-left-0 {
+        left: $all-zero;
+    }
+    &.u-left-50 {
+        left: $page-grid-width-100 / 2;
+    }
+    &.u-right-0 {
+        right: $all-zero;
+    }
+    &.u-all-0 {
+        @extend .u-bot-0;
+        @extend .u-left-0;
+        @extend .u-right-0;
+        @extend .u-top-0;
+    }
+}
+
+.u-position-right-0 {
+    left: auto;
+    right: $all-zero;
+}
+
+.u-relative {
+    position: relative;
+}
+
+.u-fixed {
+    @extend .u-absolute;
+    position: fixed;
+}
+
+.u-static {
+    position: static !important;
+}
+
+
+// overflow
+.u-oflowhidden {
+    overflow: hidden;
+}
+
+
+// border radius
+.u-no-border {
+    border: none !important;
+}
+
+// box shadow
+// text-transform
+.u-txt-uppercase {
+    text-transform: uppercase;
+}
+
+
+// text decoration
+.u-text-decoration-none {
+    text-decoration: none;
+}
+
+// transparent
+.u-transparent {
+    background-color: transparent;
+}

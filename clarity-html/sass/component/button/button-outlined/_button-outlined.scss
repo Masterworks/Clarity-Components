@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+a.button {
+    padding: 12px 15px 12px 15px;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    font-size: 16px;
+    text-align: center;
+    color: #059CAF;
+    border: 2px solid #059CAF;
+    box-sizing: border-box;
+    box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+    text-decoration: none;
+    background: $white;
+    transition: all .15s ease-in-out;
+    -webkit-font-smoothing: antialiased;
+
+    &:hover {
+        transform: translateY(-1px);
+    }
+
+    &:active {
+        transform: translateY(1px);
+    }
+}
