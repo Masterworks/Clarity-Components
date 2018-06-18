@@ -5,7 +5,8 @@ body {
 
 .c {
     &-formContainer {
-        background-color: $grey-v2;
+        background: url('../images/login-bg.png') no-repeat center transparent;
+        background-size: cover;
         @extend .u-display-flex;
         @extend .u-justify--center;
         @extend .u-align-item--center;
@@ -36,6 +37,13 @@ body {
             @extend .u-normal--line-height;
             @extend .u-aligntext--center;
         }
+    }
+    &-container-wrap {
+        @extend .u-display-flex;
+        @extend .u-justify--center;
+        @extend .u-align-item--center;
+        @extend .u-absolute;
+        @extend .u-all-0;
     }
 }
 

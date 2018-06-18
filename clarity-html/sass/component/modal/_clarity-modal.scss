@@ -50,6 +50,11 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.04);
     border-radius: 3px;
     background-color: #ffffff;
+    &--success {
+        border: 1px solid #219653;
+        background: url(../images/check.svg) no-repeat 98% !important;
+        @extend .u-relative;
+    }
 }
 
 .input-box:focus {
@@ -223,7 +228,7 @@ a.button:active {
     display: flex;
     justify-content: center;
     box-sizing: border-box;
-    height: 95px;
+    height: 88px;
     padding: 25px;
     background: #F0F3F4;
     border-radius: 0 0 3px 3px;
