@@ -34,8 +34,18 @@
     display: block;
 }
 
+.u-box-module {
+    &--borderbox {
+        box-sizing: border-box;
+    }
+}
+
 .u-display-in-block {
     display: inline-block;
+}
+
+.u-display-flex {
+    display: flex;
 }
 
 // valign
@@ -43,8 +53,26 @@
     vertical-align: middle;
 }
 
+.u-align-item {
+    &--center {
+        align-items: center;
+    }
+}
+
+// justufy content
+.u-justify {
+    &--center {
+        justify-content: center;
+    }
+}
 
 // background image styles
+.u-bx-shadow {
+    &--loginBx {
+        box-shadow: 0px 1px 4px rgba(19, 53, 84, 0.04), 0px 8px 13px rgba(0, 52, 101, 0.03);
+    }
+}
+
 // cover / contain
 .u-bg-cover {
     background-size: cover;
@@ -170,13 +198,39 @@
     text-transform: uppercase;
 }
 
+//text-align
+.u-aligntext {
+    &--center {
+        text-align: center;
+    }
+    &--right {
+        text-align: right;
+    }
+    &--left {
+        text-align: left;
+    }
+}
 
 // text decoration
-.u-text-decoration-none {
-    text-decoration: none;
+.u-text-decoration {
+    &--none {
+        text-decoration: none;
+    }
+    &--underline {
+        text-decoration: underline;
+    }
 }
 
 // transparent
 .u-transparent {
     background-color: transparent;
+}
+
+.u-normal {
+    &--font-weight {
+        font-weight: normal;
+    }
+    &--line-height {
+        line-height: normal;
+    }
 }

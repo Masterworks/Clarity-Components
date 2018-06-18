@@ -1,80 +1,79 @@
 // Login
 body {
-    height: 100%;
+    @extend .u-height-100;
 }
 
-.o-formContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    @extend .u-absolute;
-    @extend .u-all-0;
-    background-color: rgba(240, 242, 242, .5);
-}
-
-.formContainer__inner {
-    width: 336px;
-    margin: 0 auto;
-    display: block;
-    height: 339px;
-    border: 1px solid #D5DCE3;
-    box-sizing: border-box;
-    box-shadow: 0px 1px 4px rgba(19, 53, 84, 0.04), 0px 8px 13px rgba(0, 52, 101, 0.03);
-    background-color: #fff;
-    border-radius: 3px;
-    font-family: 'source sans pro';
-    text-decoration: none;
-    transition: all .125s ease-in-out;
-    padding: 27px;
-    position: relative;
-}
-
-
-.formContainer__header {
-    margin-top: 0;
-    margin-bottom: 25px;
-    font-family: 'Source Sans Pro';
-    font-weight: normal;
-    line-height: normal;
-    font-size: 39px;
-    text-align: center;
-    color: $dark-v1;
+.c {
+    &-formContainer {
+        background-color: $grey-v2;
+        @extend .u-display-flex;
+        @extend .u-justify--center;
+        @extend .u-align-item--center;
+        @extend .u-absolute;
+        @extend .u-all-0;
+        &__inner {
+            font-family: 'source sans pro';
+            width: $all-zero + 336;
+            height: $all-zero + 339;
+            padding: $all-zero + 27;
+            border: $all-zero + 1 solid $grey-v3;
+            @include border-radius(3px);
+            background-color: $white;
+            @extend .u-block-elm-center;
+            @extend .u-display-block;
+            @extend .u-box-module--borderbox;
+            @extend .u-bx-shadow--loginBx;
+            @extend .u-text-decoration--none;
+            @extend .u-relative;
+            transition: all .125s ease-in-out;
+        }
+        &__header {
+            font-family: 'Source Sans Pro';
+            color: $dark-v1;
+            font-size: $all-zero + 39;
+            margin: $all-zero $all-zero $all-zero + 25 $all-zero;
+            @extend .u-normal--font-weight;
+            @extend .u-normal--line-height;
+            @extend .u-aligntext--center;
+        }
+    }
 }
 
 .input-content__content {
     margin-top: 29px;
 }
 
-input-wrap {
-    position: relative;
-    width: 100%;
-    height: 45px;
+.input-wrap {
+    &--loginSection {
+        @extend .u-relative;
+        @extend .u-width-100;
+        height: $all-zero + 45;
+    }
 }
 
-.input-wrap--botmargin {
-    margin-bottom: 15px;
-}
-
-.formbottom--topmargin {
-    margin-top: 40px;
+.formbottom {
+    &--topmargin {
+        margin: $all-zero + 40 $all-zero $all-zero;
+        @extend .u-aligntext--center;
+        font-size: $all-zero + 10;
+    }
 }
 
 .forgot__password {
     padding-top: 10px;
     text-align: center;
+    a {
+        color: #059CAF;
+        font-size: 14px;
+        @extend .u-text-decoration--none;
+    }
 }
 
-.forgot__password a {
-    color: #059CAF;
-    font-size: 14px;
-    text-decoration: none;
-}
-
-.clarity-text {
-    position: absolute;
-    width: 100%;
+.clarity-logo {
+    @extend .u-absolute;
+    @extend .u-left-0;
+    @extend .u-width-100;
+    @extend .u-aligntext--center;
     height: auto;
-    left: 0;
-    text-align: center;
     top: -83px;
 }
