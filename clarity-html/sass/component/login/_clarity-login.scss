@@ -1,6 +1,8 @@
 // Login
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900');
 body {
     @extend .u-height-100;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .c {
@@ -39,6 +41,7 @@ body {
         }
     }
     &-container-wrap {
+        background: url('../images/login-bg.png') no-repeat center transparent;
         @extend .u-display-flex;
         @extend .u-justify--center;
         @extend .u-align-item--center;

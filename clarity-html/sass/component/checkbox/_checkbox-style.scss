@@ -1,0 +1,36 @@
+.c-checkbox {
+    .input-wrap {
+        display: flex;
+        flex-direction: row;
+        height: auto;
+    }
+
+    .input-wrap .input-label {
+        display: block;
+        margin-bottom: 5px;
+        font-family: 'Source Sans Pro';
+        font-size: 16px;
+        color: #273A4B;
+        pointer-events: auto;
+        @extend .u-static;
+    }
+
+    .check-box {
+        margin-right: 12px;
+    }
+
+    .description-container {
+        width: 363px;
+        height: 58px;
+        position: relative;
+        bottom: 1px;
+    }
+
+    .check-box-description {
+        margin-top: 0px;
+        font-family: 'Source Sans Pro';
+        line-height: 20px;
+        font-size: 14px;
+        color: #717A83;
+    }
+}

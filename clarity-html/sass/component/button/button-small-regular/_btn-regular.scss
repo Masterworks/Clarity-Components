@@ -34,4 +34,10 @@ a.button-regular {
     &.email--sent {
         background: #00AE81;
     }
+    &--btn {
+        padding: 12px 26px;
+        height: auto;
+        line-height: normal;
+        @extend .u-display-in-block;
+    }
 }

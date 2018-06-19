@@ -66,6 +66,14 @@
     }
 }
 
+//clear
+.clearfix::after,
+.clearfix::before {
+    content: "";
+    clear: both;
+    display: table;
+}
+
 // background image styles
 .u-bx-shadow {
     &--loginBx {
