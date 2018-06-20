@@ -1,3 +1,5 @@
+//@import "../tags/style.scss";
+
 .list-view-item {
     display: flex;
     width: 100%;
@@ -12,7 +14,7 @@
     box-sizing: border-box;
     box-shadow: 0px 1px 4px rgba(19, 53, 84, 0.04), 0px 8px 13px rgba(0, 52, 101, 0.03);
     border-radius: 3px;
-
+    
 }
 
 .list-view-item-subtitle {
@@ -22,7 +24,7 @@
     color: #273A4B;
 
     &:after {
-        content: ":";
+        content: ":";        
     }
 }
 
@@ -58,11 +60,11 @@
             margin: 0 15px;
             position: relative;
             top: 12px;
-            border-right: 1px dotted rgba(0, 0, 0, .2);
+            border-right: 1px dotted rgba(0,0,0, .2);
         }
 
         &.tag:after {
-            display: none;
+            display: none;            
         }
 
         &.tag {
@@ -99,8 +101,7 @@
     border-radius: 50%;
     background-color: #BEC6CE;
 
-    &:before,
-    &:after {
+    &:before, &:after {
         content: "";
         display: block;
         position: absolute;
