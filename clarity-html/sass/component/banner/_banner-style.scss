@@ -1,0 +1,11 @@
+.c {
+    &-banner {
+        &__inner {
+            padding: $all-zero + 89;
+            @extend .u-aligntext--center;
+            h1 {
+                color: $blue-v2;
+            }
+        }
+    }
+}

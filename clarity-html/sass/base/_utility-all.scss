@@ -242,3 +242,9 @@
         line-height: normal;
     }
 }
+
+.u-font-style {
+    &--italic {
+        font-style: italic;
+    }
+}

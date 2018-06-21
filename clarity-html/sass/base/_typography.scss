@@ -1,2 +1,7 @@
 // colorscheme partial
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:100,300,400,600,700,900');
+
+h1 {
+    font-size: $all-zero + 49;
+    @extend .u-normal--font-weight;
+}

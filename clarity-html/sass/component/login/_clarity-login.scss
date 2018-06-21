@@ -3,6 +3,8 @@
 body {
     @extend .u-height-100;
     font-family: 'Source Sans Pro', sans-serif;
+    margin: $all-zero;
+    padding: $all-zero;
 }
 
 .c {
