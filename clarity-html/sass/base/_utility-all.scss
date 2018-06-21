@@ -34,6 +34,10 @@
     display: block;
 }
 
+.u-display-none {
+    display: none;
+}
+
 .u-box-module {
     &--borderbox {
         box-sizing: border-box;
@@ -204,6 +208,13 @@
 // text-transform
 .u-txt-uppercase {
     text-transform: uppercase;
+}
+
+//
+.u-list-style {
+    &--none {
+        list-style: none;
+    }
 }
 
 //text-align

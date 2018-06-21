@@ -7,6 +7,7 @@ header {
     font-family: 'source sans pro';
     color: #273A4B;
     border-bottom: 1px solid #E4E9ED;
+    position: relative;
 }
 
 .logo {
@@ -288,5 +289,37 @@ b {
             border-bottom: $all-zero + 1 dotted $blue-v1;
             @extend .u-text-decoration--none;
         }
+    }
+}
+
+.c-signout {
+    background: $white;
+    padding: $all-zero;
+    margin: $all-zero;
+    border: $all-zero + 1 solid $grey-v5;
+    width: $all-zero +200;
+    min-height: $all-zero + 77;
+    top: $all-zero + 59;
+    z-index: 100;
+    @extend .u-absolute;
+    @extend .u-right-0;
+    @extend .u-display-none;
+    li {
+        @extend .u-display-block;
+        @extend .u-static;
+        @extend .u-list-style--none;
+        border-bottom: 1px solid #E4E9ED;
+        a {
+            color: $blue-v1;
+            text-decoration: none;
+            display: block;
+            padding: $all-zero + 10;
+        }
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+    &.active {
+        @extend .u-display-block;
     }
 }

@@ -47,24 +47,7 @@
                         <img class="new-notification-dot" src="../images/ellipse.svg" alt="new-notification" />
                     </a>
                     <script>
-                        function myFunction() {
-                            document.getElementById("myDropdown").classList.toggle("show");
-                        }
 
-                        // Close the dropdown menu if the user clicks outside of it
-                        window.onclick = function(event) {
-                            if (!event.target.matches('.btn-notifications')) {
-
-                                var dropdowns = document.getElementsByClassName("dropdown-content");
-                                var i;
-                                for (i = 0; i < dropdowns.length; i++) {
-                                    var openDropdown = dropdowns[i];
-                                    if (openDropdown.classList.contains('show')) {
-                                        openDropdown.classList.remove('show');
-                                    }
-                                }
-                            }
-                        }
 
                     </script>
                     <ul id="myDropdown" class="dropdown-content level-1-dropdown">
@@ -93,6 +76,10 @@
                     </ul>
                 </div>
                 <a href="#" class="btn-user-account"></a>
+                <ul class="c-signout js-signout">
+                    <li><a href="#">Loream Ipsum</a></li>
+                    <li><a href="#">Log Out</a></li>
+                </ul>
             </header>
         </div>
     </div>
@@ -183,6 +170,9 @@
         </div>
     </div>
     <!-- services section -->
+    <!-- jQuery -->
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/custom.js"></script>
 </body>
 
 </html>
