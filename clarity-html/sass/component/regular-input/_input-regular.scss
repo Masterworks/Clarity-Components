@@ -22,6 +22,8 @@
             transform-origin: top left;
             z-index: 10;
             cursor: default;
+            text-transform: none;
+            letter-spacing: normal;
         }
 
         .input-wrap .input-box:focus + .input-label {

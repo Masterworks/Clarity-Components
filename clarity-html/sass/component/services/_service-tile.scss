@@ -18,6 +18,10 @@
             padding-bottom: $all-zero + 60;
             @extend .u-height-100;
             @extend .u-relative;
+            transition: all .125s ease-in-out;
+            -moz-transition: all .125s ease-in-out;
+            -webkit-transition: all .125s ease-in-out;
+            box-shadow: 0px 1px 4px rgba(19, 53, 84, 0.04), 0px 8px 13px rgba(0, 52, 101, 0.03);
             h2 {
                 font-weight: 300;
                 font-size: $all-zero + 25;
@@ -34,6 +38,11 @@
                 padding: $all-zero $all-zero + 21;
                 margin: $all-zero + 16 $all-zero;
                 @extend .u-font-style--italic;
+            }
+            &:hover {
+                transform: translateY(-2px);
+                cursor: pointer;
+                box-shadow: 0px 2px 40px 2px rgba(23, 70, 80, 0.05), 0px 11px 30px rgba(0, 52, 80, 0.04);
             }
         }
         &__report {

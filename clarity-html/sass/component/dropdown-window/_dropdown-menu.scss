@@ -8,6 +8,7 @@
         color: #717A83;
         width: 93%;
         height: 100%;
+        margin: 0;
     }
 
     .dropdown-search-bar {
@@ -59,7 +60,7 @@
             }
 
             &:not(:first-child):hover {
-                height: 41px;
+//                height: 41px;
                 margin-top: -1px;
                 border-bottom: 1px solid #BAD0E5;
                 border-top: 1px solid #BAD0E5;
