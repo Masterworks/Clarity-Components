@@ -41,6 +41,9 @@
 
             & + .dropdown-content {
                 display: block;
+                @extend .u-absolute;
+                top: 34px;
+                outline: none;
             }
         }
 
@@ -160,7 +163,7 @@
         .level-2-dropdown {
             position: absolute;
             top: 0%;
-            right: 100%;
+            left: 100%;
             margin-right: -1px;
             z-index: 100;
 
@@ -274,11 +277,10 @@
             position: absolute;
             top: 32%;
             margin-top: 1px;
-            right: 100%;
+            left: 100%;
             margin-right: -1px;
             border: 1px solid #D5DCE3;
             box-sizing: border-box;
-
         }
 
         .create-codes-container:hover {
@@ -347,21 +349,26 @@
             position: absolute;
             top: 42px;
             left: 63px;
-            height: 13px;
-            width: 125px;
-            padding: 9px 18px 17px 17px;
+            width: 145px;
+            padding: 0 18px;
             font-family: 'Source Sans Pro';
             font-style: normal;
-            font-weight: 600;
-            line-height: normal;
+            font-weight: 700;
             font-size: 16px;
             text-align: center;
             text-decoration: none;
+            border: none;
             color: #FFFFFF;
             border-radius: 3px;
             background: linear-gradient(102.52deg, rgba(17, 0, 209, 0.3) -18.15%, rgba(255, 255, 255, 0.3) 111.87%), #059CAF;
             background-blend-mode: overlay, normal;
             box-shadow: 0px 3px 7px rgba(5, 136, 152, 0.2), 0px 1px 1px rgba(15, 60, 66, 0.1), inset 0px -1px 0px rgba(0, 0, 0, 0.05);
+            height: 39px;
+            line-height: 39px;
         }
+    }
+    &--style {
+        @extend .u-display-in-block;
+        @extend .u-static;
     }
 }

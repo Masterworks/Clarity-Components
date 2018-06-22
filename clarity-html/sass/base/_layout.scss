@@ -1,1 +1,17 @@
-
+.c {
+    &-usersearch {
+        width: $all-zero + 265;
+        border-left: $all-zero + 1 dotted $grey-v4;
+        @extend .u-display-in-block;
+        @extend .u-txt-valign-top;
+    }
+    &-client {
+        @extend .c-usersearch;
+        width: $all-zero + 280;
+        border: none;
+    }
+    &-organisation {
+        @extend .c-client;
+        width: $all-zero + 105;
+    }
+}

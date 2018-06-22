@@ -9,6 +9,9 @@
             &.has-alert .alert-text {
                 display: block;
             }
+            &--width192 {
+                width: $all-zero + 192;
+            }
         }
 
         .input-wrap .input-label {
@@ -100,5 +103,12 @@
                 background-color: rgba(33, 150, 83, .05);
             }
         }
+    }
+    &__label {
+        letter-spacing: 0.05em;
+        color: $grey-v6;
+        font-size: $all-zero + 13;
+        @extend .u-display-in-block;
+        @extend .u-txt-uppercase;
     }
 }

@@ -1,0 +1,107 @@
+// Padding 
+@mixin padding($size) {
+    padding: $size +'px' !important;
+}
+
+@mixin padding-left($size) {
+    padding-left: $size +'px' !important;
+}
+
+@mixin padding-right($size) {
+    padding-right: $size +'px' !important;
+}
+
+@mixin padding-top($size) {
+    padding-top: $size +'px' !important;
+}
+
+@mixin padding-bottom($size) {
+    padding-bottom: $size +'px' !important;
+}
+
+@mixin padding-horizontal($size) {
+    padding-left: $size +'px' !important;
+    padding-right: $size +'px' !important;
+}
+
+@mixin padding-vertical($size) {
+    padding-top: $size +'px' !important;
+    padding-bottom: $size +'px' !important;
+}
+
+$spaceamounts: (0, 5, 10, 15, 20, 25, 30, 35, 40);
+.u {
+    &-padding {
+        @each $space in $spaceamounts {
+            &-all-#{$space} {
+                @include padding(#{$space});
+            }
+            &-left-#{$space} {
+                @include padding-left(#{$space});
+            }
+            &-right-#{$space} {
+                @include padding-right(#{$space});
+            }
+            &-top-#{$space} {
+                @include padding-top(#{$space});
+            }
+            &-bottom-#{$space} {
+                @include padding-bottom(#{$space});
+            }
+        }
+    }
+}
+
+//margin
+@mixin margin($size) {
+    margin: $size +'px' !important;
+}
+
+@mixin margin-left($size) {
+    margin-left: $size +'px' !important;
+}
+
+@mixin margin-right($size) {
+    margin-right: $size +'px' !important;
+}
+
+@mixin margin-top($size) {
+    margin-top: $size +'px' !important;
+}
+
+@mixin margin-bottom($size) {
+    margin-bottom: $size +'px' !important;
+}
+
+@mixin margin-horizontal($size) {
+    margin-left: $size +'px' !important;
+    margin-right: $size +'px' !important;
+}
+
+@mixin margin-vertical($size) {
+    margin-top: $size +'px' !important;
+    margin-bottom: $size +'px' !important;
+}
+
+$spaceamounts: (0, 5, 10, 15, 20, 25, 30, 35, 40);
+.u {
+    &-margin {
+        @each $space in $spaceamounts {
+            &-all-#{$space} {
+                @include margin(#{$space});
+            }
+            &-left-#{$space} {
+                @include margin-left(#{$space});
+            }
+            &-right-#{$space} {
+                @include margin-right(#{$space});
+            }
+            &-top-#{$space} {
+                @include margin-top(#{$space});
+            }
+            &-bottom-#{$space} {
+                @include margin-bottom(#{$space});
+            }
+        }
+    }
+}

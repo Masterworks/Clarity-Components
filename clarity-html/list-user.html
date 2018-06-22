@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Clarity | Dashboard</title>
+    <title>Clarity | List-User</title>
 
     <!-- main style sheet -->
     <link href="css/style.css" rel="stylesheet">
@@ -88,10 +88,10 @@
     <div class="c-headerBottom">
         <div class="container">
             <div class="row">
-                <div class="col">
+                <div class="col u-margin-top-20">
                     <!-- setting button -->
-                    <div class="c-settingBtn c-settingBtn--makecenter">
-                        <div class="c-settingBtn__inner">
+                    <div class="c-settingBtn u-display-in-block">
+                        <div class="c-settingBtn__inner c-settingBtn--style">
                             <div class="settings-container">
                                 <button class="settings-button"> 
                                     <img src="../images/gear-icon.svg" alt="gear-icon" class="gear-icon">
@@ -151,6 +151,63 @@
                         </div>
                     </div>
                     <!-- setting button -->
+                    <!-- search user -->
+                    <div class="c-usersearch u-margin-left-15 u-padding-left-15">
+                        <div class="c-input c-input--small">
+                            <span class="c-input__label">Filters:</span>
+                            <!-- 
+                             In order to display an input notice/alert you need to add two classes to .input-wrap (first, `.has-alert` and then `.alert-success` or `.alert-error` respectively). Then be sure to add in the alert text as the last child of `.input-wrap` as a
+                            <p> tag with a class of `.alert-text`. -->
+                            <div class="input-wrap input-wrap--width192 u-display-in-block">
+                                <img class="input-icon" src="images/filter.png" alt="filter">
+                                <input class="input-box" type="text" required>
+                                <label class="input-label">Search Users</label>
+                                <p class="alert-text">I am an input notice. Be sure to read me.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- search user -->
+                    <!-- client -->
+                    <div class="c-client u-margin-left-15">
+                        <div class="c-select-small">
+                            <div class="c-select-small">
+                                <div class="input-wrap">
+                                    <select class="input-box" name="input-box">
+                                          <option disabled selected value style="display:none"></option>
+                                          <option value="option-1">option 1</option>
+                                          <option value="option-2">option 2</option>
+                                          <option value="option-3">option 3</option>
+                                          <option value="option-4">option 4</option>
+                                    </select>
+                                    <label class="input-label input-label--font14">Label</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- client -->
+                    <!-- client -->
+                    <div class="c-organisation u-margin-left-15">
+                        <div class="c-select-small">
+                            <div class="c-select-small">
+                                <div class="input-wrap">
+                                    <select class="input-box" name="input-box">
+                                          <option disabled selected value style="display:none"></option>
+                                          <option value="option-1">option 1</option>
+                                          <option value="option-2">option 2</option>
+                                          <option value="option-3">option 3</option>
+                                          <option value="option-4">option 4</option>
+                                    </select>
+                                    <label class="input-label input-label--font14">Org</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- client -->
+                    <!-- add user -->
+                    <div class="o-adduser u-display-in-block u-pull--right">
+                        <a class="buttonimg buttonimg--buttonicon" href="#">Add New User <i class="u-margin-left-5"></i></a>
+                    </div>
+                    <!-- !~add user -->
                 </div>
             </div>
         </div>
@@ -160,7 +217,8 @@
     <div class="c-banner">
         <div class="container">
             <div class="c-banner__inner">
-                <h1>Administration</h1>
+                <h1 class="u-margin-bottom-0">Administration</h1>
+                <h5 class="u-margin-bottom-0">Settings and preferences</h5>
             </div>
         </div>
     </div>

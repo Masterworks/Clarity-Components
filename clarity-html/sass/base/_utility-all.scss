@@ -45,16 +45,30 @@
 }
 
 .u-display-in-block {
-    display: inline-block;
+    display: inline-block !important;
 }
 
 .u-display-flex {
     display: flex;
 }
 
+//floats
+.u-pull {
+    &--right {
+        float: right;
+    }
+    &--left {
+        float: left;
+    }
+}
+
 // valign
 .u-txt-valign-middle {
     vertical-align: middle;
+}
+
+.u-txt-valign-top {
+    vertical-align: top;
 }
 
 .u-align-item {
@@ -251,6 +265,9 @@
     }
     &--line-height {
         line-height: normal;
+    }
+    &--font-style {
+        font-style: normal;
     }
 }
 
