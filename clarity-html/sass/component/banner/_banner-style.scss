@@ -8,6 +8,11 @@
             }
             h5 {
                 color: $grey-v7;
+                font-size: $all-zero + 13;
+                letter-spacing: $all-zero + 2.5;
+                margin-top: $all-zero;
+                @extend .u-txt-uppercase;
+                @extend .u-normal--font-weight;
             }
         }
     }

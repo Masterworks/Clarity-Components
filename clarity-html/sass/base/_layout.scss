@@ -15,3 +15,20 @@
         width: $all-zero + 105;
     }
 }
+
+.o {
+    &-user {
+        padding: $all-zero + 35;
+        background: rgba(240, 242, 243, 0.5);
+    }
+    &-rightPan {
+        @extend .u-bg-color-fff;
+        @include border-radius(3px);
+        padding: $all-zero + 30;
+        border: $all-zero + 1 solid $grey-v3;
+        &__link {
+            color: $blue-v1;
+            @extend .u-text-decoration--none;
+        }
+    }
+}

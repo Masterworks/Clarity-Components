@@ -5,3 +5,20 @@ h1 {
     font-size: $all-zero + 49;
     @extend .u-normal--font-weight;
 }
+
+.h1 {
+    font-size: $all-zero + 49;
+    @extend .u-normal--font-weight;
+    &--user {
+        font-size: $all-zero + 31;
+        color: $dark-v1;
+        margin: $all-zero;
+    }
+}
+
+p {
+    @extend .u-normal--font-weight;
+    @extend .u-normal--font-style;
+    line-height: 24px;
+    font-size: 16px;
+}

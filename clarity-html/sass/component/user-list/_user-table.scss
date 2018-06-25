@@ -1,0 +1,11 @@
+.c {
+    &-usertable {
+        @extend .u-width-100;
+        thead {
+            background: $green-v1;
+            .c-usertable__name {
+                width: $page-grid-width-100 / 5;
+            }
+        }
+    }
+}
