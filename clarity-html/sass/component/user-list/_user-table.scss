@@ -1,10 +1,73 @@
 .c {
     &-usertable {
         @extend .u-width-100;
-        thead {
+        &__row {
+            font-size: $all-zero;
             background: $green-v1;
-            .c-usertable__name {
-                width: $page-grid-width-100 / 5;
+            border-radius: $all-zero + 3;
+            padding: $all-zero + 8 $all-zero + 12;
+            color: $grey-v8;
+            @extend .u-txt-uppercase;
+        }
+        &__rowbody {
+            font-size: $all-zero;
+            color: $grey-v8;
+            padding: $all-zero + 13 $all-zero;
+            border-bottom: $all-zero + 1 solid $grey-v5;
+            &--noborder {
+                border-bottom: none;
+            }
+        }
+        &__block {
+            @extend .u-display-in-block;
+            word-wrap: break-word;
+            vertical-align: top;
+            &--name {
+                font-size: $all-zero + 13;
+                width: 20%;
+            }
+            &--namefield {
+                font-size: $all-zero + 16;
+                width: 20%;
+                color: $blue-v1;
+            }
+            &--email {
+                font-size: $all-zero + 13;
+                width: 35%;
+            }
+            &--emailfield {
+                font-size: $all-zero + 16;
+                width: 35%;
+
+                a {
+                    color: $grey-v4;
+                    @extend .u-text-decoration--none;
+                }
+            }
+            &--org {
+                font-size: $all-zero + 13;
+                width: 15%;
+            }
+            &--orgfield {
+                @extend .u-txt-uppercase;
+                font-size: $all-zero + 16;
+                width: 15%;
+            }
+            &--role {
+                font-size: $all-zero + 13;
+                width: 20%;
+            }
+            &--rolefield {
+                font-size: $all-zero + 16;
+                width: 20%;
+            }
+            &--enable {
+                font-size: $all-zero + 13;
+                width: 10%;
+            }
+            &--enablefield {
+                font-size: $all-zero + 16;
+                width: 10%;
             }
         }
     }

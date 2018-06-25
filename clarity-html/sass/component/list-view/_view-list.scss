@@ -1,5 +1,4 @@
 //@import "../tags/style.scss";
-
 .list-view-item {
     display: flex;
     width: 100%;
@@ -14,7 +13,7 @@
     box-sizing: border-box;
     box-shadow: 0px 1px 4px rgba(19, 53, 84, 0.04), 0px 8px 13px rgba(0, 52, 101, 0.03);
     border-radius: 3px;
-    
+
 }
 
 .list-view-item-subtitle {
@@ -24,7 +23,7 @@
     color: #273A4B;
 
     &:after {
-        content: ":";        
+        content: ":";
     }
 }
 
@@ -60,11 +59,11 @@
             margin: 0 15px;
             position: relative;
             top: 12px;
-            border-right: 1px dotted rgba(0,0,0, .2);
+            border-right: 1px dotted rgba(0, 0, 0, .2);
         }
 
         &.tag:after {
-            display: none;            
+            display: none;
         }
 
         &.tag {
@@ -101,7 +100,8 @@
     border-radius: 50%;
     background-color: #BEC6CE;
 
-    &:before, &:after {
+    &:before,
+    &:after {
         content: "";
         display: block;
         position: absolute;
@@ -117,5 +117,54 @@
 
     &:after {
         bottom: -12px;
+    }
+    &--user {
+        width: 4px;
+        height: 4px;
+        &:before,
+        &:after {
+            content: "";
+            display: block;
+            width: 4px;
+            height: 4px;
+        }
+        &:after {
+            bottom: -9px;
+        }
+        &:before {
+            top: -9px;
+        }
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.c {
+    &-pagination {
+        @extend .u-aligntext--center;
+        &__nav {
+            width: $all-zero + 39;
+            height: $all-zero + 39;
+            border-radius: $all-zero + 3;
+            @extend .u-display-in-block;
+            border: $all-zero + 1 solid $grey-v5;
+            background: $white;
+            @extend .u-relative;
+            i {
+                @extend .u-absolute;
+                top: $all-zero + 8;
+                width: $all-zero + 6;
+                height: $all-zero + 10;
+                @extend .u-display-block;
+                left: $all-zero + 15;
+            }
+        }
+        span {
+            display: inline-block;
+            vertical-align: top;
+            padding: $all-zero + 10;
+            color: $grey-v4;
+        }
     }
 }
