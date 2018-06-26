@@ -1,7 +1,7 @@
 .c {
     &-usersearch {
-        width: $all-zero + 265;
-        border-left: $all-zero + 1 dotted $grey-v4;
+        width: $all-zero + 275;
+        border-left: $all-zero + 1 dotted $grey-v9;
         @extend .u-display-in-block;
         @extend .u-txt-valign-top;
     }
@@ -26,9 +26,20 @@
         @include border-radius(3px);
         padding: $all-zero + 30;
         border: $all-zero + 1 solid $grey-v3;
+        box-shadow: 0px 1px 4px rgba(19, 53, 84, 0.04), 0px 8px 13px rgba(0, 52, 101, 0.03);
         &__link {
             color: $blue-v1;
             @extend .u-text-decoration--none;
         }
+        p {
+            color: $grey-v4;
+        }
+    }
+}
+
+// bootstrap grid padding change
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1100px;
     }
 }
