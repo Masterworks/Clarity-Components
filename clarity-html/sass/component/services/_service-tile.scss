@@ -50,6 +50,17 @@
                 cursor: pointer;
                 box-shadow: 0px 2px 40px 2px rgba(23, 70, 80, 0.05), 0px 11px 30px rgba(0, 52, 80, 0.04);
             }
+            &:focus {
+                transform: translateY(-2px);
+                cursor: pointer;
+                outline: none;
+                box-shadow: 0px 2px 40px 2px rgba(23, 70, 80, 0.05), 0px 11px 30px rgba(0, 52, 80, 0.04);
+            }
+            &:visited {
+                transform: translateY(-2px);
+                cursor: pointer;
+                box-shadow: 0px 2px 40px 2px rgba(23, 70, 80, 0.05), 0px 11px 30px rgba(0, 52, 80, 0.04);
+            }
         }
         &__report {
             border-top: 1px dotted $grey-v1;
