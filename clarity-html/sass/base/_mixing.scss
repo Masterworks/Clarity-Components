@@ -29,7 +29,7 @@
     padding-bottom: $size +'px' !important;
 }
 
-$spaceamounts: (0, 5, 10, 15, 20, 25, 30, 35, 40);
+$spaceamounts: (0, 5, 7, 10, 11, 15, 20, 25, 30, 35, 40, 45, 50, 55);
 .u {
     &-padding {
         @each $space in $spaceamounts {
@@ -83,7 +83,7 @@ $spaceamounts: (0, 5, 10, 15, 20, 25, 30, 35, 40);
     margin-bottom: $size +'px' !important;
 }
 
-$spaceamounts: (0, 5, 10, 15, 20, 25, 30, 35, 40);
+$spaceamounts: (0, 5, 7, 10, 11, 15, 20, 25, 30, 35, 40, 45, 50, 55);
 .u {
     &-margin {
         @each $space in $spaceamounts {
