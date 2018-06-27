@@ -25,15 +25,24 @@
             &--name {
                 font-size: $all-zero + 13;
                 width: 20%;
+                font-weight: 600;
+                letter-spacing: $all-zero + 1;
             }
             &--namefield {
                 font-size: $all-zero + 16;
                 width: 20%;
                 color: $blue-v1;
+                padding-left: $all-zero + 10;
+                a {
+                    @extend .u-text-decoration--none;
+                    color: $blue-v1;
+                }
             }
             &--email {
                 font-size: $all-zero + 13;
                 width: 35%;
+                font-weight: 600;
+                letter-spacing: $all-zero + 1;
             }
             &--emailfield {
                 font-size: $all-zero + 16;
@@ -47,27 +56,36 @@
             &--org {
                 font-size: $all-zero + 13;
                 width: 15%;
+                font-weight: 600;
+                letter-spacing: $all-zero + 1;
             }
             &--orgfield {
                 @extend .u-txt-uppercase;
                 font-size: $all-zero + 16;
                 width: 15%;
+                color: $grey-v4;
             }
             &--role {
                 font-size: $all-zero + 13;
                 width: 20%;
+                font-weight: 600;
+                letter-spacing: 2px;
             }
             &--rolefield {
                 font-size: $all-zero + 16;
                 width: 20%;
+                color: $grey-v4;
             }
             &--enable {
                 font-size: $all-zero + 13;
                 width: 10%;
+                font-weight: 600;
+                letter-spacing: 1px;
             }
             &--enablefield {
                 font-size: $all-zero + 16;
                 width: 10%;
+                color: $grey-v4;
             }
         }
     }
