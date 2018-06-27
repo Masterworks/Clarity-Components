@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Clarity | List-User</title>
+    <title>Clarity | Edit-User</title>
 
     <!-- main style sheet -->
     <link href="css/style.css" rel="stylesheet">
@@ -151,6 +151,60 @@
                         </div>
                     </div>
                     <!-- setting button -->
+                    <!-- search user -->
+                    <div class="c-usersearch u-margin-left-15 u-padding-left-15">
+                        <div class="c-input c-input--small">
+                            <span class="c-input__label">Filters:</span>
+                            <!-- 
+                             In order to display an input notice/alert you need to add two classes to .input-wrap (first, `.has-alert` and then `.alert-success` or `.alert-error` respectively). Then be sure to add in the alert text as the last child of `.input-wrap` as a
+                            <p> tag with a class of `.alert-text`. -->
+                            <div class="input-wrap input-wrap--width192 u-display-in-block">
+                                <img class="input-icon" src="images/filter.png" alt="filter">
+                                <input class="input-box" type="text" required>
+                                <label class="input-label">Search Users</label>
+                                <p class="alert-text">I am an input notice. Be sure to read me.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- search user -->
+                    <!-- client -->
+                    <div class="c-client u-margin-left-7">
+                        <div class="c-select-small">
+                            <div class="c-select-small">
+                                <div class="input-wrap">
+                                    <select class="input-box" name="input-box">
+                                          <option disabled selected value style="display:none"></option>
+                                          <option value="option-1">option 1</option>
+                                          <option value="option-2">option 2</option>
+                                          <option value="option-3">option 3</option>
+                                          <option value="option-4">option 4</option>
+                                    </select>
+                                    <label class="input-label input-label--font14">By Client</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- client -->
+                    <!-- client -->
+                    <!--
+<div class="c-organisation u-margin-left-15">
+    <div class="c-select-small">
+        <div class="c-select-small">
+            <div class="input-wrap">
+                <select class="input-box" name="input-box">
+                                          <option disabled selected value style="display:none"></option>
+                                          <option value="option-1">option 1</option>
+                                          <option value="option-2">option 2</option>
+                                          <option value="option-3">option 3</option>
+                                          <option value="option-4">option 4</option>
+                                    </select>
+                <label class="input-label input-label--font14">Org</label>
+            </div>
+        </div>
+    </div>
+</div>
+-->
+                    <!-- client -->
                     <!-- add user -->
                     <div class="o-adduser u-display-in-block u-pull--right">
                         <a class="buttonimg buttonimg--buttonicon" href="#">Add New User <i class="u-margin-left-5"></i></a>
@@ -164,8 +218,8 @@
     <!-- banner section -->
     <div class="c-banner">
         <div class="container">
-            <div class="c-banner__inner">
-                <h1 class="u-margin-bottom-0">Administration</h1>
+            <div class="c-banner__inner u-padding-top-35 u-padding-bottom-55">
+                <h1 class="u-margin-bottom-0 u-margin-top-0">Administration</h1>
                 <h5 class="u-margin-bottom-0">Settings and preferences</h5>
             </div>
         </div>
@@ -176,10 +230,10 @@
         <div class="container">
             <div class="row">
                 <!-- side nav -->
-                <div class="col-md-3">
+                <div class="col-md-3  u-padding-right-10 u-padding-left-10">
                     <div class="c-dropdown c-dropdown--user">
                         <ul class="dropdown-content level-1-dropdown">
-                            <li>
+                            <li class="is-active">
                                 <a class="level-1-dropdown-link" href="#">View/Edit Users</a>
 
                                 <!--
@@ -221,7 +275,7 @@
                 <!-- !~side nav end -->
 
                 <!-- user section -->
-                <div class="col-md-9">
+                <div class="col-md-9 u-padding-right-10 u-padding-left-10">
                     <div class="o-rightPan">
                         <h1 class="h1 h1--user">All Users</h1>
                         <p>
@@ -229,286 +283,108 @@
                         </p>
                         <hr class="u-hr--v1">
                         <!-- user table -->
-                        <div class="u-margin-top-20">
-                            <div class="c-usertable">
-                                <div class="c-usertable__row">
-                                    <div class="c-usertable__block c-usertable__block--name">
-                                        Name
+                        <div class="u-margin-top-30">
+                            <!-- edit user form section -->
+                            <!-- single row -->
+                            <div class="row u-margin-bottom-40">
+                                <div class="col-sm-6">
+                                    <!-- input box -->
+                                    <div class="c-input c-input--regular">
+                                        <div class="input-wrap">
+                                            <input class="input-box" type="text" required="">
+                                            <label class="input-label">Name</label>
+                                        </div>
                                     </div>
-                                    <div class="c-usertable__block c-usertable__block--email">
-                                        Email
-                                    </div>
-                                    <div class="c-usertable__block c-usertable__block--org">
-                                        Organization
-                                    </div>
-                                    <div class="c-usertable__block c-usertable__block--role">
-                                        Role
-                                    </div>
-                                    <div class="c-usertable__block c-usertable__block--enable">
-                                        Enabled
-                                    </div>
+                                    <!-- input box -->
                                 </div>
-                                <!-- userlist single row -->
-                                <div class="c-usertable__rowbody">
-                                    <div class="c-usertable__block c-usertable__block--namefield">
-                                        John McGibbons
+                                <div class="col-sm-6">
+                                    <!-- input box -->
+                                    <div class="c-input c-input--regular">
+                                        <div class="input-wrap">
+                                            <input class="input-box" type="email" required="">
+                                            <label class="input-label">Email</label>
+                                        </div>
                                     </div>
-                                    <div class="c-usertable__block c-usertable__block--emailfield">
-                                        <a href="#">jmcgibbons@masterworks.com</a>
-                                    </div>
-                                    <div class="c-usertable__block c-usertable__block--orgfield">
-                                        ODUSA
-                                    </div>
-                                    <div class="c-usertable__block c-usertable__block--rolefield">
-                                        Project Mana...
-                                    </div>
-                                    <div class="c-usertable__block c-usertable__block--enablefield">
-                                        Yes
-                                        <span class="btn-menu">
-                                            <i class="icon-more-vert"></i> 
-                                            <!-- dropdown still needs to be added here -->
-                                        </span>
-                                    </div>
+                                    <!-- input box -->
                                 </div>
-                                <!-- userlist single row -->
-                                <!-- userlist single row -->
-                                <div class="c-usertable__rowbody">
-                                    <div class="c-usertable__block c-usertable__block--namefield">
-                                        John McGibbons
-                                    </div>
-                                    <div class="c-usertable__block c-usertable__block--emailfield">
-                                        <a href="#">jmcgibbons@masterworks.com</a>
-                                    </div>
-                                    <div class="c-usertable__block c-usertable__block--orgfield">
-                                        ODUSA
-                                    </div>
-                                    <div class="c-usertable__block c-usertable__block--rolefield">
-                                        Project Mana...
-                                    </div>
-                                    <div class="c-usertable__block c-usertable__block--enablefield">
-                                        Yes
-                                        <span class="btn-menu">
-                                            <i class="icon-more-vert"></i> 
-                                            <!-- dropdown still needs to be added here -->
-                                        </span>
-                                    </div>
-                                </div>
-                                <!-- userlist single row -->
-                                <!-- userlist single row -->
-                                <div class="c-usertable__rowbody">
-                                    <div class="c-usertable__block c-usertable__block--namefield">
-                                        John McGibbons
-                                    </div>
-                                    <div class="c-usertable__block c-usertable__block--emailfield">
-                                        <a href="#">jmcgibbons@masterworks.com</a>
-                                    </div>
-                                    <div class="c-usertable__block c-usertable__block--orgfield">
-                                        ODUSA
-                                    </div>
-                                    <div class="c-usertable__block c-usertable__block--rolefield">
-                                        Project Mana...
-                                    </div>
-                                    <div class="c-usertable__block c-usertable__block--enablefield">
-                                        Yes
-                                        <span class="btn-menu">
-                                            <i class="icon-more-vert"></i> 
-                                            <!-- dropdown still needs to be added here -->
-                                        </span>
-                                    </div>
-                                </div>
-                                <!-- userlist single row -->
-                                <!-- userlist single row -->
-                                <div class="c-usertable__rowbody">
-                                    <div class="c-usertable__block c-usertable__block--namefield">
-                                        John McGibbons
-                                    </div>
-                                    <div class="c-usertable__block c-usertable__block--emailfield">
-                                        <a href="#">jmcgibbons@masterworks.com</a>
-                                    </div>
-                                    <div class="c-usertable__block c-usertable__block--orgfield">
-                                        ODUSA
-                                    </div>
-                                    <div class="c-usertable__block c-usertable__block--rolefield">
-                                        Project Mana...
-                                    </div>
-                                    <div class="c-usertable__block c-usertable__block--enablefield">
-                                        Yes
-                                        <span class="btn-menu">
-                                            <i class="icon-more-vert"></i> 
-                                            <!-- dropdown still needs to be added here -->
-                                        </span>
-                                    </div>
-                                </div>
-                                <!-- userlist single row -->
-                                <!-- userlist single row -->
-                                <div class="c-usertable__rowbody">
-                                    <div class="c-usertable__block c-usertable__block--namefield">
-                                        John McGibbons
-                                    </div>
-                                    <div class="c-usertable__block c-usertable__block--emailfield">
-                                        <a href="#">jmcgibbons@masterworks.com</a>
-                                    </div>
-                                    <div class="c-usertable__block c-usertable__block--orgfield">
-                                        ODUSA
-                                    </div>
-                                    <div class="c-usertable__block c-usertable__block--rolefield">
-                                        Project Mana...
-                                    </div>
-                                    <div class="c-usertable__block c-usertable__block--enablefield">
-                                        Yes
-                                        <span class="btn-menu">
-                                            <i class="icon-more-vert"></i> 
-                                            <!-- dropdown still needs to be added here -->
-                                        </span>
-                                    </div>
-                                </div>
-                                <!-- userlist single row -->
-                                <!-- userlist single row -->
-                                <div class="c-usertable__rowbody">
-                                    <div class="c-usertable__block c-usertable__block--namefield">
-                                        John McGibbons
-                                    </div>
-                                    <div class="c-usertable__block c-usertable__block--emailfield">
-                                        <a href="#">jmcgibbons@masterworks.com</a>
-                                    </div>
-                                    <div class="c-usertable__block c-usertable__block--orgfield">
-                                        ODUSA
-                                    </div>
-                                    <div class="c-usertable__block c-usertable__block--rolefield">
-                                        Project Mana...
-                                    </div>
-                                    <div class="c-usertable__block c-usertable__block--enablefield">
-                                        Yes
-                                        <span class="btn-menu">
-                                            <i class="icon-more-vert"></i> 
-                                            <!-- dropdown still needs to be added here -->
-                                        </span>
-                                    </div>
-                                </div>
-                                <!-- userlist single row -->
-                                <!-- userlist single row -->
-                                <div class="c-usertable__rowbody">
-                                    <div class="c-usertable__block c-usertable__block--namefield">
-                                        John McGibbons
-                                    </div>
-                                    <div class="c-usertable__block c-usertable__block--emailfield">
-                                        <a href="#">jmcgibbons@masterworks.com</a>
-                                    </div>
-                                    <div class="c-usertable__block c-usertable__block--orgfield">
-                                        ODUSA
-                                    </div>
-                                    <div class="c-usertable__block c-usertable__block--rolefield">
-                                        Project Mana...
-                                    </div>
-                                    <div class="c-usertable__block c-usertable__block--enablefield">
-                                        Yes
-                                        <span class="btn-menu">
-                                            <i class="icon-more-vert"></i> 
-                                            <!-- dropdown still needs to be added here -->
-                                        </span>
-                                    </div>
-                                </div>
-                                <!-- userlist single row -->
-                                <!-- userlist single row -->
-                                <div class="c-usertable__rowbody">
-                                    <div class="c-usertable__block c-usertable__block--namefield">
-                                        John McGibbons
-                                    </div>
-                                    <div class="c-usertable__block c-usertable__block--emailfield">
-                                        <a href="#">jmcgibbons@masterworks.com</a>
-                                    </div>
-                                    <div class="c-usertable__block c-usertable__block--orgfield">
-                                        ODUSA
-                                    </div>
-                                    <div class="c-usertable__block c-usertable__block--rolefield">
-                                        Project Mana...
-                                    </div>
-                                    <div class="c-usertable__block c-usertable__block--enablefield">
-                                        Yes
-                                        <span class="btn-menu">
-                                            <i class="icon-more-vert"></i> 
-                                            <!-- dropdown still needs to be added here -->
-                                        </span>
-                                    </div>
-                                </div>
-                                <!-- userlist single row -->
-                                <!-- userlist single row -->
-                                <div class="c-usertable__rowbody">
-                                    <div class="c-usertable__block c-usertable__block--namefield">
-                                        John McGibbons
-                                    </div>
-                                    <div class="c-usertable__block c-usertable__block--emailfield">
-                                        <a href="#">jmcgibbons@masterworks.com</a>
-                                    </div>
-                                    <div class="c-usertable__block c-usertable__block--orgfield">
-                                        ODUSA
-                                    </div>
-                                    <div class="c-usertable__block c-usertable__block--rolefield">
-                                        Project Mana...
-                                    </div>
-                                    <div class="c-usertable__block c-usertable__block--enablefield">
-                                        Yes
-                                        <span class="btn-menu">
-                                            <i class="icon-more-vert"></i> 
-                                            <!-- dropdown still needs to be added here -->
-                                        </span>
-                                    </div>
-                                </div>
-                                <!-- userlist single row -->
-                                <!-- userlist single row -->
-                                <div class="c-usertable__rowbody">
-                                    <div class="c-usertable__block c-usertable__block--namefield">
-                                        John McGibbons
-                                    </div>
-                                    <div class="c-usertable__block c-usertable__block--emailfield">
-                                        <a href="#">jmcgibbons@masterworks.com</a>
-                                    </div>
-                                    <div class="c-usertable__block c-usertable__block--orgfield">
-                                        ODUSA
-                                    </div>
-                                    <div class="c-usertable__block c-usertable__block--rolefield">
-                                        Project Mana...
-                                    </div>
-                                    <div class="c-usertable__block c-usertable__block--enablefield">
-                                        Yes
-                                        <span class="btn-menu">
-                                            <i class="icon-more-vert"></i> 
-                                            <!-- dropdown still needs to be added here -->
-                                        </span>
-                                    </div>
-                                </div>
-                                <!-- userlist single row -->
-                                <!-- userlist single row -->
-                                <div class="c-usertable__rowbody c-usertable__rowbody--noborder">
-                                    <div class="c-usertable__block c-usertable__block--namefield">
-                                        John McGibbons
-                                    </div>
-                                    <div class="c-usertable__block c-usertable__block--emailfield">
-                                        <a href="#">jmcgibbons@masterworks.com</a>
-                                    </div>
-                                    <div class="c-usertable__block c-usertable__block--orgfield">
-                                        ODUSA
-                                    </div>
-                                    <div class="c-usertable__block c-usertable__block--rolefield">
-                                        Project Mana...
-                                    </div>
-                                    <div class="c-usertable__block c-usertable__block--enablefield">
-                                        Yes
-                                        <span class="btn-menu">
-                                            <i class="icon-more-vert"></i> 
-                                            <!-- dropdown still needs to be added here -->
-                                        </span>
-                                    </div>
-                                </div>
-                                <!-- userlist single row -->
                             </div>
+                            <!-- edit user form section -->
+                            <!-- single row -->
+                            <div class="row u-margin-bottom-40">
+                                <div class="col-sm-6">
+                                    <!-- select box -->
+                                    <div class="c-select">
+                                        <div class="input-wrap">
+                                            <select class="input-box" name="input-box">
+                                                  <option value="option1"></option>
+                                                  <option value="option2">option 2</option>
+                                                  <option value="option3">option 3</option>
+                                                  <option value="option4">option 4</option>
+                                            </select>
+                                            <label class="input-label">Client(s)</label>
+                                            <div class="dropdown-arrow"></div>
+                                        </div>
+                                    </div>
+                                    <!-- select box -->
+                                </div>
+                                <div class="col-sm-6">
+                                    <!-- select box -->
+                                    <div class="c-select">
+                                        <div class="input-wrap">
+                                            <select class="input-box" name="input-box">
+                                                  <option value="option1"></option>
+                                                  <option value="option2">option 2</option>
+                                                  <option value="option3">option 3</option>
+                                                  <option value="option4">option 4</option>
+                                            </select>
+                                            <label class="input-label">Default Role</label>
+                                            <div class="dropdown-arrow"></div>
+                                        </div>
+                                    </div>
+                                    <!-- select box -->
+                                </div>
+                            </div>
+                            <!-- single row -->
+                            <div class="row u-margin-bottom-40">
+                                <div class="col-sm-6">
+                                    <!-- input box -->
+                                    <div class="c-input c-input--regular">
+                                        <div class="input-wrap">
+                                            <input class="input-box" type="password" required="">
+                                            <label class="input-label">Change Password</label>
+                                        </div>
+                                    </div>
+                                    <!-- input box -->
+                                </div>
+                                <div class="col-sm-6">
+                                    <!-- input box -->
+                                    <div class="c-input c-input--regular">
+                                        <div class="input-wrap">
+                                            <input class="input-box" type="password" required="">
+                                            <label class="input-label">Confirm New Password</label>
+                                        </div>
+                                    </div>
+                                    <!-- input box -->
+                                </div>
+                            </div>
+                            <!-- edit user form section -->
+                            <!-- checkbox -->
+                            <div class="row u-margin-bottom-40">
+                                <div class="col">
+                                    <div class="c-checkbox">
+                                        <div class="input-wrap">
+                                            <input id="check-box-square" class="check-box" type="checkbox" checked>
+                                            <div class="description-container">
+                                                <label class="input-label" for="check-box-square">Enabled</label>
+                                                <p class="check-box-description">When checked this user will have access to all parts of the app you have allowed. When unchecked...</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ~checkbox -->
                         </div>
                         <!-- ~!user table -->
-                    </div>
-                    <div class="c-pagination u-margin-top-20">
-                        <a class="c-pagination__nav c-pagination__nav--prev" href="#"><i><img src="images/left-arrow.svg" alt="img"></i></a>
-                        <span>1-10 of 31</span>
-                        <a class="c-pagination__nav c-pagination__nav--next" href="#"><i><img src="images/right-arrow.svg" alt="img"></i></a>
                     </div>
                 </div>
                 <!-- !~user section end -->

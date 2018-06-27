@@ -9,7 +9,6 @@
         position: absolute;
         top: 13px;
         left: 15px;
-        font-family: Lato;
         font-size: 16px;
         transform: none;
         color: #9DAAB5;
@@ -26,7 +25,6 @@
         width: 100%;
         height: 45px;
         padding-left: 15px;
-        font-family: Lato;
         font-size: 16px;
         color: #273A4B;
         border: 1px solid #BEC6CE;
@@ -49,7 +47,7 @@
         background-color: #fff;
 
         & + .dropdown-arrow {
-            transform: rotate(180deg);
+            transform: translate(0, -50%) rotate(180deg);
             transition: transform .2s linear;
 
         }
@@ -72,8 +70,13 @@
     .dropdown-items {
         padding-left: 0px;
         padding-top: 0px;
-        font-family: Lato;
         font-size: 16px;
         list-style-type: none;
     }
+}
+
+.c-select .input-box option:focus + .input-label {
+    transform: translate(10px, -22px) scale(0.75);
+    -webkit-transform: translate(10px, -22px) scale(0.75);
+    -moz-transform: translate(10px, -22px) scale(0.75);
 }
