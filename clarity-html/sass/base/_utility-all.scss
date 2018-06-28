@@ -66,6 +66,21 @@
     }
 }
 
+//width
+.u-width {
+    width: $all-zero;
+    &--172 {
+        width: $all-zero + 172;
+    }
+}
+
+//color
+.u-color {
+    &--blue-v1 {
+        color: $blue-v1;
+    }
+}
+
 // valign
 .u-txt-valign-middle {
     vertical-align: middle;
@@ -287,7 +302,10 @@
 
 .u-hr {
     &--v1 {
-        border: 1px solid $grey-v5;
+        @extend .u-no-border;
         margin-top: $all-zero + 30;
+        height: $all-zero + 1;
+        @extend .u-oflowhidden;
+        background-color: $grey-v5;
     }
 }

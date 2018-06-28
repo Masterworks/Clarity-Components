@@ -46,6 +46,9 @@
         &:focus {
             outline: none;
         }
+        &--grey {
+            background-image: url(../images/dropdown-arrow-grey.svg);
+        }
     }
     .input-wrap .input-box:focus + .input-label {
         padding: 0 5px;

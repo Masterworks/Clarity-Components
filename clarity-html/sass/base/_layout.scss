@@ -37,6 +37,11 @@
     }
 }
 
+.c-enable-text {
+    border-left: $all-zero + 1 dotted $grey-v9;
+    line-height: $all-zero + 33;
+}
+
 // bootstrap grid padding change
 @media (min-width: 1200px) {
     .container {

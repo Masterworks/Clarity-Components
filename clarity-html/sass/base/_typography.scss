@@ -32,6 +32,13 @@ h1 {
     }
 }
 
+h2 {
+    font-size: $all-zero + 25;
+    line-height: $all-zero + 31;
+    margin: $all-zero;
+    @extend .u-normal--font-weight;
+}
+
 p {
     @extend .u-normal--font-weight;
     @extend .u-normal--font-style;

@@ -369,7 +369,7 @@
                             </div>
                             <!-- edit user form section -->
                             <!-- checkbox -->
-                            <div class="row u-margin-bottom-40">
+                            <div class="row u-margin-bottom-35">
                                 <div class="col">
                                     <div class="c-checkbox">
                                         <div class="input-wrap">
@@ -383,8 +383,65 @@
                                 </div>
                             </div>
                             <!-- ~checkbox -->
+                            <!-- info panel -->
+                            <div class="row">
+                                <div class="col">
+                                    <div class="c-clientinfo">
+                                        <h2 class="u-margin-bottom-10">Client Permissions</h2>
+                                        <p class="u-margin-top-10">
+                                            Maecenas sed diam eget risus varius blandit sit amet non magna. Vestibulum id ligula porta felis euismod semper. Maecenas faucibus mollis interdum.
+                                        </p>
+                                    </div>
+                                    <hr class="u-hr--v1">
+                                </div>
+                            </div>
+                            <!-- info panel -->
                         </div>
                         <!-- ~!user table -->
+                        <!-- filter section -->
+                        <div class="o-filter">
+                            <div class="row u-margin-top-10">
+                                <div class="col-sm-10">
+                                    <!-- search client -->
+                                    <div class="u-display-in-block">
+                                        <div class="c-input c-input--small">
+                                            <span class="c-input__label">Filters:</span>
+                                            <!--In order to display an input notice/alert you need to add two classes to .input-wrap (first, `.has-alert` and then `.alert-success` or `.alert-error` respectively). Then be sure to add in the alert text as the last child of `.input-wrap` as a
+                                                <p> tag with a class of `.alert-text`. -->
+                                            <div class="input-wrap input-wrap--width192 u-display-in-block">
+                                                <img class="input-icon" src="images/filter.png" alt="filter">
+                                                <input class="input-box" type="text" required>
+                                                <label class="input-label">Search Users</label>
+                                                <p class="alert-text">I am an input notice. Be sure to read me.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- ~search client -->
+                                    <!-- client -->
+                                    <div class="u-width--172 u-margin-left-12 u-display-in-block">
+                                        <div class="c-select-small">
+                                            <div class="c-select-small">
+                                                <div class="input-wrap">
+                                                    <select class="input-box input-box--grey" name="input-box">
+                                                          <option disabled selected value style="display:none"></option>
+                                                          <option value="option-1">option 1</option>
+                                                          <option value="option-2">option 2</option>
+                                                          <option value="option-3">option 3</option>
+                                                          <option value="option-4">option 4</option>
+                                                    </select>
+                                                    <label class="input-label input-label--font14">Access</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- client -->
+                                </div>
+                                <div class="col-sm-2">
+                                    <a class="c-enable-text u-color--blue-v1 u-padding-left-10 u-text-decoration--none u-display-in-block" href="javascript void(0);">Enable all</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- filter section end -->
                     </div>
                 </div>
                 <!-- !~user section end -->
