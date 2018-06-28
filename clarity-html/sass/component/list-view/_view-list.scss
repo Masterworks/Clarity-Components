@@ -89,6 +89,15 @@
     margin-right: -3px;
     position: relative;
     bottom: 3px;
+    &--user {
+        margin-left: $all-zero;
+        margin-right: $all-zero;
+        padding: $all-zero + 7 $all-zero + 15;
+        background-color: $transparent;
+        @extend .u-no-outline;
+        @extend .u-no-border;
+        @extend .u-cursor-pointer;
+    }
 }
 
 .icon-more-vert {
@@ -140,6 +149,88 @@
     }
 }
 
+.btn-menu-istoogle:focus {
+    @extend .u-no-outline;
+}
+
+.btn-menu-istoogle:focus + .useraction {
+    display: block;
+    top: $all-zero + 40;
+    @extend .u-no-outline;
+}
+
+.useraction {
+    padding-left: $all-zero;
+    background-color: $white;
+    min-width: $all-zero + 200;
+    margin-top: $all-zero;
+    @include border-radius(3px);
+    @extend .u-absolute;
+    @extend .u-right-0;
+    display: none;
+    z-index: 10; //    border: $all-zero + 1 solid $grey-v5;
+    box-shadow: 0px 1px 4px rgba(19, 53, 84, 0.04), 0px 8px 13px rgba(0, 52, 101, 0.03), 0px 11px 20px rgba(0, 0, 0, 0.05);
+    li {
+        box-sizing: border-box;
+        padding: $all-zero $all-zero + 15 $all-zero $all-zero;
+        line-height: $all-zero + 39;
+        border-bottom: $all-zero + 1 solid $grey-v5;
+        @extend .u-width-100;
+        @extend .u-list-style--none;
+        &:first-child {
+            border-top: $all-zero + 1 solid $grey-v5;
+            border-right: $all-zero + 1 solid $grey-v5;
+            border-left: $all-zero + 1 solid $grey-v5;
+            @include border-radius(3px 3px 0 0);
+        }
+        &:first-child:hover {
+            border-top: $all-zero + 1 solid $blue-v3;
+            border-right: $all-zero + 1 solid $blue-v3;
+            border-left: $all-zero + 1 solid $blue-v3;
+            border-bottom: $all-zero + 1 solid $blue-v3;
+        }
+        &:not(:first-child):hover {
+            margin-top: -1px;
+            border-bottom: $all-zero + 1 solid $blue-v3;
+            border-top: $all-zero + 1 solid $blue-v3;
+        }
+        &:last-child {
+            border-bottom: $all-zero + 1 solid $grey-v5;
+            border-right: $all-zero + 1 solid $grey-v5;
+            border-left: $all-zero + 1 solid $grey-v5;
+            border-top: none;
+            @include border-radius(0 0 3px 3px);
+        }
+        &:last-child:hover {
+            border-top: $all-zero + 1 solid $blue-v3;
+            border-right: $all-zero + 1 solid $blue-v3;
+            border-left: $all-zero + 1 solid $blue-v3;
+            border-bottom: $all-zero + 1 solid $blue-v3;
+        }
+        &:not(:first-child) {
+            border-right: $all-zero + 1 solid $grey-v5;
+            border-left: $all-zero + 1 solid $grey-v5;
+        }
+        &:not(:last-child) {
+            border-right: $all-zero + 1 solid $grey-v5;
+            border-left: $all-zero + 1 solid $grey-v5;
+        }
+        a {
+            padding: $all-zero $all-zero + 15;
+            font-size: $all-zero + 14;
+            color: $grey-v4;
+            width: $page-grid-width-100 - 3;
+            margin-top: $all-zero;
+            white-space: nowrap;
+            font-family: 'Source Sans Pro';
+            @extend .u-display-in-block;
+            @extend .u-text-decoration--none;
+            @extend .u-height-100;
+        }
+    }
+}
+
+// pagination
 .c {
     &-pagination {
         @extend .u-aligntext--center;

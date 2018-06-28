@@ -52,6 +52,10 @@
     display: flex;
 }
 
+.u-cursor-pointer {
+    cursor: pointer;
+}
+
 //floats
 .u-pull {
     &--right {
@@ -216,6 +220,10 @@
 // border radius
 .u-no-border {
     border: none !important;
+}
+
+.u-no-outline {
+    outline: none !important;
 }
 
 // box shadow

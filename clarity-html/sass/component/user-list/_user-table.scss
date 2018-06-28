@@ -86,6 +86,7 @@
                 font-size: $all-zero + 16;
                 width: 10%;
                 color: $grey-v4;
+                @extend .u-relative;
             }
         }
     }
