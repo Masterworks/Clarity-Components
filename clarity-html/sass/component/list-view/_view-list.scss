@@ -229,34 +229,3 @@
         }
     }
 }
-
-// pagination
-.c {
-    &-pagination {
-        @extend .u-aligntext--center;
-        &__nav {
-            width: $all-zero + 39;
-            height: $all-zero + 39;
-            border-radius: $all-zero + 3;
-            @extend .u-display-in-block;
-            border: $all-zero + 1 solid $grey-v5;
-            background: $white;
-            @extend .u-relative;
-            box-shadow: 0px 1px 4px rgba(19, 53, 84, 0.04), 0px 8px 13px rgba(0, 52, 101, 0.03);
-            i {
-                @extend .u-absolute;
-                top: $all-zero + 8;
-                width: $all-zero + 6;
-                height: $all-zero + 10;
-                @extend .u-display-block;
-                left: $all-zero + 15;
-            }
-        }
-        span {
-            display: inline-block;
-            vertical-align: top;
-            padding: $all-zero + 10;
-            color: $grey-v4;
-        }
-    }
-}
