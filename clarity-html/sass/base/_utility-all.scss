@@ -309,3 +309,9 @@
         background-color: $grey-v5;
     }
 }
+
+.u-border {
+    &--dashedtop {
+        border-top: 1px dashed $grey-v5;
+    }
+}
