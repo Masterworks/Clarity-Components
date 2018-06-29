@@ -40,6 +40,15 @@
 .c-enable-text {
     border-left: $all-zero + 1 dotted $grey-v9;
     line-height: $all-zero + 33;
+    &:after {
+        content: '';
+        width: $all-zero + 66;
+        height: $all-zero + 1;
+        border-bottom: $all-zero + 1 dotted $blue-v1;
+        bottom: $all-zero + 5;
+        @extend .u-display-block;
+        @extend .u-absolute;
+    }
 }
 
 // bootstrap grid padding change

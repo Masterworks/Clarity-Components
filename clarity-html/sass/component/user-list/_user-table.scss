@@ -38,6 +38,33 @@
                     color: $blue-v1;
                 }
             }
+            &--access {
+                font-size: $all-zero + 13;
+                width: 15%;
+                font-weight: 600;
+                letter-spacing: $all-zero + 1;
+            }
+            &--accessfield {
+                width: 15%;
+                padding-left: $all-zero + 10;
+                padding-top: $all-zero + 7;
+            }
+            &--namev1 {
+                font-size: $all-zero + 13;
+                width: 85%;
+                font-weight: 600;
+                letter-spacing: $all-zero + 1;
+            }
+            &--namev1field {
+                width: 35%;
+                padding-left: $all-zero + 10;
+                font-size: $all-zero + 16;
+                line-height: $all-zero + 33;
+                a {
+                    @extend .u-text-decoration--none;
+                    color: $blue-v1;
+                }
+            }
             &--email {
                 font-size: $all-zero + 13;
                 width: 35%;
@@ -52,6 +79,9 @@
                     color: $grey-v4;
                     @extend .u-text-decoration--none;
                 }
+            }
+            &--valuefield {
+                width: 50%;
             }
             &--org {
                 font-size: $all-zero + 13;
