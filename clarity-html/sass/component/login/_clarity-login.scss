@@ -19,7 +19,7 @@ body {
         &__inner {
             font-family: 'source sans pro';
             width: $all-zero + 336;
-            height: $all-zero + 339;
+//            height: $all-zero + 339;
             padding: $all-zero + 27;
             border: $all-zero + 1 solid $grey-v3;
             @include border-radius(3px);
