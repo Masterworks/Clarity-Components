@@ -22,3 +22,15 @@ window.onclick = function (event) {
 $(".btn-user-account").click(function () {
     $(".js-signout").toggleClass("active");
 });
+
+// select box
+//$(function () {
+//    var $select = $('.input-box'),
+//        $images = $('.input-label');
+//
+//    $select.on('change', function () {
+//        var value = '.' + $(this).val();
+//        //$images.show().not(value).hide();
+//        $images.addClass('is-selected');
+//    });
+//});

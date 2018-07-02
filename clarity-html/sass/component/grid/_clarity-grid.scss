@@ -1,0 +1,78 @@
+//grid
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    @include box-sizing(border-box);
+}
+
+.container {
+    width: $page-grid-width-100;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col {
+    @extend .u-relative;
+    width: $page-grid-width-100;
+    min-height: $all-zero + 1;
+    padding-right: $all-zero + 15;
+    padding-left: $all-zero + 15;
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: $page-grid-width-100;
+}
+
+.grid-sm-2 {
+    flex: 0 0 16.66667%;
+    max-width: $page-grid-width-100 - 83.34;
+    padding-right: $all-zero + 15;
+    padding-left: $all-zero + 15;
+}
+
+.grid-md-3 {
+    flex: $all-zero $all-zero $page-grid-width-100 / 4;
+    max-width: $page-grid-width-100 / 4;
+    padding-right: $all-zero + 10;
+    padding-left: $all-zero + 10;
+    @include box-sizing(border-box);
+}
+
+.nav-left {
+    width: $page-grid-width-100;
+    max-width: $all-zero + 260;
+    @extend .u-pull--left;
+}
+
+.grid-sm-6 {
+    width: $page-grid-width-100 / 2;
+    @extend .u-display-in-block;
+    padding: $all-zero $all-zero + 10;
+    @include box-sizing(border-box);
+}
+
+.right-body {
+    width: $all-zero + 820;
+    @extend .u-pull--right;
+}
+
+.grid-sm-10 {
+    flex: 0 0 83.33333%;
+    max-width: $page-grid-width-100 - 16.67;
+    padding-right: $all-zero + 15;
+    padding-left: $all-zero + 15;
+}
