@@ -122,7 +122,13 @@
                 font-size: $all-zero + 13;
                 width: 20%;
                 font-weight: 600;
-                letter-spacing: $all-zero + 1;
+                letter-spacing: 0.06em;
+                a {
+                    color: $grey-v8;
+                    @extend .u-text-decoration--none;
+                    padding-right: $all-zero + 15;
+                    background: url(../images/filter-arrow.png) no-repeat center right transparent;
+                }
             }
             &--clientidfield {
                 font-size: $all-zero + 16;
@@ -136,8 +142,14 @@
                 font-size: $all-zero + 13;
                 width: 50%;
                 font-weight: 600;
-                letter-spacing: 1px;
+                letter-spacing: 0.06em;
                 color: $dark-v1;
+                a {
+                    color: $dark-v1;
+                    @extend .u-text-decoration--none;
+                    padding-right: $all-zero + 15;
+                    background: url(../images/filter-arrow-black.png) no-repeat center right transparent;
+                }
             }
             &--clientnamefield {
                 font-size: $all-zero + 16;
@@ -151,7 +163,13 @@
                 font-size: 13px;
                 width: 20%;
                 font-weight: 600;
-                letter-spacing: 1px;
+                letter-spacing: 0.06em;
+                a {
+                    color: $grey-v8;
+                    @extend .u-text-decoration--none;
+                    padding-right: $all-zero + 15;
+                    background: url(../images/filter-arrow.png) no-repeat center right transparent;
+                }
             }
             &--abbreviationfield {
                 width: 20%;
