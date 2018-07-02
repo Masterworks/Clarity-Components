@@ -119,23 +119,53 @@
                 @extend .u-relative;
             }
             &--clientid {
-                font-size: 13px;
+                font-size: $all-zero + 13;
                 width: 20%;
                 font-weight: 600;
-                letter-spacing: 1px;
+                letter-spacing: $all-zero + 1;
+            }
+            &--clientidfield {
+                font-size: $all-zero + 16;
+                width: 20%;
+                color: $grey-v4;
+                padding: $all-zero;
+                font-family: 'Source Sans Pro', sans-serif;
+                @extend .u-normal--font-weight;
             }
             &--clientname {
-                font-size: 13px;
-                width: 55%;
+                font-size: $all-zero + 13;
+                width: 50%;
                 font-weight: 600;
                 letter-spacing: 1px;
                 color: $dark-v1;
+            }
+            &--clientnamefield {
+                font-size: $all-zero + 16;
+                width: 50%;
+                a {
+                    color: $blue-v1;
+                    @extend .u-text-decoration--none;
+                }
             }
             &--abbreviation {
                 font-size: 13px;
                 width: 20%;
                 font-weight: 600;
                 letter-spacing: 1px;
+            }
+            &--abbreviationfield {
+                width: 20%;
+                font-size: $all-zero + 16;
+                color: $grey-v4;
+            }
+            &--moreoption {
+                font-size: 13px;
+                width: 10%;
+                font-weight: 600;
+                letter-spacing: 1px;
+            }
+            &--moreoptionfield {
+                width: 10%;
             }
         }
     }
