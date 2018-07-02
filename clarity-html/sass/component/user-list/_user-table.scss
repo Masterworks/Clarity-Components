@@ -118,6 +118,25 @@
                 color: $grey-v4;
                 @extend .u-relative;
             }
+            &--clientid {
+                font-size: 13px;
+                width: 20%;
+                font-weight: 600;
+                letter-spacing: 1px;
+            }
+            &--clientname {
+                font-size: 13px;
+                width: 55%;
+                font-weight: 600;
+                letter-spacing: 1px;
+                color: $dark-v1;
+            }
+            &--abbreviation {
+                font-size: 13px;
+                width: 20%;
+                font-weight: 600;
+                letter-spacing: 1px;
+            }
         }
     }
 }

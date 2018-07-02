@@ -8,7 +8,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        body { /*-- Just presentational css --*/ 
+        body {
+            /*-- Just presentational css --*/
             display: flex;
             height: 100%;
             justify-content: center;
@@ -19,7 +20,8 @@
             bottom: 0;
             left: 0;
         }
-    </style> 
+
+    </style>
 </head>
 
 <body>
@@ -29,7 +31,7 @@
     `.alert-error` respectively). Then be sure to add in the alert text as
     the last child of `.input-wrap` as a <p> tag with a class of `.alert-text`. 
     -->
-    <div class="input-wrap">
+    <div class="input-wrap has-alert alert-success">
         <img class="input-icon" src="../../images/search-icon.svg" alt="search">
         <input class="input-box" type="text" required>
         <label class="input-label">Label</label>
