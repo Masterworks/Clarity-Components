@@ -12,13 +12,13 @@
 .c {
     &-service {
         &-tile {
-            @include border-radius(3px);
             background-color: $white;
             border: $all-zero + 1 solid $grey-v3;
             padding-top: $all-zero + 35;
             padding-bottom: $all-zero + 60;
             @extend .u-height-100;
             @extend .u-relative;
+            @include border-radius(3px);
             transition: all .125s ease-in-out;
             -moz-transition: all .125s ease-in-out;
             -webkit-transition: all .125s ease-in-out;
@@ -42,23 +42,13 @@
             }
             &:hover {
                 transform: translateY(-2px);
+                box-shadow: 0px 2px 40px 2px rgba(23, 70, 80, 0.05), 0px 11px 30px rgba(0, 52, 80, 0.04);
                 cursor: pointer; //                box-shadow: 0px 2px 40px 2px rgba(23, 70, 80, 0.05), 0px 11px 30px rgba(0, 52, 80, 0.04);
             }
             &:active {
-                transform: translateY(1px);
+                transform: translateY(0px);
+                box-shadow: 0px 0px 4px rgba(19, 53, 84, 0.04), 0px 5px 13px rgba(0, 52, 101, 0.03);
                 cursor: pointer;
-                box-shadow: none;
-            }
-            &:focus {
-                transform: translateY(-2px);
-                cursor: pointer;
-                outline: none;
-                box-shadow: 0px 2px 40px 2px rgba(23, 70, 80, 0.05), 0px 11px 30px rgba(0, 52, 80, 0.04);
-            }
-            &:visited {
-                transform: translateY(-2px);
-                cursor: pointer;
-                box-shadow: 0px 2px 40px 2px rgba(23, 70, 80, 0.05), 0px 11px 30px rgba(0, 52, 80, 0.04);
             }
         }
         &__report {
