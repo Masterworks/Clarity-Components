@@ -167,6 +167,7 @@
     @include border-radius(3px);
     @extend .u-absolute;
     @extend .u-right-0;
+    @extend .u-aligntext--left;
     display: none;
     z-index: 10; //    border: $all-zero + 1 solid $grey-v5;
     box-shadow: 0px 1px 4px rgba(19, 53, 84, 0.04), 0px 8px 13px rgba(0, 52, 101, 0.03), 0px 11px 20px rgba(0, 0, 0, 0.05);
