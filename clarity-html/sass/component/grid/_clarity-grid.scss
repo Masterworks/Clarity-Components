@@ -17,6 +17,7 @@
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+    max-width: 1130px;
 }
 
 .row {
@@ -66,7 +67,7 @@
 }
 
 .right-body {
-    width: $all-zero + 820;
+    width: $all-zero + 817;
     @extend .u-pull--right;
 }
 
