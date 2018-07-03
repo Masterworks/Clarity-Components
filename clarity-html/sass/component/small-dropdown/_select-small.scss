@@ -1,28 +1,75 @@
-.select-input--size-small {
-    height: 33px;
-
-    .select-input__label {
-        font-size: 14px;
-        top: 8px;
-        left: 13px;        
+.c-select-small {
+    .input-wrap {
+        position: relative;
+        width: 100%;
+        height: 33px;
+        font-family: 'Source Sans Pro';
     }
 
-    .select-input__field {
-        font-size: 14px;
+    .input-wrap .input-label {
+        position: absolute;
+        top: 6px;
+        left: 13px;
+        font-size: 16px;
+        color: #9DAAB5;
+        pointer-events: none;
+        transition: .2s all ease-out;
+        transform-origin: top left;
+        z-index: 10;
+        cursor: default;
+        transform: none;
+        padding: 0;
+        &--font14 {
+            font-size: $all-zero + 14;
+            top: $all-zero + 8;
+        }
     }
 
-    .select-input__icon {
-        right: 13px;
-        top: 50%;
+
+    .input-box {
+        width: 100%;
+        height: 100%;
+        padding-left: 15px;
+        font-size: 14px;
+        color: #273A4B;
+        border: 1px solid #BEC6CE;
+        box-sizing: border-box;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.04);
+        border-radius: 3px;
+        background-color: #ffffff;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background-image: url(../../images/dropdown-arrow-dark.svg  );
+        background-repeat: no-repeat;
+        background-position: right 15px top 14px;
+
+        &:focus {
+            outline: none;
+        }
+        &--grey {
+            background-image: url(../images/dropdown-arrow-grey.svg);
+        }
+    }
+    .input-wrap .input-box:focus + .input-label,
+    .input-label.is-selected {
+        padding: 0 5px;
+        font-size: 14px;
+        transform: translate(-2px, -15px) scale(0.75);
+        color: #9DAAB5;
+        background-color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    .no-label {
+        .input-label {
+            display: none;
+        }
     }
 }
 
-.select-input--size-small .select-input__field:focus + .select-input__label{
-    padding: 0 5px;
-    font-size: 16px;
-    color: #9DAAB5;
-    background-color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    transform: translate(-1px, -17px) scale(0.75);
+.c-client {
+    .input-box {
+        background-image: url(../images/dropdown-arrow-grey.svg  );
+    }
 }

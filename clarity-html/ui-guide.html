@@ -169,34 +169,34 @@
     <span style="display:block;height:10px;"></span>
 
     <!-- regular select box -->
-
-    <div class="select-input">
-        <select class="select-input__field" name="input-box">
-                <option class="select-input__option" value=""></option>
-                <option class="select-input__option" value="option2">option 2</option>
-                <option class="select-input__option" value="option3">option 3</option>
-                <option class="select-input__option" value="option4">option 4</option>
-        </select>
-        <label class="select-input__label">Label</label>
-        <div class="select-input__icon"></div>
+    <div class="c-select">
+        <div class="input-wrap">
+            <select class="input-box" name="input-box">
+                  <option value="option1"></option>
+                  <option value="option2">option 2</option>
+                  <option value="option3">option 3</option>
+                  <option value="option4">option 4</option>
+            </select>
+            <label class="input-label">Label</label>
+            <div class="dropdown-arrow"></div>
+        </div>
     </div>
-
     <!-- regular select end -->
     <div class="clearfix"></div>
     <span style="display:block;height:20px;"></span>
     <!-- small select box -->
-    
-    <div class="select-input select-input--size-small">
-        <select class="select-input__field" name="input-box">
-            <option class="select-input__option" value=""></option>
-            <option class="select-input__option" value="option2">option 2</option>
-            <option class="select-input__option" value="option3">option 3</option>
-            <option class="select-input__option" value="option4">option 4</option>
-        </select>
-        <label class="select-input__label">Label</label>
-        <div class="select-input__icon"></div>
+    <div class="c-select-small">
+        <div class="input-wrap">
+            <select class="input-box" name="input-box">
+              <option disabled selected value style="display:none"></option>
+              <option value="option-1">option 1</option>
+              <option value="option-2">option 2</option>
+              <option value="option-3">option 3</option>
+              <option value="option-4">option 4</option>
+            </select>
+            <label class="input-label">Label</label>
+        </div>
     </div>
-
     <!-- small select box -->
     <div class="clearfix"></div>
     <span style="display:block;height:20px;"></span>
@@ -213,82 +213,92 @@
     <div class="clearfix"></div>
     <span style="display:block;height:20px;"></span>
     <!-- grid -->
-    <a href="#" class="grid-view-item grid-view-item--project">
-        <span class="grid-view-item__preview">
-            <div class="grid-view-item__hover-container">
-                <span class="grid-view-item__btn-menu">
-                    <i class="icon-more-horz"></i>
-                    <!-- dropdown still needs to be added here -->
-                </span>
-                <span class="button cta-primary">Edit Request</span>
-                <span class="btn-share">
-                    <svg class="icon-share" width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0 0V8C0 8.53043 0.210714 9.03914 0.585786 9.41421C0.960859 9.78929 1.46957 10 2 10H14C14.5304 10 15.0391 9.78929 15.4142 9.41421C15.7893 9.03914 16 8.53043 16 8V0" transform="translate(1 11)" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M7.5 4L3.75 0L0 4" transform="translate(5.25 1)" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M0 0V13" transform="translate(9 1)" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </span>
+    <div class="c-gridview c-gridview--modifier">
+        <a href="#" class="grid-view-item">
+          <span class="grid-view-item-preview">
+            <div class="grid-view-item-hover-container">
+              <span class="btn-menu">
+                <i class="icon-more-horz"></i>
+                <!-- dropdown still needs to be added here -->
+              </span>
+              <span class="button cta-primary">Edit Request</span>
+              <span class="btn-share">
+                  <svg class="icon-share" width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0V8C0 8.53043 0.210714 9.03914 0.585786 9.41421C0.960859 9.78929 1.46957 10 2 10H14C14.5304 10 15.0391 9.78929 15.4142 9.41421C15.7893 9.03914 16 8.53043 16 8V0" transform="translate(1 11)" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M7.5 4L3.75 0L0 4" transform="translate(5.25 1)" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M0 0V13" transform="translate(9 1)" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+              </span>
             </div>
-        </span>
-        <span class="grid-view-item__primary-content">
-            <h6 class="grid-view-item__subtitle">Subtitle</h6>
-            <h4 class="grid-view-item__title">Grid View Item Title</h4>
-        </span>
-        <span class="grid-view-item__secondary-content"> 
-            <small class="grid-view-item__secondary-info">Last Updated: 3 hours ago</small>
+            <span class="grid-view-item-preview-number">10,285</span>
+          </span>
+          <span class="grid-view-item-primary-content">
+            <h6 class="grid-view-item-subtitle">Subtitle</h6>
+            <h4 class="grid-view-item-title">Grid View Item Title</h4>
+          </span>
+          <span class="grid-view-item-secondary-content"> 
+            <small class="grid-view-item-secondary-info">Last Updated: 3 hours ago</small>
             <p class="tag tag-received">Received</p>
-        </span>
+          </span>
     </a>
+    </div>
     <!-- !~grid -->
     <div class="clearfix"></div>
     <span style="display:block;height:20px;"></span>
     <!-- regular input -->
-
-
-    <!-- 
-    In order to display an input notice/alert you need to add two classes 
-    to .input `.input--has-alert-error` or 
-    `.input--has-alert-success`. Then be sure to add in the alert text as
-    the last child of `.input` as a <p> tag with a class of `.input__alert`. 
-    -->
-    <div class="input">
-        <img class="input__icon" src="images/search-icon.svg" alt="search">
-        <input class="input__field" type="text" required>
-        <label class="input__label">Label</label>
+    <div class="c-input c-input--regular">
+        <!-- 
+        In order to display an input notice/alert you need to add two classes 
+        to .input-wrap (first, `.has-alert` and then `.alert-success` or 
+        `.alert-error` respectively). Then be sure to add in the alert text as
+        the last child of `.input-wrap` as a <p> tag with a class of `.alert-text`. 
+        -->
+        <div class="input-wrap">
+            <img class="input-icon" src="images/search-icon.svg" alt="search">
+            <input class="input-box" type="text" required>
+            <label class="input-label">Label</label>
+            <p class="alert-text">I am an input notice. Be sure to read me.</p>
+        </div>
     </div>
-
     <!-- ~!regular input -->
     <div class="clearfix"></div>
     <span style="display:block;height:20px;"></span>
     <!-- small input -->
-    <div class="input input--size-small">
-        <img class="input__icon" src="images/search-icon.svg" alt="search">
-        <input class="input__field" type="text" required>
-        <label class="input__label">Label</label>
+    <div class="c-input c-input--small">
+        <!-- 
+ In order to display an input notice/alert you need to add two classes to .input-wrap (first, `.has-alert` and then `.alert-success` or `.alert-error` respectively). Then be sure to add in the alert text as the last child of `.input-wrap` as a
+<p> tag with a class of `.alert-text`. -->
+        <div class="input-wrap">
+            <img class="input-icon" src="images/search-icon.svg" alt="search">
+            <input class="input-box" type="text" required>
+            <label class="input-label">Label</label>
+            <p class="alert-text">I am an input notice. Be sure to read me.</p>
+        </div>
     </div>
     <!-- small input -->
     <div class="clearfix"></div>
     <span style="display:block;height:20px;"></span>
     <!-- list view -->
-    <a href="#" class="list-view-item">
-        <h6 class="list-view-item__subtitle">CLNT</h6>
-        <h4 class="list-view-item__title">Grid View Item Title</h4>
-        <ul class="list-view-item__info">
-            <li class="list-view-item__preview-number">Select Count: <span>10,285</span></li>
-            <li class="list-view-item__secondary-info">Last Updated: 3 hours ago</li>
-            <li class="tag tag-received">Received</li>
-        </ul>
+    <div class="c-list-view">
+        <a href="#" class="list-view-item">
+            <h6 class="list-view-item-subtitle">CLNT</h6>
+            <h4 class="list-view-item-title">Grid View Item Title</h4>
+            <ul class="list-view-item-info">
+                <li class="list-view-item-preview-number">Select Count: <span>10,285</span></li>
+                <li class="list-view-item-secondary-info">Last Updated: 3 hours ago</li>
+                <li class="tag tag-received">Received</li>
+            </ul>
 
-        <span class="btn-menu btn-menu--list-view">
-            <i class="icon-more-vert"></i>
-            <!-- dropdown still needs to be added here -->
-        </span>
-    </a>
+            <span class="btn-menu">
+        <i class="icon-more-vert"></i>
+        <!-- dropdown still needs to be added here -->
+      </span>
+        </a>
+    </div>
     <!-- ~!list view -->
     <div class="clearfix"></div>
     <span style="display:block;height:20px;"></span>
     <!-- list view -->
-
     <div class="c-coderow">
         <div class="select-row-container">
             <p class="code">BADD</p>
@@ -296,12 +306,12 @@
             <div class="dropdown-container">
                 <div class="input-wrap">
                     <select class="input-box" name="input-box">
-                        <option value=""></option>
-                        <option value="option-1">Hard Include</option>
-                        <option value="option-2">Include</option>
-                        <option value="option-3">Exclude</option>
-                        <option value="option-4">Hard Exclude</option>
-                    </select>
+                    <option value=""></option>
+                    <option value="option-1">Hard Include</option>
+                    <option value="option-2">Include</option>
+                    <option value="option-3">Exclude</option>
+                    <option value="option-4">Hard Exclude</option>
+                </select>
                 </div>
             </div>
             <div class="count-container">

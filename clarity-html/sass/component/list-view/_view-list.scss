@@ -1,3 +1,4 @@
+//@import "../tags/style.scss";
 .list-view-item {
     display: flex;
     width: 100%;
@@ -15,7 +16,7 @@
 
 }
 
-.list-view-item__subtitle {
+.list-view-item-subtitle {
     margin-right: 5px;
     font-size: 20px;
     text-transform: uppercase;
@@ -26,14 +27,14 @@
     }
 }
 
-.list-view-item__title {
+.list-view-item-title {
     flex-grow: 3;
     font-size: 20px;
     font-weight: normal;
     color: #273A4B;
 }
 
-.list-view-item__info {
+.list-view-item-info {
     margin: 0;
     padding: 0;
     position: relative;
@@ -72,7 +73,7 @@
     }
 }
 
-.list-view-item__preview-number span {
+.list-view-item-preview-number span {
     font-family: 'Fira Code';
     line-height: 21px;
     font-size: 16px;
@@ -83,7 +84,7 @@
     display: inline;
 }
 
-.btn-menu--list-view {
+.btn-menu {
     margin-left: 20px;
     margin-right: -3px;
     position: relative;
