@@ -1,11 +1,5 @@
 // Login
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900');
-body {
-    @extend .u-height-100;
-    font-family: 'Source Sans Pro', sans-serif;
-    margin: $all-zero;
-    padding: $all-zero;
-}
+//@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900');
 
 .c {
     &-formContainer {
@@ -19,7 +13,7 @@ body {
         &__inner {
             font-family: 'source sans pro';
             width: $all-zero + 336;
-//            height: $all-zero + 339;
+            //            height: $all-zero + 339;
             padding: $all-zero + 27;
             border: $all-zero + 1 solid $grey-v3;
             @include border-radius(3px);
@@ -60,7 +54,7 @@ body {
     &--loginSection {
         @extend .u-relative;
         @extend .u-width-100;
-//        height: $all-zero + 45;
+        //        height: $all-zero + 45;
     }
 }
 

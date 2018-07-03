@@ -50,7 +50,8 @@
             background-image: url(../images/dropdown-arrow-grey.svg);
         }
     }
-    .input-wrap .input-box:focus + .input-label {
+    .input-wrap .input-box:focus + .input-label,
+    .input-label.is-selected {
         padding: 0 5px;
         font-size: 14px;
         transform: translate(-2px, -15px) scale(0.75);
