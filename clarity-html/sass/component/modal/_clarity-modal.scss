@@ -1,7 +1,6 @@
 .input-wrap {
     position: relative;
-    width: 100%;
-//    height: 45px;
+    width: 100%; //    height: 45px;
 }
 
 .input-wrap.has-alert .alert-text {
@@ -19,7 +18,7 @@
     transform-origin: top left;
     z-index: 10;
     cursor: default;
-    text-transform: uppercase;
+
 }
 
 .input-wrap .input-box:focus + .input-label {
@@ -29,6 +28,8 @@
     color: #9DAAB5;
     background-color: #fff;
     text-transform: none;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
 }
 
 .input-box:valid + .input-label {
@@ -38,6 +39,8 @@
     color: #9DAAB5;
     background-color: #fff;
     text-transform: none;
+
+    text-transform: uppercase;
 }
 
 .input-box {
@@ -63,13 +66,11 @@
 }
 
 .alert-error .input-box {
-    border: 1px solid #B13535;
-    color: #B34646;
+    border: 1px solid #B13535; //    color: #B34646;
 }
 
 .alert-success .input-box {
-    border: 1px solid #219653;
-    color: #008a3a;
+    border: 1px solid #219653; //    color: #008a3a;
 }
 
 .input-icon {
