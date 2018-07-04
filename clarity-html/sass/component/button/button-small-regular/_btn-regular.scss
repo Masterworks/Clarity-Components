@@ -32,8 +32,7 @@ a.button-regular {
         inset 0px -1px 0px rgba(0, 0, 0, 0.05);
     }
     &.email--sent {
-        background: #00AE81;
-        //        url(../images/tick.svg) no-repeat 0 0
+        background: #00AE81; //        url(../images/tick.svg) no-repeat 0 0
         padding: $all-zero $all-zero + 42;
         max-width: $all-zero + 117;
     }
@@ -44,7 +43,7 @@ a.button-regular {
         @extend .u-display-in-block;
     }
     &--send {
-        padding: 0 25px 0;
+        padding: 0 10px 0;
     }
     &--sending {
         background-color: $grey-v6;
