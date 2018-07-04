@@ -34,6 +34,7 @@ a.button-regular {
     &.email--sent {
         background: #00AE81;
         padding: $all-zero $all-zero + 42;
+        max-width: $all-zero + 117;
     }
     &--btn {
         padding: 12px 26px;
@@ -45,8 +46,8 @@ a.button-regular {
         padding: 0 42px 0;
     }
     &--sending {
-        padding: $all-zero + 12 $all-zero + 42;
         background-color: $grey-v6;
         color: $white;
+        max-width: $all-zero + 117;
     }
 }
