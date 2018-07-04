@@ -44,7 +44,7 @@
         @extend .u-normal--line-height;
         @extend .u-aligntext--center;
         @extend .u-text-decoration--none;
-        background-color: #00AE81;
+        background-color: #00AE81 !important;
         box-shadow: 0px 3px 7px rgba(5, 136, 152, 0.2), 0px 1px 1px rgba(15, 60, 66, 0.1), inset 0px -1px 0px rgba(0, 0, 0, 0.05);
         transition: all .15s ease-in-out;
         -webkit-font-smoothing: antialiased;
