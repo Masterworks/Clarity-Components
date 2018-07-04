@@ -42,11 +42,12 @@
     .input-wrap .input-box:focus + .input-label,
     .input-label.is-selected {
         padding: 0 5px;
-        font-size: 16px;
-        //        transform: translate(10px, -22px) scale(0.75);
+        font-size: 16px; //        transform: translate(10px, -22px) scale(0.75);
         transform: translate(0, -22px) scale(0.75);
         color: #9DAAB5;
         background-color: #fff;
+        text-transform: uppercase;
+        letter-spacing: $all-zero + 2;
 
         & + .dropdown-arrow {
             transform: translate(0, -50%) rotate(180deg);

@@ -57,3 +57,15 @@ $('[type="file"]').ezdz({
         }
     }
 });
+// ezdz drop zone end
+
+$('#filetype').on('change', function () {
+    //  alert( this.value ); // or $(this).val()
+    if (this.value == "MY") {
+        $('#logo').show();
+        $('#urltype').hide();
+    } else {
+        $('#logo').hide();
+        $('#urltype').show();
+    }
+});

@@ -155,7 +155,7 @@
 
 .btn-menu-istoogle:focus + .useraction {
     display: block;
-    top: $all-zero + 40;
+    top: $all-zero - 1;
     @extend .u-no-outline;
 }
 
@@ -189,11 +189,13 @@
             border-right: $all-zero + 1 solid $blue-v3;
             border-left: $all-zero + 1 solid $blue-v3;
             border-bottom: $all-zero + 1 solid $blue-v3;
+            background-color: #EDF8FE;
         }
         &:not(:first-child):hover {
             margin-top: -1px;
             border-bottom: $all-zero + 1 solid $blue-v3;
             border-top: $all-zero + 1 solid $blue-v3;
+            background-color: #EDF8FE;
         }
         &:last-child {
             border-bottom: $all-zero + 1 solid $grey-v5;

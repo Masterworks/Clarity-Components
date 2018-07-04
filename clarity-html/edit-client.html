@@ -272,11 +272,29 @@
                                     <!-- input box -->
                                     <div class="c-input c-input--regular">
                                         <div class="input-wrap">
+                                            <!--
                                             <div class="c-dropzone">
                                                 <form class="u-relative" action="" method="post" enctype="multipart/form-data">
                                                     <input type="file" accept="">
                                                     <a class="c-choosefile" href="#">File</a>
                                                     <label class="c-choosefile__label">Logo Upload</label>
+                                                </form>
+                                            </div>
+-->
+                                            <div class="c-dropzone">
+                                                <form class="u-relative" action="" method="post" enctype="multipart/form-data">
+                                                    <div id="logo">
+                                                        <input type="file" accept="">
+                                                        <label class="c-choosefile__label">Logo Upload</label>
+                                                    </div>
+                                                    <div id="urltype" style="display:none;">
+                                                        <input class="input-box" type="text" required="">
+                                                        <label class="input-label">Client External ID</label>
+                                                    </div>
+                                                    <select class="c-choosefile" id="filetype"> 
+                                                        <option value="MY">File</option>
+                                                        <option value="JP">Url</option>
+                                                    </select>
                                                 </form>
                                             </div>
                                         </div>
