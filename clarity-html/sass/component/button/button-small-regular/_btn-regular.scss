@@ -40,4 +40,7 @@ a.button-regular {
         line-height: normal;
         @extend .u-display-in-block;
     }
+    &--send {
+        padding: 0 42px 0;
+    }
 }
