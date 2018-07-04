@@ -105,3 +105,43 @@ $spaceamounts: (0, 5, 7, 10, 11, 12, 15, 20, 25, 30, 35, 40, 45, 50, 55);
         }
     }
 }
+
+$class: col_;
+$offset: offset_;
+$grid: 70px;
+$gutter: 20px;
+
+.row {
+    margin: 0 -$gutter/2;
+}
+
+// custom grid
+@for $i from 1 through 16 {
+
+    // for each $col_#{i} 
+    .#{$class}#{$i} {
+        @if $i !=1 {
+            width: $grid * $i;
+        }
+        @else {
+            width: $grid;
+        }
+        padding: 0 $gutter/2;
+        float: left;
+        box-sizing: border-box;
+        & > div {
+            box-shadow: 0px 1px 4px rgba(19, 53, 84, 0.04), 0px 8px 13px rgba(0, 52, 101, 0.03);
+            height: 20px;
+            border: 1px solid #D5DCE3;
+        }
+    }
+}
+
+@for $i from 1 through 15 {
+
+    // for each $col_#{i} 
+    .#{$class}#{$offset}#{$i} {
+        margin-left: $grid * $i;
+
+    }
+}
