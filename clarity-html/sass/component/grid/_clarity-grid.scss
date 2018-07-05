@@ -80,7 +80,7 @@
 
 //grid builder
 .bx-container {
-    width: $all-zero + 1100;
+    max-width: $all-zero + 1100;
     @extend .u-block-elm-center;
     &__row {
         margin-left: -10px;
