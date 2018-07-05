@@ -79,7 +79,11 @@
 }
 
 //grid builder
-.col__container {
-    max-width: 1120px;
-    margin: 0 -10px;
+.bx-container {
+    width: $all-zero + 1100;
+    @extend .u-block-elm-center;
+    &__row {
+        margin-left: -10px;
+        margin-right: -10px;
+    }
 }
