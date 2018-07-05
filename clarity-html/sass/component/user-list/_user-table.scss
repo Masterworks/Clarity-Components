@@ -38,6 +38,55 @@
                     color: $blue-v1;
                 }
             }
+            &--capability {
+                font-size: $all-zero + 13;
+                width: 40%;
+                font-weight: 600;
+                letter-spacing: $all-zero + 1;
+            }
+            &--capabilityfield {
+                font-size: $all-zero + 16;
+                width: 40%;
+                color: $grey-v4;
+                font-weight: 600;
+            }
+            &--read {
+                font-size: $all-zero + 13;
+                width: 15%;
+                font-weight: 600;
+                letter-spacing: $all-zero + 1;
+            }
+            &--readfield {
+                font-size: $all-zero + 13;
+                width: 15%;
+            }
+            &--create {
+                font-size: $all-zero + 13;
+                width: 15%;
+                font-weight: 600;
+                letter-spacing: $all-zero + 1;
+            }
+            &--createfield {
+                width: 15%;
+            }
+            &--edit {
+                font-size: $all-zero + 13;
+                width: 15%;
+                font-weight: 600;
+                letter-spacing: $all-zero + 1;
+            }
+            &--editfield {
+                width: 15%;
+            }
+            &--delete {
+                font-size: $all-zero + 13;
+                width: 15%;
+                font-weight: 600;
+                letter-spacing: $all-zero + 1;
+            }
+            &--deletefield {
+                width: 15%;
+            }
             &--access {
                 font-size: $all-zero + 13;
                 width: 10%;

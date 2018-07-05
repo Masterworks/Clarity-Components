@@ -49,6 +49,14 @@
         @extend .u-display-block;
         @extend .u-absolute;
     }
+    &--bordersolid {
+        @extend .u-absolute;
+        @extend .u-right-0;
+        top: -3px;
+        &:after {
+            border-bottom: $all-zero + 1 solid $blue-v1;
+        }
+    }
 }
 
 .check-box {

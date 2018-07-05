@@ -1,22 +1,63 @@
 a.button {
-  padding: 7px 26px 10px 26px;
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  font-size: 16px;
-  text-align: center;
-  text-decoration: none;
-  color: #059CAF;
-  border: 2px solid #059CAF;
-  box-sizing: border-box;
-  box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.05);
-  border-radius: 3px;
-  transition: all .15s ease-in-out;
-  -webkit-font-smoothing: antialiased; }
-  a.button:hover {
-    transform: translateY(-1px); }
-  a.button:active {
-    transform: translateY(1px); }
+    padding: 7px 26px 10px 26px;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: #059CAF;
+    border: 2px solid #059CAF;
+    box-sizing: border-box;
+    box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+    transition: all .15s ease-in-out;
+    -webkit-font-smoothing: antialiased;
+}
+
+a.button:hover {
+    transform: translateY(-1px);
+}
+
+a.button:active {
+    transform: translateY(1px);
+}
 
 /*# sourceMappingURL=style.css.map */
+
+.button {
+    &__outline {
+        padding: $all-zero $all-zero + 26 $all-zero $all-zero + 26;
+        font-family: 'Source Sans Pro';
+        color: $blue-v1;
+        border: $all-zero + 2 solid $blue-v1;
+        font-weight: 600;
+        font-size: $all-zero + 16;
+        box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.05);
+        @include border-radius(3px 3px 3px 3px);
+        transition: all .15s ease-in-out;
+        -webkit-font-smoothing: antialiased;
+        @include box-sizing(border-box);
+        @extend .u-normal--font-style;
+        @extend .u-normal--line-height;
+        @extend .u-aligntext--center;
+        @extend .u-text-decoration--none;
+        &--outlinered {
+            padding: $all-zero $all-zero + 5 $all-zero $all-zero + 5;
+            min-width: $all-zero + 111;
+            border: $all-zero + 2 solid $red-v1;
+            color: $red-v1;
+            height: $all-zero + 35;
+            line-height: $all-zero + 30;
+            @extend .u-display-in-block;
+        }
+        &:hover {
+            transform: translateY(-1px);
+        }
+
+        &:active {
+            transform: translateY(1px);
+        }
+    }
+}
