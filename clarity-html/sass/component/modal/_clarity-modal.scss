@@ -38,9 +38,14 @@
     transform: translate(-1px, -22px) scale(0.75);
     color: #9DAAB5;
     background-color: #fff;
-    text-transform: none;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
+    text-transform: none; //    text-transform: uppercase;
+}
+
+.modal-primary-content {
+    .input-box:valid + .input-label {
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+    }
 }
 
 .input-box {
