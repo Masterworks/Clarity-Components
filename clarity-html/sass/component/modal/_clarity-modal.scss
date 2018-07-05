@@ -48,6 +48,13 @@
     }
 }
 
+.c-formContainer {
+    .input-box:valid + .input-label {
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+    }
+}
+
 .input-box {
     width: 100%;
     height: 45px;

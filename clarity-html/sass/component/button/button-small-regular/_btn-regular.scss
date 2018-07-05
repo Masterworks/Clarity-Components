@@ -44,6 +44,7 @@ a.button-regular {
     }
     &--send {
         padding: 0 10px 0;
+        min-width: 117px;
     }
     &--sending {
         background-color: $grey-v6;
