@@ -292,6 +292,38 @@ b {
         }
     }
 }
+.c-view-controls {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 10px;
+
+    .view-grid,
+    .view-list {
+        background-color: transparent;
+        border: none;
+        position: relative;
+        padding: 0;
+        cursor: pointer;
+    }
+
+    .view-grid {
+        top: 0px;
+        padding: 5px;
+    }
+
+    .view-list {
+        bottom: 3px;
+        padding: 5px;
+    }
+}
+
+.icon-view-grid {
+    stroke: $blue-v1;
+}
+
+.icon-view-list {
+    stroke: $grey-v7;
+}
 
 .c-signout {
     background: $white;

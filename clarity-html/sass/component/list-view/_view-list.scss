@@ -1,8 +1,8 @@
-//@import "../tags/style.scss";
-.list-view-item {
+.c-list-view-item {
     display: flex;
     width: 100%;
     height: 75px;
+    margin-bottom: 13px;
     align-items: center;
     box-sizing: border-box;
     padding: 0 25px;
@@ -13,10 +13,28 @@
     box-sizing: border-box;
     box-shadow: 0px 1px 4px rgba(19, 53, 84, 0.04), 0px 8px 13px rgba(0, 52, 101, 0.03);
     border-radius: 3px;
+    transition: all .125s ease-in-out;
 
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0px 2px 40px 2px rgba(23, 70, 80, 0.05), 0px 11px 30px rgba(0, 52, 80, 0.04);
+
+        .grid-view-item__hover-container {
+            opacity: 1;
+        }
+    }
+
+    &:active {
+        transform: translateY(0px);
+        box-shadow: 0px 0px 4px rgba(19, 53, 84, 0.04), 0px 5px 13px rgba(0, 52, 101, 0.03);
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
 }
 
-.list-view-item-subtitle {
+.list-view-item__subtitle {
     margin-right: 5px;
     font-size: 20px;
     text-transform: uppercase;
@@ -27,14 +45,14 @@
     }
 }
 
-.list-view-item-title {
+.list-view-item__title {
     flex-grow: 3;
     font-size: 20px;
     font-weight: normal;
     color: #273A4B;
 }
 
-.list-view-item-info {
+.list-view-item__info {
     margin: 0;
     padding: 0;
     position: relative;
@@ -73,7 +91,7 @@
     }
 }
 
-.list-view-item-preview-number span {
+.list-view-item__preview-number span {
     font-family: 'Fira Code';
     line-height: 21px;
     font-size: 16px;
@@ -84,7 +102,7 @@
     display: inline;
 }
 
-.btn-menu {
+.btn-menu--list-view {
     margin-left: 20px;
     margin-right: -3px;
     position: relative;
@@ -155,7 +173,7 @@
 
 .btn-menu-istoogle:focus + .useraction {
     display: block;
-    top: $all-zero - 1;
+    top: $all-zero + 40;
     @extend .u-no-outline;
 }
 
@@ -189,13 +207,11 @@
             border-right: $all-zero + 1 solid $blue-v3;
             border-left: $all-zero + 1 solid $blue-v3;
             border-bottom: $all-zero + 1 solid $blue-v3;
-            background-color: #EDF8FE;
         }
         &:not(:first-child):hover {
             margin-top: -1px;
             border-bottom: $all-zero + 1 solid $blue-v3;
             border-top: $all-zero + 1 solid $blue-v3;
-            background-color: #EDF8FE;
         }
         &:last-child {
             border-bottom: $all-zero + 1 solid $grey-v5;

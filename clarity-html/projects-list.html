@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Clarity | List-User</title>
+
+    <!-- main style sheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- header start -->
+    <div class="o-header">
+        <div class="container">
+            <div class="header">
+                <a href="#" class="logo">Clarity</a>
+                <ul class="primary-nav">
+                    <li class="primary-nav-item">
+                        <a href="#" class="primary-nav-link">Dashboard</a>
+                    </li>
+                    <li class="primary-nav-item">
+                        <a href="#" class="primary-nav-link">New Request</a>
+                    </li>
+                    <li class="primary-nav-item">
+                        <a href="#" class="primary-nav-link">Templates</a>
+                    </li>
+                </ul>
+                <div class="notification-container">
+                    <a onclick="myFunction()" class="btn-notifications">
+                        <svg class="notification-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="notification-icon" d="M17.003 12.7523H0C0.676422 12.7523 1.32514 12.4836 1.80344 12.0052C2.28174 11.5269 2.55045 10.8782 2.55045 10.2018V5.95105C2.55045 4.37274 3.17744 2.85906 4.29348 1.74302C5.40951 0.626984 6.92319 -8.86776e-08 8.50151 -8.86776e-08C10.0798 -8.86776e-08 11.5935 0.626984 12.7095 1.74302C13.8256 2.85906 14.4526 4.37274 14.4526 5.95105V10.2018C14.4526 10.8782 14.7213 11.5269 15.1996 12.0052C15.6779 12.4836 16.3266 12.7523 17.003 12.7523ZM9.97227 16.1529C9.8228 16.4105 9.60827 16.6244 9.35015 16.7731C9.09203 16.9217 8.79938 17 8.50151 17C8.20363 17 7.91098 16.9217 7.65286 16.7731C7.39474 16.6244 7.18021 16.4105 7.03075 16.1529"
+                                transform="translate(1 1)" fill="#273A4B" />
+                            <path class="notification-icon" d="M17.003 12.7523H0C0.676422 12.7523 1.32514 12.4836 1.80344 12.0052C2.28174 11.5269 2.55045 10.8782 2.55045 10.2018V5.95105C2.55045 4.37274 3.17744 2.85906 4.29348 1.74302C5.40951 0.626984 6.92319 -8.86776e-08 8.50151 -8.86776e-08C10.0798 -8.86776e-08 11.5935 0.626984 12.7095 1.74302C13.8256 2.85906 14.4526 4.37274 14.4526 5.95105V10.2018C14.4526 10.8782 14.7213 11.5269 15.1996 12.0052C15.6779 12.4836 16.3266 12.7523 17.003 12.7523ZM9.97227 16.1529C9.8228 16.4105 9.60827 16.6244 9.35015 16.7731C9.09203 16.9217 8.79938 17 8.50151 17C8.20363 17 7.91098 16.9217 7.65286 16.7731C7.39474 16.6244 7.18021 16.4105 7.03075 16.1529H9.97227Z"
+                                transform="translate(1 1)" stroke="#273A4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <img class="new-notification-dot" src="../images/ellipse.svg" alt="new-notification" />
+                    </a>
+                    <script>
+
+
+                    </script>
+                    <ul id="myDropdown" class="dropdown-content level-1-dropdown">
+                        <li>
+                            <a class="level-1-dropdown-link" href="#">
+                        <span class="time-tag">5/22/18 at 1:42 PM</span>
+                        <img class="unread-marker" src="../images/unread-marker.svg" alt="unread-marker">
+                        <p class="notification-text">Your request has been
+                            <b>received</b> by Data Services: Newsletter EOY 2018 (SUGM)</p>
+                    </a>
+                        </li>
+                        <li>
+                            <a class="level-1-dropdown-link" href="#">
+                        <span class="time-tag">5/15/18 at 11:25 AM</span>
+                        <p class="notification-text">Your request has been
+                            <b>fulfilled</b> by Data Services: Christmas 2018 Catalog (SIM)</p>
+                    </a>
+                        </li>
+                        <li>
+                            <a class="level-1-dropdown-link" href="#">
+                        <span class="time-tag">4/1/18 at 8:04 AM</span>
+                        <p class="notification-text">
+                            <b>Jovie S.</b> left a comment on your request: Secret Santa 04-104-29 (PF)</p>
+                    </a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#" class="btn-user-account"></a>
+                <ul class="c-signout js-signout">
+                    <li><a href="#">Loream Ipsum</a></li>
+                    <li><a href="#">Log Out</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- header end -->
+    <!-- bottom header -->
+    <div class="c-headerBottom u-margin-top-20">
+        <div class="bx-container">
+            <div class="bx-container__row clearfix">
+                <div class="col_16">
+                    <!-- setting button -->
+                    <div class="c-settingBtn u-display-in-block">
+                        <div class="c-settingBtn__inner c-settingBtn--style">
+                            <div class="settings-container">
+                                <button class="settings-button"> 
+                                    <img src="../images/gear-icon.svg" alt="gear-icon" class="gear-icon">
+                                </button>
+                                <ul class="dropdown-content level-1-dropdown">
+                                    <li>
+                                        <a class="level-1-dropdown-link" href="#">Apply Select Codes Template</a>
+                                        <ul class="dropdown-content level-2-dropdown">
+                                            <li class="dropdown-search-bar">
+                                                <div class="input-wrap">
+                                                    <img class="input-icon" src="../../Clarity-Components/images/search-icon.svg" alt="search">
+                                                    <input class="input-box" type="text" required>
+                                                    <label class="input-label">Label</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a class="level-2-dropdown-link" href="#">July Jubilee</a>
+                                            </li>
+                                            <li>
+                                                <a class="level-2-dropdown-link" href="#">Let Freedom Ring</a>
+                                            </li>
+                                            <li>
+                                                <a class="level-2-dropdown-link" href="#">Camp O the Pines</a>
+                                            </li>
+                                            <li>
+                                                <a class="level-2-dropdown-link" href="#">Blue Mtn Parkway</a>
+                                            </li>
+                                            <li>
+                                                <a class="level-2-dropdown-link" href="#">Outreach Retreat</a>
+                                            </li>
+                                            <li>
+                                                <a class="level-2-dropdown-link" href="#">Reaching Creatures Conference</a>
+                                            </li>
+                                            <li>
+                                                <a class="level-2-dropdown-link" href="#">Hearts of Hope</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="create-codes-container">
+                                        <a class="level-1-dropdown-link" href="#">Create Select Codes Template</a>
+                                        <ul>
+                                            <div class="dropdown-content create-codes-dropdown">
+                                                <h5>Create Select Codes Template</h5>
+                                                <div class="input-wrap create-select-codes-wrap">
+                                                    <input class="input-box create-codes-input" type="text" required>
+                                                    <label class="create-codes-label">Template Title</label>
+                                                    <a href="#" class="button">Save Template</a>
+                                                </div>
+                                            </div>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a class="level-1-dropdown-link" href="#">Download Request as PDF</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- setting button -->
+                    <div class="c-view-controls">
+                        <button class="view-grid">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g class="icon-view-grid">
+                                    <path d="M7 0H0V7H7V0Z" transform="translate(1 1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7 0H0V7H7V0Z" transform="translate(12 1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7 0H0V7H7V0Z" transform="translate(12 12)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7 0H0V7H7V0Z" transform="translate(1 12)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                            </svg>
+                        </button>
+                        
+                        <button class="view-list">
+                            <svg width="19" height="14" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g class="icon-view-list">
+                                    <path d="M0 0H13" transform="translate(5 1)" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                                    <path d="M0 0H13" transform="translate(5 7)" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                                    <path d="M0 0H13" transform="translate(5 13)" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                                    <circle cx="1" cy="1" r="0.5"/>
+                                    <circle cx="1" cy="1" r="0.5" transform="translate(0 6)" />
+                                    <circle cx="1" cy="1" r="0.5" transform="translate(0 12)" />
+                                </g>
+                            </svg>                                    
+                        </button>
+                                
+                    </div>
+                    <!-- search user -->
+                    <div class="c-usersearch u-margin-left-15 u-padding-left-15">
+                        <div class="c-input c-input--small">
+                            <span class="c-input__label">Filters:</span>
+                            <!-- 
+                             In order to display an input notice/alert you need to add two classes to .input-wrap (first, `.has-alert` and then `.alert-success` or `.alert-error` respectively). Then be sure to add in the alert text as the last child of `.input-wrap` as a
+                            <p> tag with a class of `.alert-text`. -->
+                            <div class="input-wrap input-wrap--width192 u-display-in-block">
+                                <img class="input-icon" src="images/filter.svg" alt="filter">
+                                <input class="input-box" type="text" required>
+                                <label class="input-label">Search Projects</label>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- search user -->
+                    <!-- client -->
+                    <div class="c-client u-margin-left-7">
+                        <div class="c-select-small">
+                            <div class="c-select-small">
+                                <div class="input-wrap">
+                                    <select class="input-box" name="input-box">
+                                          <option disabled selected value style="display:none"></option>
+                                          <option value="option-1">option 1</option>
+                                          <option value="option-2">option 2</option>
+                                          <option value="option-3">option 3</option>
+                                          <option value="option-4">option 4</option>
+                                    </select>
+                                    <label class="input-label input-label--font14">By Client</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- client -->
+                    <!-- client -->
+                    <!--
+
+                    <!-- client -->
+                    <!-- add user -->
+                    <div class="o-adduser u-display-in-block u-pull--right">
+                        <a class="buttonimg buttonimg--buttonicon" href="#">Add New User <i class="u-margin-left-5"></i></a>
+                    </div>
+                    <!-- !~add user -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- bottom header -->
+    <!-- banner section -->
+    <div class="c-banner">
+        <div class="container">
+            <div class="c-banner__inner u-padding-top-35 u-padding-bottom-55">
+                <h1 class="u-margin-bottom-0 u-margin-top-0">All Projects</h1>
+                <h5 class="u-margin-bottom-0">View and Edit Projects</h5>
+            </div>
+        </div>
+    </div>
+    <!-- banner section end -->
+    <!-- services section -->
+    <div class="o-user">
+        <div class="bx-container">
+            <div class="bx-container__row clearfix">
+
+                <a href="#" class="c-list-view-item">
+                    <h6 class="list-view-item__subtitle">CLNT</h6>
+                    <h4 class="list-view-item__title">Grid View Item Title</h4>
+                    <ul class="list-view-item__info">
+                        <li class="list-view-item__secondary-info">540-29664-004</li>
+                        <li class="list-view-item__secondary-info">Due: 05/28/18</li>
+                        <li class="tag tag-received">Received</li>
+                    </ul>
+            
+                    <span class="btn-menu btn-menu--list-view">
+                        <i class="icon-more-vert"></i>
+                        <!-- dropdown still needs to be added here -->
+                    </span>
+                </a>
+
+                <a href="#" class="c-list-view-item">
+                    <h6 class="list-view-item__subtitle">CLNT</h6>
+                    <h4 class="list-view-item__title">Grid View Item Title</h4>
+                    <ul class="list-view-item__info">
+                        <li class="list-view-item__secondary-info">540-29664-004</li>
+                        <li class="list-view-item__secondary-info">Due: 05/28/18</li>
+                        <li class="tag tag-received">Received</li>
+                    </ul>
+            
+                    <span class="btn-menu btn-menu--list-view">
+                        <i class="icon-more-vert"></i>
+                        <!-- dropdown still needs to be added here -->
+                    </span>
+                </a>
+
+                <a href="#" class="c-list-view-item">
+                    <h6 class="list-view-item__subtitle">CLNT</h6>
+                    <h4 class="list-view-item__title">Grid View Item Title</h4>
+                    <ul class="list-view-item__info">
+                        <li class="list-view-item__secondary-info">540-29664-004</li>
+                        <li class="list-view-item__secondary-info">Due: 05/28/18</li>
+                        <li class="tag tag-received">Received</li>
+                    </ul>
+            
+                    <span class="btn-menu btn-menu--list-view">
+                        <i class="icon-more-vert"></i>
+                        <!-- dropdown still needs to be added here -->
+                    </span>
+                </a>
+
+                <a href="#" class="c-list-view-item">
+                    <h6 class="list-view-item__subtitle">CLNT</h6>
+                    <h4 class="list-view-item__title">Grid View Item Title</h4>
+                    <ul class="list-view-item__info">
+                        <li class="list-view-item__secondary-info">540-29664-004</li>
+                        <li class="list-view-item__secondary-info">Due: 05/28/18</li>
+                        <li class="tag tag-received">Received</li>
+                    </ul>
+            
+                    <span class="btn-menu btn-menu--list-view">
+                        <i class="icon-more-vert"></i>
+                        <!-- dropdown still needs to be added here -->
+                    </span>
+                </a>
+
+                <a href="#" class="c-list-view-item">
+                    <h6 class="list-view-item__subtitle">CLNT</h6>
+                    <h4 class="list-view-item__title">Grid View Item Title</h4>
+                    <ul class="list-view-item__info">
+                        <li class="list-view-item__secondary-info">540-29664-004</li>
+                        <li class="list-view-item__secondary-info">Due: 05/28/18</li>
+                        <li class="tag tag-received">Received</li>
+                    </ul>
+            
+                    <span class="btn-menu btn-menu--list-view">
+                        <i class="icon-more-vert"></i>
+                        <!-- dropdown still needs to be added here -->
+                    </span>
+                </a>
+
+                <a href="#" class="c-list-view-item">
+                    <h6 class="list-view-item__subtitle">CLNT</h6>
+                    <h4 class="list-view-item__title">Grid View Item Title</h4>
+                    <ul class="list-view-item__info">
+                        <li class="list-view-item__secondary-info">540-29664-004</li>
+                        <li class="list-view-item__secondary-info">Due: 05/28/18</li>
+                        <li class="tag tag-received">Received</li>
+                    </ul>
+            
+                    <span class="btn-menu btn-menu--list-view">
+                        <i class="icon-more-vert"></i>
+                        <!-- dropdown still needs to be added here -->
+                    </span>
+                </a>
+
+                <a href="#" class="c-list-view-item">
+                    <h6 class="list-view-item__subtitle">CLNT</h6>
+                    <h4 class="list-view-item__title">Grid View Item Title</h4>
+                    <ul class="list-view-item__info">
+                        <li class="list-view-item__secondary-info">540-29664-004</li>
+                        <li class="list-view-item__secondary-info">Due: 05/28/18</li>
+                        <li class="tag tag-received">Received</li>
+                    </ul>
+            
+                    <span class="btn-menu btn-menu--list-view">
+                        <i class="icon-more-vert"></i>
+                        <!-- dropdown still needs to be added here -->
+                    </span>
+                </a>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- services section -->
+    <!-- jQuery -->
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/custom.js"></script>
+</body>
+
+</html>
