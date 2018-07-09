@@ -105,11 +105,8 @@
 }
 
 ._edit-projects-base {
-    //    width: 840px;
-    //    margin: 0 auto;
     @extend .u-bg-color-fff;
     @include border-radius(3px);
-    margin: 0 auto;
     padding: $all-zero + 30;
     border: $all-zero + 1 solid $grey-v3;
     box-shadow: 0px 1px 4px rgba(19, 53, 84, 0.04), 0px 8px 13px rgba(0, 52, 101, 0.03);
