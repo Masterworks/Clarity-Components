@@ -23,6 +23,12 @@
     }
 }
 
+.u-pointer-event {
+    &-none {
+        pointer-events: none;
+    }
+}
+
 // block element alignment
 .u-block-elm-center {
     margin: $all-zero auto;
@@ -32,6 +38,10 @@
 // display
 .u-display-block {
     display: block;
+}
+
+.u-display-flex {
+    display: flex;
 }
 
 .u-display-none {
@@ -46,6 +56,10 @@
 
 .u-display-in-block {
     display: inline-block !important;
+}
+
+.u-display-inline {
+    display: inline;
 }
 
 .u-pull-10 {
@@ -249,6 +263,11 @@
     overflow: hidden;
 }
 
+.u-whitespace {
+    &-nowrap {
+        white-space: nowrap;
+    }
+}
 
 // border radius
 .u-no-border {

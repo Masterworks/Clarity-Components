@@ -1,121 +1,121 @@
 .header {
-    display: flex;
-    width: 100%;
-    height: 60px;
+    color: $dark-v1;
+    border-bottom: $all-zero + 1 solid $grey-v5;
+    background: $white;
+    height: $all-zero + 60;
     justify-content: space-between;
     align-items: center;
     font-family: 'source sans pro';
-    color: #273A4B;
-    border-bottom: 1px solid #E4E9ED;
-    position: relative;
-    background: $white;
+    @extend .u-relative;
+    @extend .u-display-flex;
+    @extend .u-width-100;
 }
 
 .logo {
-    display: block;
-    width: 122px;
-    height: 26px;
-    text-indent: 100%;
-    white-space: nowrap;
-    overflow: hidden;
+    width: $all-zero + 122;
+    height: $all-zero + 26;
+    text-indent: $page-grid-width-100;
+    background-size: $page-grid-width-100;
     background-image: url('../images/clarity-logo.svg');
-    background-size: 100%;
+    @extend .u-whitespace-nowrap;
     background-repeat: no-repeat;
+    @extend .u-display-block;
+    @extend .u-oflowhidden;
 }
 
 .primary-nav {
-    display: flex;
-    height: 20px;
+    @extend .u-display-flex;
+    height: $all-zero + 20;
     justify-content: flex-end;
     flex-grow: 3;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+    margin: $all-zero;
+    padding: $all-zero;
+    @extend .u-list-style--none;
 
     &:after {
         content: "";
-        display: inline-block;
-        width: 1px;
-        height: 34px;
-        margin: 0 23px;
-        position: relative;
-        bottom: 6px;
-        border-right: 1px dotted #BEC6CE;
+        @extend .u-display-in-block;
+        width: $all-zero + 1;
+        height: $all-zero + 34;
+        margin: $all-zero $all-zero + 23;
+        @extend .u-relative;
+        bottom: $all-zero + 6;
+        border-right: $all-zero + 1 dotted $grey-v1;
     }
 }
 
 .primary-nav-item {
-    display: inline;
-    font-size: 16px;
-    margin-right: 25px;
+    @extend .u-display-inline;
+    font-size: $all-zero + 16;
+    margin-right: $all-zero + 25;
 
     &:last-child {
-        margin-right: 0;
+        margin-right: $all-zero;
     }
 }
 
 .primary-nav-link {
-    text-decoration: none;
-    color: #273A4B;
+    @extend .u-text-decoration--none;
+    color: $dark-v1;
 }
 
 .notification-container {
-    top: 1px;
-    position: relative;
-    width: 38px;
-    height: 20px;
+    top: $all-zero + 1;
+    @extend .u-relative;
+    width: $all-zero + 38;
+    height: $all-zero + 20;
 
 }
 
 .btn-notifications {
-    display: inline-block;
-    margin-right: 18px;
-    line-height: 0;
+    @extend .u-display-in-block;
+    margin-right: $all-zero + 18;
+    line-height: $all-zero;
     outline: none;
     border: none;
     background: none;
     cursor: pointer;
 
     &:hover {
-        width: 100%;
-        height: 100%;
+        @extend .u-width-100;
+        @extend .u-height-100;
         .new-notification-dot {
-            display: block;
-            pointer-events: none;
+            @extend .u-display-block;
+            @extend .u-pointer-event-none;
         }
 
         .notification-icon {
-            fill: #273A4B;
-            stroke: #273A4B;
-            pointer-events: none;
+            fill: $dark-v1;
+            stroke: $dark-v1;
+            @extend .u-pointer-event-none;
         }
     }
 
 }
 
 .notification-icon {
-    fill: #BEC6CE;
-    stroke: #BEC6CE;
-    pointer-events: none;
+    fill: $grey-v1;
+    stroke: $grey-v1;
+    @extend .u-pointer-event-none;
 }
 
 .new-notification-dot {
-    position: relative;
+    @extend .u-relative;
     top: -25px;
-    left: 10px;
-    display: none;
-    pointer-events: none;
+    left: $all-zero + 10;
+    @extend .u-display-none;
+    @extend .u-pointer-event-none;
 }
 
 .btn-user-account {
-    display: block;
-    position: relative;
-    width: 32px;
-    height: 32px;
-    margin-right: 19px;
+    @extend .u-display-block;
+    @extend .u-relative;
+    width: $all-zero + 32;
+    height: $all-zero + 32;
+    margin-right: $all-zero + 19;
     background-image: url(../images/avatar.jpg);
     background-size: 100%;
-    border-radius: 50%;
+    @include border-radius(50%);
 
     &:after {
         content: "";
@@ -292,6 +292,7 @@ b {
         }
     }
 }
+
 .c-view-controls {
     display: inline-block;
     vertical-align: top;
