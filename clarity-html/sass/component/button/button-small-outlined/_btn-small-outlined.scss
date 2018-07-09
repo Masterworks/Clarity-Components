@@ -44,7 +44,7 @@ a.button:active {
         @extend .u-aligntext--center;
         @extend .u-text-decoration--none;
         &--outlinered {
-            padding: $all-zero $all-zero + 5 $all-zero $all-zero + 5;
+            padding: $all-zero $all-zero + 15 $all-zero $all-zero + 15;
             min-width: $all-zero + 111;
             border: $all-zero + 2 solid $red-v1;
             color: $red-v1;
