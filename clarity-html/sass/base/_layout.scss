@@ -63,6 +63,13 @@
     font-size: 17px;
 }
 
+.c {
+    &-capabiliti {
+        font-size: $all-zero + 16;
+        @extend .u-aligntext--right;
+    }
+}
+
 .c-message {
     width: 100%;
     max-width: 760px;

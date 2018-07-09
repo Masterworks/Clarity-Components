@@ -333,4 +333,7 @@
     &--dashedtop {
         border-top: 1px dashed $grey-v5;
     }
+    &--dashedbottom {
+        border-bottom: 1px dashed $grey-v5 !important;
+    }
 }
