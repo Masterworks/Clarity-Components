@@ -31,6 +31,36 @@
     &:nth-child(3n+3) {
         margin-right: 0;
     }
+
+    @media screen and (max-width: 1080px) {
+        box-sizing: border-box;
+        width: 29.45%;
+        margin: 0 0.875% 30px;
+
+        &:nth-child(3n-2) {
+            margin-left: 4%;
+        }
+
+        &:nth-child(3n-3) {
+            margin-right: 4%;
+        }
+    }
+    
+    @media screen and (max-width: 700px) {
+        box-sizing: border-box;
+        width: 45%;
+        margin: 0 1% 30px;
+
+        &:nth-child(odd) {
+            margin-left: 4%;
+            margin-right: 0.875%;
+        }
+
+        &:nth-child(even) {
+            margin-right: 4%;
+            margin-left: 0.875%
+        }
+    }
 }
 
 .grid-view-item__hover-container {
@@ -102,17 +132,7 @@
     background-repeat: no-repeat;
     background-position: center bottom 0px;
     box-shadow: 0 1px 0 #D5DCE3;
-    text-align: center;
-
-    .c-grid-view-item--request & {
-        background-image: url(../images/faux-docs.png);
-    }
-
-    .c-grid-view-item--project & {
-        background-image: url(../images/grid-view-item-project.svg);
-        background-size: 293px;
-        background-position: center bottom;
-    }
+    text-align: center;    
 }
 
 .cta-primary {
@@ -147,6 +167,7 @@
     text-align: center;
     color: #273A4B;
     margin: 0;
+    padding: 0 20px;
 }
 
 .grid-view-item__subtitle {
@@ -179,4 +200,39 @@
 
 .tag {
     display: inline;
+}
+
+/*--------------------------*/
+/*-- Type Specific Styles --*/
+/*--------------------------*/
+
+.c-grid-view-item {
+    &--request .grid-view-item__preview {
+        background-image: url('../images/faux-docs.png');
+    }
+
+    &--project .grid-view-item__preview {
+        background-image: url('../images/grid-view-item-project.svg');
+        background-size: 293px;
+        background-position: center bottom;
+    }
+
+    &--report {
+        height: 260px;
+
+        .grid-view-item__preview {
+            height: 57%;
+            background-image: url('../images/grid-view-item-report.svg');
+            background-size: 253px;
+            background-position: center bottom;
+
+            @media screen and (max-width: 1000px) {
+                background-size: 92%;
+            }
+        }
+
+        .grid-view-item__primary-content {
+            height: 111px;
+        }
+    }
 }
