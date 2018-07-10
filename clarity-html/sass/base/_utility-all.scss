@@ -13,6 +13,10 @@
     height: $page-grid-height-100vh;
 }
 
+.u-height-auto {
+    height: auto;
+}
+
 // alignment
 .u-valign-middle {
     display: table;
@@ -26,6 +30,9 @@
 .u-pointer-event {
     &-none {
         pointer-events: none;
+    }
+    &-auto {
+        pointer-events: auto;
     }
 }
 
@@ -282,6 +289,10 @@
 // text-transform
 .u-txt-uppercase {
     text-transform: uppercase;
+}
+
+.u-text-transform-none {
+    text-transform: none;
 }
 
 //

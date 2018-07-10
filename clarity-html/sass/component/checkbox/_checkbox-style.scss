@@ -1,38 +1,38 @@
 .c-checkbox {
     .input-wrap {
-        display: flex;
+        @extend .u-display-flex;
+        @extend .u-height-auto;
         flex-direction: row;
-        height: auto;
     }
 
     .input-wrap .input-label {
-        display: block;
-        margin-bottom: 5px;
-        font-family: 'Source Sans Pro';
-        font-size: 16px;
-        color: #273A4B;
-        pointer-events: auto;
-        text-transform: none;
+        @extend .u-display-block;
+        margin-bottom: $all-zero + 5;
+        font-size: $all-zero + 16;
+        color: $dark-v1;
         letter-spacing: normal;
+        font-family: 'Source Sans Pro';
+        @extend .u-pointer-event-auto;
+        @extend .u-text-transform-none;
         @extend .u-static;
     }
 
     .check-box {
-        margin-right: 12px;
+        margin-right: $all-zero + 12;
     }
 
     .description-container {
-        width: 363px;
-        height: 58px;
-        position: relative;
-        bottom: 1px;
+        width: $all-zero + 363;
+        height: $all-zero + 58;
+        bottom: $all-zero + 1;
+        @extend .u-relative;
     }
 
     .check-box-description {
-        margin-top: 0px;
         font-family: 'Source Sans Pro';
-        line-height: 20px;
-        font-size: 14px;
-        color: #717A83;
+        margin-top: $all-zero;
+        line-height: $all-zero + 20;
+        font-size: $all-zero + 14;
+        color: $grey-v4;
     }
 }
