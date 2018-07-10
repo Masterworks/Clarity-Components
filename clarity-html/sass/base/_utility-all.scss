@@ -163,6 +163,12 @@
     background-size: contain;
 }
 
+.u-background {
+    &-norepeat {
+        background-repeat: no-repeat;
+    }
+}
+
 // positions
 .u-bg-pos-center-middle {
     background-position: $page-grid-width-100 / 2 $page-grid-width-100 / 2;
