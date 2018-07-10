@@ -340,7 +340,7 @@ b {
         @extend .u-display-block;
         @extend .u-static;
         @extend .u-list-style--none;
-        border-bottom: 1px solid #E4E9ED;
+        border-bottom: $all-zero + 1 solid $grey-v5;
         a {
             color: $blue-v1;
             text-decoration: none;
