@@ -1,20 +1,20 @@
 a.button-regular {
-    padding: 0 26px 0 26px;
-    height: 45px;
-    line-height: 45px;
+    padding: $all-zero $all-zero + 26 $all-zero $all-zero + 26;
+    height: $all-zero + 45;
+    line-height: $all-zero + 45;
     font-family: 'Source Sans Pro';
-    font-style: normal;
+    @extend .u-normal--font-style;
     font-weight: 600;
-    font-size: 16px;
-    text-align: center;
-    text-decoration: none;
-    color: #FFFFFF;
+    font-size: $all-zero + 16;
+    @extend .u-aligntext--center;
+    @extend .u-text-decoration--none;
+    color: $white;
     background: linear-gradient(104.45deg, rgba(17, 0, 209, 0.15) -17.83%, rgba(255, 255, 255, 0.15) 111.94%), #059CAF;
     background-blend-mode: overlay, normal;
     box-shadow: 0px 3px 7px rgba(5, 136, 152, 0.2),
     0px 1px 1px rgba(15, 60, 66, 0.1),
     inset 0px -1px 0px rgba(0, 0, 0, 0.05);
-    border-radius: 3px;
+    @include border-radius(3px 3px 3px 3px);
     transition: all .15s ease-in-out;
     -webkit-font-smoothing: antialiased;
 
@@ -37,14 +37,14 @@ a.button-regular {
         max-width: $all-zero + 117;
     }
     &--btn {
-        padding: 12px 26px;
-        height: auto;
-        line-height: normal;
+        padding: $all-zero + 12 $all-zero + 26;
+        @extend .u-height-auto;
+        @extend .u-normal--line-height;
         @extend .u-display-in-block;
     }
     &--send {
-        padding: 0 10px 0;
-        min-width: 117px;
+        padding: $all-zero $all-zero + 10 $all-zero;
+        min-width: $all-zero + 117;
     }
     &--sending {
         background-color: $grey-v6;

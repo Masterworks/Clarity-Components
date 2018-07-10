@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .buttonimg {
     &--buttonicon {
         font-weight: 600;
@@ -38,6 +37,7 @@
         padding: $all-zero + 12 $all-zero + 15;
         color: $white;
         border-color: none;
+        line-height: $all-zero + 45;
         @include border-radius(3px);
         @extend .u-display-in-block;
         @extend .u-normal--font-style;
@@ -61,6 +61,16 @@
             width: $all-zero + 12;
             height: $all-zero + 12;
             @extend .u-display-in-block;
+        }
+    }
+}
+
+a {
+    &.button-regular {
+        &.buttonimg {
+            &--buttonsuccessicon {
+                line-height: $all-zero + 45 !important;
+            }
         }
     }
 }

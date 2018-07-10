@@ -49,7 +49,7 @@ a.button:active {
             border: $all-zero + 2 solid $red-v1;
             color: $red-v1;
             height: $all-zero + 35;
-            line-height: $all-zero + 30;
+            line-height: $all-zero + 30 !important;
             @extend .u-display-in-block;
         }
         &:hover {
