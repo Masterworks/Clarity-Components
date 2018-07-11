@@ -38,6 +38,7 @@
                 line-height: $all-zero + 24;
                 padding: $all-zero $all-zero + 21;
                 margin: $all-zero + 16 $all-zero;
+                min-height: $all-zero + 48;
                 @extend .u-font-style--italic;
             }
             &:hover {
