@@ -11,7 +11,7 @@
     background-color: $white;
     @include border-radius (3px 3px 3px 3px);
     font-family: 'source sans pro';
-    text-decoration: none;
+    @extend .u-text-decoration--none;
     @include transition (all .125s ease-in-out);
 
     &:hover {
@@ -29,7 +29,7 @@
     }
 
     &:nth-child(3n+3) {
-        margin-right: 0;
+        margin-right: $all-zero;
     }
 
     @media screen and (max-width: 1080px) {
@@ -65,27 +65,27 @@
 
 .grid-view-item__hover-container {
     opacity: 0;
-    transition: all .1s ease-in-out;
-    position: absolute;
+    @include transition (all .1s ease-in-out);
+    @extend .u-absolute;
     top: -1px;
     right: -1px;
     bottom: -1px;
     left: -1px;
     z-index: 1;
     background-image: linear-gradient(0deg, rgba(39, 58, 75, 0.75), rgba(39, 58, 75, 0.75));
-    border-radius: 3px 3px 0 0;
+    @include border-radius (3px 3px 0px 0px);
 }
 
 .grid-view-item__btn-menu {
-    position: absolute;
-    top: 11px;
-    left: 30px;
+    @extend .u-absolute;
+    top: $all-zero + 11;
+    left: $all-zero + 30;
 }
 
 .btn-share {
-    position: absolute;
-    top: 18px;
-    right: 23px;
+    @extend .u-absolute;
+    top: $all-zero + 18;
+    right: $all-zero + 23;
 }
 
 .icon-share {
@@ -94,23 +94,23 @@
 
 .icon-more-horz {
     display: inline-block;
-    position: relative;
-    width: 6px;
-    height: 6px;
-    margin: 0 4px;
-    border-radius: 50%;
-    background-color: #fff;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, .5);
+    @extend .u-relative;
+    width: $all-zero + 6;
+    height: $all-zero + 6;
+    margin: $all-zero $all-zero + 4;
+    @include border-radius (50%);
+    background-color: $white;
+    box-shadow: $all-zero $all-zero + 2 $all-zero + 6 rgba(0, 0, 0, .5);
 
     &:before,
     &:after {
         content: "";
         display: block;
-        position: absolute;
-        width: 6px;
-        height: 6px;
-        border-radius: 50%;
-        background-color: #fff;
+        @extend .u-absolute;
+        width: $all-zero + 6;
+        height: $all-zero + 6;
+        @include border-radius (50%);
+        background-color: $white;
         box-shadow: 0 2px 6px rgba(0, 0, 0, .5);
     }
 
@@ -124,32 +124,32 @@
 }
 
 .grid-view-item__preview {
-    display: block;
+    @extend .u-display-block;
     height: 50%;
-    position: relative;
-    background-color: #F4F6F7;
+    @extend .u-relative;
+    background-color: $grey-v10;
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center bottom 0px;
-    box-shadow: 0 1px 0 #D5DCE3;
-    text-align: center;
+    box-shadow: 0 1px 0 $grey-v3;
+    @extend .u-aligntext--center;
 }
 
 .cta-primary {
-    position: relative;
-    top: 70px;
-    padding: 12px 15px 12px 15px;
+    @extend .u-relative;
+    top: $all-zero + 70;
+    padding: $all-zero + 12 $all-zero + 15 $all-zero + 12 $all-zero + 15;
     font-family: 'Source Sans Pro';
-    font-style: normal;
+    @extend .u-normal--font-style;
     font-weight: 600;
-    font-size: 16px;
-    text-align: center;
-    border: 2px solid #fff;
-    color: #fff;
-    box-sizing: border-box;
+    font-size: $all-zero + 16;
+    @extend .u-aligntext--center;
+    border: $all-zero + 2 solid $white;
+    color: $white;
+    @extend .u-box-module--borderbox;
     box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.05), 0 1px 6px rgba(0, 0, 0, .2);
     text-shadow: 0 1px 3px rgba(0, 0, 0, .3);
-    border-radius: 3px;
+    @include border-radius (3px 3px 3px 3px);
 }
 
 .grid-view-item__primary-content {
