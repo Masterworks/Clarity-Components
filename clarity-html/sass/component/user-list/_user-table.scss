@@ -17,6 +17,9 @@
             &--noborder {
                 border-bottom: none;
             }
+            &:last-child {
+                @extend .u-no-border;
+            }
         }
         &__block {
             @extend .u-display-in-block;

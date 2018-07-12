@@ -1,18 +1,18 @@
 .c-select-small {
     .input-wrap {
-        position: relative;
-        width: 100%;
-        height: 33px;
+        @extend .u-relative;
+        @extend .u-width-100;
+        height: $all-zero + 33;
         font-family: 'Source Sans Pro';
     }
 
     .input-wrap .input-label {
-        position: absolute;
-        top: 6px;
-        left: 13px;
-        font-size: 16px;
-        color: #9DAAB5;
-        pointer-events: none;
+        @extend .u-absolute;
+        top: $all-zero + 6;
+        left: $all-zero + 13;
+        font-size: $all-zero + 16;
+        color: $grey-v7;
+        @extend .u-pointer-event-none;
         transition: .2s all ease-out;
         transform-origin: top left;
         z-index: 10;
@@ -25,26 +25,24 @@
         }
     }
 
-
     .input-box {
-        width: 100%;
-        height: 100%;
-        padding-left: 15px;
-        font-size: 14px;
-        color: #273A4B;
-        border: 1px solid #BEC6CE;
-        box-sizing: border-box;
+        @extend .u-width-100;
+        @extend .u-height-100;
+        padding-left: $all-zero + 15;
+        font-size: $all-zero + 14;
+        color: $dark-v1;
+        border: $all-zero + 1 solid $grey-v1;
+        @extend .u-box-module--borderbox;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.04);
-        border-radius: 3px;
-        background-color: #ffffff;
-        -webkit-appearance: none;
-        -moz-appearance: none;
+        @include border-radius (3px 3px 3px 3px);
+        background-color: $white;
+        @extend .u-appearance-none;
         background-image: url(../../images/dropdown-arrow-dark.svg  );
-        background-repeat: no-repeat;
+        @extend .u-background-norepeat;
         background-position: right 15px top 14px;
 
         &:focus {
-            outline: none;
+            @extend .u-no-outline;
         }
         &--grey {
             background-image: url(../images/dropdown-arrow-grey.svg);
@@ -52,13 +50,13 @@
     }
     .input-wrap .input-box:focus + .input-label,
     .input-label.is-selected {
-        padding: 0 5px;
-        font-size: 14px;
+        padding: $all-zero $all-zero + 5;
+        font-size: $all-zero + 14;
         transform: translate(-2px, -15px) scale(0.75);
-        color: #9DAAB5;
-        background-color: #fff;
-        text-transform: uppercase;
-        letter-spacing: 2px;
+        color: $grey-v7;
+        background-color: $white;
+        @extend .u-txt-uppercase;
+        letter-spacing: $all-zero + 2;
     }
 
     .no-label {

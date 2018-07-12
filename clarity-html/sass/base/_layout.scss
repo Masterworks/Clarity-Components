@@ -71,9 +71,9 @@
 }
 
 .c-message {
-    width: 100%;
-    max-width: 760px;
-    padding: 14px 20px;
+    @extend .u-width-100;
+    max-width: $all-zero + 760;
+    padding: $all-zero + 14 $all-zero + 20;
     text-align: center;
     border-radius: 3px;
     border: 1px solid #fff;
@@ -120,6 +120,6 @@
 }
 
 .is_danger {
-    color: #f50a0a;
-    font-size: 14px;
+    color: $red-v1;
+    font-size: $all-zero + 14;
 }

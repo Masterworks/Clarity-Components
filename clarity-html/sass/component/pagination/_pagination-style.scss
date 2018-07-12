@@ -26,6 +26,10 @@
                 transform: translateY(1px);
                 box-shadow: none;
             }
+            &--disable {
+                opacity: 0.5;
+                @extend .u-pointer-event-none;
+            }
         }
         span {
             display: inline-block;
