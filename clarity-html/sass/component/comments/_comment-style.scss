@@ -1,44 +1,43 @@
 .c-comments {
     h5 {
-        display: inline;
+        @extend .u-display-inline;
         font-family: Source Sans Pro;
-        font-weight: normal;
-        font-size: 20px;
-        color: #273A4B;
+        @extend .u-normal--font-weight;
+        font-size: $all-zero + 20;
+        color: $dark-v1;
     }
     .comment-header {
-        display: block;
+        @extend .u-display-block;
     }
     .comment-time {
-        display: inline;
-        padding-left: 10px;
+        @extend .u-display-inline;
+        padding-left: $all-zero + 10;
         font-family: Source Sans Pro;
-        line-height: 16px;
-        font-size: 14px;
-        color: #9DAAB5;
+        line-height: $all-zero + 16;
+        font-size: $all-zero + 14;
+        color: $grey-v7;
     }
     .comment-paragraph {
-        display: block;
-        width: 580px;
-        height: 48px;
+        @extend .u-display-block;
+        width: $all-zero + 580;
+        height: $all-zero + 48;
         font-family: Source Sans Pro;
-        line-height: 24px;
-        font-size: 16px;
-        color: #717A83;
+        line-height: $all-zero + 24;
+        font-size: $all-zero + 16;
+        color: $grey-v4;
     }
     .comment-tag {
-        display: inline;
-        margin-left: 220px;
-        padding: 4px 11px;
-        font-family: Proxima Nova;
+        @extend .u-display-inline;
+        margin-left: $all-zero + 220;
+        padding: $all-zero + 4 $all-zero + 11;
         font-weight: 600;
-        font-size: 11px;
-        text-align: center;
+        font-size: $all-zero + 11;
+        @extend .u-aligntext--center;
         letter-spacing: 0.15em;
-        text-transform: uppercase;
-        color: #2080B7;
+        @extend .u-txt-uppercase;
+        color: $blue-v5;
         opacity: 0.6;
-        background-color: #EDF8FE;
-        border-radius: 3px;
+        background-color: $blue-v4;
+        @include border-radius(3px 3px 3px 3px);
     }
 }

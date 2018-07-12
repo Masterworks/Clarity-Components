@@ -57,18 +57,7 @@ $('[type="file"]').ezdz({
         }
     }
 });
-// ezdz drop zone end
 
-$('#filetype').on('change', function () {
-    //  alert( this.value ); // or $(this).val()
-    if (this.value == "MY") {
-        $('#logo').show();
-        $('#urltype').hide();
-    } else {
-        $('#logo').hide();
-        $('#urltype').show();
-    }
-});
 
 // Check for inputs that have value and apply class to handle label
 // styling so that text isn't covered by label. Commented out
@@ -88,8 +77,8 @@ $('#filetype').on('change', function () {
 // Check for Selects that have an option selected already and 
 // apply class to handle label styling
 
-$('select').find(':selected').each(function() {
-    if($(this).val() != '') {
+$('select').find(':selected').each(function () {
+    if ($(this).val() != '') {
         console.log($(this));
         $(this).parents('.c-select').addClass('input-has-text');
     }

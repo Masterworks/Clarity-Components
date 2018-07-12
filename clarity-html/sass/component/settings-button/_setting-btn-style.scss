@@ -37,10 +37,10 @@
             background-position: top 15px left 34px;
         }
         .settings-button:focus {
-            outline: none;
+            @extend .u-no-outline;
 
             & + .dropdown-content {
-                display: block;
+                @extend .u-display-block;
                 @extend .u-absolute;
                 top: $all-zero + 34;
                 outline: none;
@@ -77,7 +77,7 @@
             background-color: $white;
 
             &:hover {
-                display: block;
+                @extend .u-display-block;
             }
 
             li {
@@ -348,25 +348,25 @@
         }
 
         a.button {
-            position: absolute;
-            top: 42px;
-            left: 63px;
-            width: 145px;
-            padding: 0 18px;
+            @extend .u-absolute;
+            top: $all-zero + 42;
+            left: $all-zero + 63;
+            width: $all-zero + 145;
+            padding: $all-zero $all-zero + 18;
             font-family: 'Source Sans Pro';
-            font-style: normal;
+            @extend .u-normal--font-style;
             font-weight: 700;
-            font-size: 16px;
-            text-align: center;
-            text-decoration: none;
-            border: none;
-            color: #FFFFFF;
-            border-radius: 3px;
+            font-size: $all-zero + 16;
+            @extend .u-aligntext--center;
+            @extend .u-text-decoration--none;
+            @extend .u-no-border;
+            color: $white;
+            @include border-radius(3px 3px 3px 3px);
             background: linear-gradient(102.52deg, rgba(17, 0, 209, 0.3) -18.15%, rgba(255, 255, 255, 0.3) 111.87%), #059CAF;
             background-blend-mode: overlay, normal;
             box-shadow: 0px 3px 7px rgba(5, 136, 152, 0.2), 0px 1px 1px rgba(15, 60, 66, 0.1), inset 0px -1px 0px rgba(0, 0, 0, 0.05);
-            height: 39px;
-            line-height: 39px;
+            height: $all-zero + 39;
+            line-height: $all-zero + 39;
         }
     }
     &--style {
