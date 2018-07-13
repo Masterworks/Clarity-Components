@@ -15,91 +15,91 @@
         }
 
         .input-wrap .input-label {
-            position: absolute;
-            top: 8px;
-            left: 11px;
-            font-size: 14px;
-            color: #9DAAB5;
-            transition: .2s all ease-out;
-            pointer-events: none;
+            @extend .u-absolute;
+            top: $all-zero + 8;
+            left: $all-zero + 11;
+            font-size: $all-zero + 14;
+            color: $grey-v7;
+            @include transition (.2s all ease-out);
+            @extend .u-pointer-event-none;
             transform-origin: top left;
             z-index: 10;
             cursor: default;
-            text-transform: none;
+            @extend .u-text-transform-none;
             letter-spacing: normal;
         }
 
         .input-wrap .input-box:focus + .input-label {
-            padding: 0 5px;
-            font-size: 14px;
+            padding: $all-zero $all-zero + 5;
+            font-size: $all-zero + 14;
             transform: translate(-2px, -15px) scale(0.75);
-            color: #9DAAB5;
-            background-color: #fff;
-            text-transform: uppercase;
-            letter-spacing: 2px;
+            color: $grey-v7;
+            background-color: $white;
+            @extend .u-txt-uppercase;
+            letter-spacing: $all-zero + 2;
         }
         .input-box:valid + .input-label {
-            padding: 0 5px;
-            font-size: 14px;
+            padding: $all-zero $all-zero + 5;
+            font-size: $all-zero + 14;
             transform: translate(-2px, -15px) scale(0.75);
-            color: #9DAAB5;
-            background-color: #fff;
-            text-transform: uppercase;
-            letter-spacing: 2px;
+            color: $grey-v7;
+            @extend .u-bg-color-fff;
+            @extend .u-txt-uppercase;
+            letter-spacing: $all-zero + 2;
         }
 
         .input-box {
-            width: 100%;
-            height: 100%;
-            padding-left: 11px;
-            font-size: 14px;
-            color: #273A4B;
-            border: 1px solid #BEC6CE;
-            box-sizing: border-box;
+            @extend .u-width-100;
+            @extend .u-height-100;
+            padding-left: $all-zero + 11;
+            font-size: $all-zero + 14;
+            color: $dark-v1;
+            border: $all-zero + 1 solid $grey-v1;
+            @extend .u-box-module--borderbox;
             box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.04);
-            border-radius: 3px;
-            background-color: #fff;
+            @include border-radius (3px 3px 3px 3px);
+            background-color: $white;
 
             &:focus {
-                outline: none;
+                @extend .u-no-outline;
             }
 
             .alert-error & {
-                border: 1px solid #B13535;
-                color: #B34646;
+                border: $all-zero + 1 solid $red-v1;
+                color: $red-v2;
             }
 
             .alert-success & {
-                border: 1px solid #219653;
-                color: #008a3a;
+                border: $all-zero + 1 solid $green-v2;
+                color: $green-v3;
             }
         }
 
         .input-icon {
-            position: absolute;
-            right: 18px;
-            top: 12px;
+            @extend .u-absolute;
+            right: $all-zero + 18;
+            top: $all-zero + 12;
         }
 
         .alert-text {
             display: none;
-            width: 100%;
-            height: 30px;
-            box-sizing: border-box;
-            margin-top: 0;
-            padding: 0 0 0 10px;
-            font-size: 14px;
+            @extend .u-width-100;
+            height: $all-zero + 30;
+            @extend .u-box-module--borderbox;
+            margin-top: $all-zero;
+            padding: $all-zero $all-zero $all-zero $all-zero + 10;
+            font-size: $all-zero + 14;
             font-family: 'source sans pro';
-            line-height: 30px;
-            border-radius: 0 0 3px 3px;
+            line-height: $all-zero + 30;
+            border-radius: $all-zero $all-zero $all-zero + 3 $all-zero + 3;
 
             .alert-error & {
-                color: #B13535;
+                color: $red-v1;
                 background-color: rgba(177, 53, 53, .05);
             }
 
             .alert-success & {
-                color: #009840;
+                color: $green-v5;
                 background-color: rgba(33, 150, 83, .05);
             }
         }

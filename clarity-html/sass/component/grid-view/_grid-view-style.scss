@@ -153,53 +153,52 @@
 }
 
 .grid-view-item__primary-content {
-    display: flex;
+    @extend .u-display-flex;
     flex-direction: column;
     align-item: center;
     justify-content: center;
-    height: 105px;
+    height: $all-zero + 105;
 }
 
 .grid-view-item__title {
     font-family: 'Source Sans Pro';
-    font-size: 20px;
-    font-weight: normal;
-    text-align: center;
-    color: #273A4B;
-    margin: 0;
-    padding: 0 20px;
+    font-size: $all-zero + 20;
+    @extend .u-normal--font-weight;
+    @extend .u-aligntext--center;
+    color: $dark-v1;
+    margin: $all-zero;
+    padding: $all-zero $all-zero + 20;
 }
 
 .grid-view-item__subtitle {
-    font-family: Proxima Nova;
     font-weight: 500;
-    font-size: 13px;
-    text-align: center;
+    font-size: $all-zero + 13;
+    @extend .u-aligntext--center;
     letter-spacing: 0.2em;
-    color: #9DAAB5;
-    text-transform: uppercase;
-    margin: 0;
+    color: $grey-v7;
+    @extend .u-txt-uppercase;
+    margin: $all-zero;
 }
 
 .grid-view-item__secondary-content {
-    display: flex;
+    @extend .u-display-flex;
     justify-content: space-between;
-    height: 45px;
-    padding: 0 15px;
+    height: $all-zero + 45;
+    padding: $all-zero $all-zero + 15;
     border-top: 1px dotted rgba(190, 198, 206, 0.5);
 }
 
 .grid-view-item__secondary-info {
     font-family: Source Sans Pro;
-    font-size: 14px;
-    line-height: 45px;
+    font-size: $all-zero + 14;
+    line-height: $all-zero + 45;
     -webkit-font-smoothing: antialiased;
-    font-weight: normal;
-    color: #9DAAB5;
+    @extend .u-normal--font-weight;
+    color: $grey-v7;
 }
 
 .tag {
-    display: inline;
+    @extend .u-display-inline;
 }
 
 /*--------------------------*/

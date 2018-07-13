@@ -1,72 +1,72 @@
 .c-coderow {
     .select-row-container {
-        display: flex;
-        border-bottom: 1px solid #E4E9ED;
-        width: 500px;
+        @extend .u-display-flex;
+        border-bottom: $all-zero + 1 solid $grey-v5;
+        width: $all-zero + 500;
         align-items: center;
-        height: 60px;
+        height: $all-zero + 60;
         font-family: 'Source Sans Pro';
 
     }
     .code {
         font-weight: 600;
-        font-size: 18px;
-        color: #273A4B;
-        margin: 0 0 0 10px;
-        text-transform: uppercase;
+        font-size: $all-zero + 18;
+        color: $dark-v1;
+        margin: $all-zero $all-zero $all-zero $all-zero + 10;
+        @extend .u-txt-uppercase;
     }
     .code-description {
-        display: flex;
+        @extend .u-display-flex;
         align-items: center;
-        position: relative;
-        font-size: 16px;
-        color: #9DAAB5;
-        margin: 0 0 0 27px;
-        width: 204px;
+        @extend .u-relative;
+        font-size: $all-zero + 16;
+        color: $grey-v7;
+        margin: $all-zero $all-zero $all-zero $all-zero + 27;
+        width: $all-zero + 204;
     }
 
     .count-container {
-        display: flex;
-        margin-left: 30px;
+        @extend .u-display-flex;
+        margin-left: $all-zero + 30;
     }
 
     .negative-count {
-        position: relative;
+        @extend .u-relative;
         font-weight: 600;
-        font-size: 16px;
-        color: #AC2828;
-        margin: 0 9px;
+        font-size: $all-zero + 16;
+        color: $red-v3;
+        margin: $all-zero $all-zero + 9;
     }
 
     .dropdown-container {
-        width: 129px;
-        height: 33px;
+        width: $all-zero + 129;
+        height: $all-zero + 33;
     }
     .input-wrap {
-        position: relative;
-        width: 100%;
-        height: 33px;
+        @extend .u-relative;
+        @extend .u-width-100;
+        height: $all-zero + 33;
     }
 
     .input-box {
-        width: 100%;
-        height: 33px;
-        padding-left: 13px;
-        font-size: 14px;
-        color: #273A4B;
-        border: 1px solid #BEC6CE;
-        box-sizing: border-box;
+        @extend .u-width-100;
+        height: $all-zero + 33;
+        padding-left: $all-zero + 13;
+        font-size: $all-zero + 14;
+        color: $dark-v1;
+        border: $all-zero + 1 solid $grey-v1;
+        @extend .u-box-module--borderbox;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.04);
-        border-radius: 3px;
+        @include border-radius (3px 3px 3px 3px);
         background-image: url(../images/dropdown-arrow-dark.svg);
-        background-repeat: no-repeat;
-        background-position: 106px 13px;
-        background-color: #ffffff;
+        @extend .u-background-norepeat;
+        background-position: $all-zero + 106 $all-zero + 13;
+        background-color: $white;
         -webkit-appearance: none;
         -moz-appearance: none;
 
         &:focus {
-            outline: none;
+            @extend .u-no-outline;
         }
     }
 }

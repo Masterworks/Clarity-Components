@@ -1,102 +1,102 @@
 .c-input {
     &--regular {
         .input-wrap {
-            position: relative;
-            width: 100%;
-            height: 45px;
+            @extend .u-relative;
+            @extend .u-width-100;
+            height: $all-zero + 45;
 
             &.has-alert .alert-text {
-                display: block;
+                @extend .u-display-block;
             }
         }
 
         .input-wrap .input-label {
-            position: absolute;
-            top: 13px;
-            left: 15px;
-            font-size: 16px;
-            color: #9DAAB5;
+            @extend .u-absolute;
+            top: $all-zero + 13;
+            left: $all-zero + 15;
+            font-size: $all-zero + 16;
+            color: $grey-v7;
             transition: .2s all ease-out;
-            pointer-events: none;
+            letter-spacing: normal;
+            @extend .u-pointer-event-none;
             transform-origin: top left;
             z-index: 10;
             cursor: default;
-            text-transform: none;
-            letter-spacing: normal;
+            @extend .u-text-transform-none;
         }
 
         .input-wrap .input-box:focus + .input-label {
-            padding: 0 5px;
-            font-size: 16px;
+            padding: $all-zero $all-zero + 5;
+            font-size: $all-zero + 16;
             transform: translate(-1px, -22px) scale(0.75);
-            color: #9DAAB5;
-            background-color: #fff;
-            text-transform: uppercase;
-            letter-spacing: 2px;
+            color: $grey-v7;
+            background-color: $white;
+            @extend .u-txt-uppercase;
+            letter-spacing: $all-zero + 2;
         }
 
         .input-box:valid + .input-label {
-            padding: 0 5px;
-            font-size: 16px;
-            transform: translate(-1px, -20px) scale(0.7);    
-            color: #9DAAB5;
-            background-color: #fff;
-            text-transform: uppercase;
-            letter-spacing: 2px;
+            padding: $all-zero $all-zero + 5;
+            font-size: $all-zero + 16;
+            //            transform: translate(-1px, -20px) scale(0.7);
+            transform: translate(-1px, -20px);
+            color: $grey-v7;
+            background-color: $white;
+            @extend .u-txt-uppercase;
+            letter-spacing: $all-zero + 2;
         }
 
         .input-box {
-            width: 100%;
-            height: 45px;
-            padding-left: 15px;
-            font-size: 16px;
-            color: #273A4B;
-            border: 1px solid #BEC6CE;
-            box-sizing: border-box;
+            @extend .u-width-100;
+            height: $all-zero + 45;
+            padding-left: $all-zero + 15;
+            font-size: $all-zero + 16;
+            color: $dark-v1;
+            border: $all-zero + 1 solid $grey-v1;
+            @extend .u-box-module--borderbox;
             box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.04);
-            border-radius: 3px;
-            background-color: #ffffff;
+            @include border-radius (3px 3px 3px 3px);
+            @extend .u-bg-color-fff;
 
             &:focus {
-                outline: none;
+                @extend .u-no-outline;
             }
 
             .alert-error & {
-                border: 1px solid #B13535;
-                color: #B34646;
+                border: $all-zero + 1 solid $red-v1;
+                color: $red-v2;
             }
-
             .alert-success & {
-                border: 1px solid #219653;
-                color: #008a3a;
+                border: $all-zero + 1 solid $green-v2;
+                color: $green-v3;
             }
         }
 
         .input-icon {
-            position: absolute;
-            right: 18px;
-            top: 18px;
+            @extend .u-absolute;
+            right: $all-zero + 18;
+            top: $all-zero + 18;
         }
 
         .alert-text {
             display: none;
-            width: 100%;
-            height: 30px;
-            box-sizing: border-box;
-            margin-top: 0;
-            padding: 0 0 0 10px;
-            font-size: 14px;
+            @extend .u-width-100;
+            height: $all-zero + 30;
+            @extend .u-box-module--borderbox;
+            margin-top: $all-zero;
+            padding: $all-zero $all-zero $all-zero $all-zero + 10;
+            font-size: $all-zero + 14;
             font-family: 'source sans pro';
-            line-height: 30px;
-            border-radius: 0 0 3px 3px;
+            line-height: $all-zero + 30;
+            @include border-radius (0 0 3px 3px);
 
             .alert-error & {
-                color: #B13535;
+                color: $red-v1;
                 background-color: rgba(177, 53, 53, .05);
             }
 
             .alert-success & {
-                color: #0F6E37;
+                color: $green-v4;
                 background-color: rgba(33, 150, 83, .05);
             }
         }

@@ -1,19 +1,18 @@
 .c-list-view-item {
-    display: flex;
-    width: 100%;
-    height: 75px;
-    margin-bottom: 13px;
+    @extend .u-display-flex;
+    @extend .u-width-100;
+    height: $all-zero + 75;
+    margin-bottom: $all-zero + 13;
     align-items: center;
-    box-sizing: border-box;
-    padding: 0 25px;
-    border: 1px solid #D5DCE3;
-    text-decoration: none;
+    @extend .u-box-module--borderbox;
+    padding: $all-zero $all-zero + 25;
+    border: $all-zero + 1 solid $grey-v3;
+    @extend .u-text-decoration--none;
     font-family: 'Source Sans Pro';
-    background: #FFFFFF;
-    box-sizing: border-box;
+    background: $white;
     box-shadow: 0px 1px 4px rgba(19, 53, 84, 0.04), 0px 8px 13px rgba(0, 52, 101, 0.03);
-    border-radius: 3px;
-    transition: all .125s ease-in-out;
+    @include border-radius (3px 3px 3px 3px);
+    @include transition (all .125s ease-in-out);
 
     &:hover {
         transform: translateY(-2px);
@@ -30,15 +29,15 @@
     }
 
     &:last-child {
-        margin-bottom: 0;
+        margin-bottom: $all-zero;
     }
 }
 
 .list-view-item__subtitle {
-    margin-right: 5px;
-    font-size: 20px;
-    text-transform: uppercase;
-    color: #273A4B;
+    margin-right: $all-zero + 5;
+    font-size: $all-zero + 20;
+    @extend .u-txt-uppercase;
+    color: $dark-v1;
 
     &:after {
         content: ":";
@@ -47,36 +46,36 @@
 
 .list-view-item__title {
     flex-grow: 3;
-    font-size: 20px;
-    font-weight: normal;
-    color: #273A4B;
+    font-size: $all-zero + 20;
+    @extend .u-normal--font-weight;
+    color: $dark-v1;
 }
 
 .list-view-item__info {
-    margin: 0;
-    padding: 0;
-    position: relative;
-    bottom: 7px;
-    list-style-type: none;
+    margin: $all-zero;
+    padding: $all-zero;
+    @extend .u-relative;
+    bottom: $all-zero + 7;
+    @extend .u-list-style--none;
 
     li {
         display: inline;
 
         &:not(.tag) {
-            font-style: normal;
-            line-height: 21px;
-            font-size: 14px;
-            color: #9DAAB5;
+            @extend .u-normal--font-style;
+            line-height: $all-zero + 21;
+            font-size: $all-zero + 14;
+            color: $grey-v7;
         }
 
         &:after {
             content: "";
             display: inline-block;
-            height: 35px;
-            width: 1px;
-            margin: 0 15px;
-            position: relative;
-            top: 12px;
+            height: $all-zero + 35;
+            width: $all-zero + 1;
+            margin: $all-zero $all-zero + 15;
+            @extend .u-relative;
+            top: $all-zero + 12;
             border-right: 1px dotted rgba(0, 0, 0, .2);
         }
 
@@ -85,28 +84,27 @@
         }
 
         &.tag {
-            position: relative;
-            bottom: 2px;
+            @extend .u-relative;
+            bottom: $all-zero + 2;
         }
     }
 }
 
 .list-view-item__preview-number span {
-    font-family: 'Fira Code';
-    line-height: 21px;
-    font-size: 16px;
+    line-height: $all-zero + 21;
+    font-size: $all-zero + 16;
     color: rgb(8, 172, 194);
 }
 
 .tag {
-    display: inline;
+    @extend .u-display-inline;
 }
 
 .btn-menu--list-view {
-    margin-left: 20px;
+    margin-left: $all-zero + 20;
     margin-right: -3px;
-    position: relative;
-    bottom: 3px;
+    @extend .u-relative;
+    bottom: $all-zero + 3;
     &--user {
         margin-left: $all-zero;
         margin-right: $all-zero;
@@ -120,22 +118,22 @@
 
 .icon-more-vert {
     display: inline-block;
-    position: relative;
-    width: 6px;
-    height: 6px;
-    margin: 0 4px;
-    border-radius: 50%;
-    background-color: #BEC6CE;
+    @extend .u-relative;
+    width: $all-zero + 6;
+    height: $all-zero + 6;
+    margin: $all-zero $all-zero + 4;
+    @include border-radius (50%);
+    background-color: $grey-v1;
 
     &:before,
     &:after {
         content: "";
         display: block;
-        position: absolute;
-        width: 6px;
-        height: 6px;
-        border-radius: 50%;
-        background-color: #BEC6CE;
+        @extend .u-absolute;
+        width: $all-zero + 6;
+        height: $all-zero + 6;
+        @include border-radius (50%);
+        background-color: $grey-v1;
     }
 
     &:before {
@@ -146,14 +144,14 @@
         bottom: -12px;
     }
     &--user {
-        width: 4px;
-        height: 4px;
+        width: $all-zero + 4;
+        height: $all-zero + 4;
         &:before,
         &:after {
             content: "";
             display: block;
-            width: 4px;
-            height: 4px;
+            width: $all-zero + 4;
+            height: $all-zero + 4;
         }
         &:after {
             bottom: -9px;
@@ -162,7 +160,7 @@
             top: -9px;
         }
         &:hover {
-            cursor: pointer;
+            @extend .u-cursor-pointer;
         }
     }
 }
