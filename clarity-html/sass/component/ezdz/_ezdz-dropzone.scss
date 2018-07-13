@@ -133,7 +133,7 @@
             background-color: $white;
             @extend .u-txt-uppercase;
             letter-spacing: 0.12em;
-            transition: .2s all ease-out;
+            @include transition (.2s all ease-out);
             @extend .u-pointer-event-none;
             transform-origin: top left;
             z-index: 10;
