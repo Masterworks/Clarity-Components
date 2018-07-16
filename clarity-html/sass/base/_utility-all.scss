@@ -234,6 +234,12 @@
     object-position: $page-grid-width-100 / 2 $page-grid-width-100 / 2;
 }
 
+//content
+.u-content {
+    &-blank {
+        content: '';
+    }
+}
 
 // transform / translate
 // position

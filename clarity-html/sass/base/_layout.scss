@@ -14,6 +14,51 @@
         @extend .c-client;
         width: $all-zero + 105;
     }
+    &-target {
+        &:before {
+            @extend .u-content-blank;
+            @extend .u-display-block;
+            width: $all-zero + 259;
+            height: $all-zero + 1;
+            @extend .u-absolute;
+            @extend .u-top-0;
+            left: -20px;
+            border-top: $all-zero + 1 dotted rgba(190, 198, 206, 0.5);
+        }
+        &:after {
+            @extend .u-content-blank;
+            @extend .u-display-block;
+            width: $all-zero + 259;
+            height: $all-zero + 1;
+            @extend .u-absolute;
+            @extend .u-bot-0;
+            left: -20px;
+            border-top: $all-zero + 1 dotted rgba(190, 198, 206, 0.5);
+        }
+    }
+    &-column {
+        min-height: $all-zero + 396;
+        &__midcontent {
+            @extend .u-aligntext--center;
+            height: $all-zero + 169;
+            @extend .u-absolute;
+            top: 50%;
+            left: 50%;
+            @include translate(-50%, -50%);
+            h2 {
+                color: $grey-v12;
+                font-family: 'ProximaNova-Bold';
+                font-size: $all-zero + 20;
+                line-height: $all-zero + 25;
+            }
+            p {
+                margin: $all-zero;
+                padding: $all-zero;
+                color: $grey-v12 $important;
+                line-height: $all-zero + 20;
+            }
+        }
+    }
 }
 
 .o {
