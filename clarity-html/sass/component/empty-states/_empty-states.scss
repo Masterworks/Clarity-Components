@@ -1,0 +1,47 @@
+.c-empty-state {
+    max-width: 550px;
+    text-align: center;
+    margin: 0 auto;    
+}
+
+.c-empty-state--reports {
+    max-width: 300px;
+    margin: 40px auto;
+    position: relative;
+
+    &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: -123px;
+        left: 62px;
+        background-image: url("../../static/images/reports-arrow.svg");
+        width: 36px;
+        height: 192px;
+    }
+}
+
+.c-empty-state__title {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-family: Proxima Nova;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #9DAAB5;
+}
+
+p.c-empty-state__description {
+    margin-top: 10px;
+    font-family: Source Sans Pro;
+    font-style: normal;
+    line-height: 23px;
+    font-size: 16px;
+    color: #9DAAB5;
+}
+
+.c-empty-state__icon {
+    display: inline;
+}

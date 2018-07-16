@@ -23,6 +23,14 @@
     @extend .u-oflowhidden;
 }
 
+.btn-mobile-menu,
+.btn-mobile-menu-close {
+    display: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
 .primary-nav {
     @extend .u-display-flex;
     height: $all-zero + 20;
@@ -34,7 +42,7 @@
 
     &:after {
         content: "";
-        @extend .u-display-in-block;
+        display: inline-block;
         width: $all-zero + 1;
         height: $all-zero + 34;
         margin: $all-zero $all-zero + 23;
@@ -113,7 +121,7 @@
     width: $all-zero + 32;
     height: $all-zero + 32;
     margin-right: $all-zero + 19;
-    background-image: url(../images/avatar.jpg);
+    background-image: url(../images/generic-avatar.svg);
     background-size: 100%;
     @include border-radius(50%);
 

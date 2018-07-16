@@ -35,10 +35,10 @@
             letter-spacing: $all-zero + 2;
         }
 
-        .input-box:valid + .input-label {
+        .input-box:valid + .input-label,
+        input:-webkit-autofill ~ .input-label {
             padding: $all-zero $all-zero + 5;
             font-size: $all-zero + 16;
-            //            transform: translate(-1px, -20px) scale(0.7);
             transform: translate(-1px, -20px);
             color: $grey-v7;
             background-color: $white;

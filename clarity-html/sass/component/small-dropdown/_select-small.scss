@@ -55,7 +55,7 @@
         transform: translate(-2px, -15px) scale(0.75);
         color: $grey-v7;
         background-color: $white;
-        @extend .u-txt-uppercase;
+        text-transform: uppercase;
         letter-spacing: $all-zero + 2;
     }
 
