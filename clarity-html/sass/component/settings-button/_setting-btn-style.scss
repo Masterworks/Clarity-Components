@@ -368,6 +368,15 @@
             height: $all-zero + 39;
             line-height: $all-zero + 39;
         }
+        &--menuleft {
+            .level-2-dropdown {
+                left: -100%;
+            }
+            .create-codes-dropdown {
+                left: -100%;
+                margin-left: -30px;
+            }
+        }
     }
     &--style {
         @extend .u-display-in-block;

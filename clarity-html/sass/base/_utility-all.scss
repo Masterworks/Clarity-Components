@@ -34,6 +34,9 @@
     &-auto {
         pointer-events: auto;
     }
+    &-cursor {
+        cursor: pointer;
+    }
 }
 
 // block element alignment
