@@ -170,8 +170,8 @@
 }
 
 .btn-menu-istoogle:focus + .useraction {
-    display: block;
-    top: $all-zero + 40;
+    display: block; //    top: $all-zero + 40;
+    top: $all-zero - 8;
     @extend .u-no-outline;
 }
 

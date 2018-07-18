@@ -38,7 +38,7 @@
         .input-box:valid + .input-label,
         input:-webkit-autofill ~ .input-label {
             padding: $all-zero $all-zero + 5;
-            font-size: $all-zero + 16;
+            font-size: $all-zero + 11;
             transform: translate(-1px, -20px);
             color: $grey-v7;
             background-color: $white;

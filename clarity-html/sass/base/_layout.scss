@@ -59,6 +59,12 @@
             }
         }
     }
+    &-upload-date {
+        font-size: $all-zero + 14;
+        line-height: $all-zero + 18;
+        color: $grey-v7;
+        @extend .u-aligntext--right;
+    }
 }
 
 .o {
@@ -165,6 +171,7 @@ input[type="checkbox"]:focus {
 .btn-menu {
     &--user {
         @extend .u-no-border;
+        @extend .u-txt-valign-top;
     }
 }
 
