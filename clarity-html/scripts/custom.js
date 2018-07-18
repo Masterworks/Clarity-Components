@@ -22,7 +22,10 @@ window.onclick = function (event) {
 $(".btn-user-account").click(function () {
     $(".js-signout").toggleClass("active");
 });
-
+// edit text field
+$('#editButton').click(function () {
+  $('.edit_text').removeAttr('readonly');
+})
 // select box
 $(function () {
     var $select = $('.input-box'),
@@ -36,27 +39,23 @@ $(function () {
 
 // ezdz drop zone
 
-$('[type="file"]').ezdz({
-    text: '<i></i>Drag to Upload or <a href="">Choose File</a>',
-    previewImage: false,
-    //    validators: {
-    //        maxWidth: 600,
-    //        maxHeight: 400
-    //    },
-    reject: function (file, errors) {
-        if (errors.mimeType) {
-            alert(file.name + ' must be an image.');
-        }
-
-        if (errors.maxWidth) {
-            alert(file.name + ' must be width:600px max.');
-        }
-
-        if (errors.maxHeight) {
-            alert(file.name + ' must be height:400px max.');
-        }
-    }
-});
+//$('[type="file"]').ezdz({
+//    text: '<i></i>Drag to Upload or <a href="">Choose File</a>',
+//    previewImage: false,
+//    reject: function (file, errors) {
+//        if (errors.mimeType) {
+//            alert(file.name + ' must be an image.');
+//        }
+//
+//        if (errors.maxWidth) {
+//            alert(file.name + ' must be width:600px max.');
+//        }
+//
+//        if (errors.maxHeight) {
+//            alert(file.name + ' must be height:400px max.');
+//        }
+//    }
+//});
 
 
 // Check for inputs that have value and apply class to handle label

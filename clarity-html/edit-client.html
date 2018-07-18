@@ -366,6 +366,24 @@
             }
         });
 
+        $('[type="file"]').ezdz({
+            text: '<i></i>Drag to Upload or <a href="">Choose File</a>',
+            previewImage: false,
+            reject: function(file, errors) {
+                if (errors.mimeType) {
+                    alert(file.name + ' must be an image.');
+                }
+
+                if (errors.maxWidth) {
+                    alert(file.name + ' must be width:600px max.');
+                }
+
+                if (errors.maxHeight) {
+                    alert(file.name + ' must be height:400px max.');
+                }
+            }
+        });
+
     </script>
 </body>
 
