@@ -12,11 +12,11 @@
 }
 
 .logo {
-    width: $all-zero + 122;
-    height: $all-zero + 26;
+    width: $all-zero + 140;
+    height: $all-zero + 30;
     text-indent: $page-grid-width-100;
     background-size: $page-grid-width-100;
-    background-image: url('../images/clarity-logo.svg');
+    background-image: url('../images/epiphany-logo.svg');
     @extend .u-whitespace-nowrap;
     background-repeat: no-repeat;
     @extend .u-display-block;

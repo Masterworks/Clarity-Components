@@ -82,5 +82,10 @@
     @extend .u-width-100;
     @extend .u-aligntext--center;
     height: auto;
-    top: -83px;
+    top: -63px;
+
+    img {
+        width: 208px;
+        height: 33px;
+    }
 }
