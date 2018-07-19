@@ -114,8 +114,14 @@
     &--192 {
         width: $all-zero + 192;
     }
+    &--223 {
+        width: $all-zero + 223;
+    }
     &--309 {
         width: $all-zero + 309;
+    }
+    &--377 {
+        width: $all-zero + 377;
     }
     &--427 {
         width: $all-zero + 427;
@@ -397,4 +403,26 @@
     &--dashedbottom {
         border-bottom: 1px dashed $grey-v5 !important;
     }
+}
+//pipe 
+.u {
+    &-pipe {
+        width:1px;
+        height: 34px;
+        border-left: $green-v4 solid 1px;
+        display: inline-block;
+        margin: 0 12px;
+        vertical-align: middle;
+        opacity: 0.3;
+        &--dashed {
+            @extend .u-pipe;
+            border-left: $green-v4 dashed 1px;        
+        }
+    }
+    
+}
+.u-refresh-icon {
+    position: absolute;
+    top:15px;
+    right: 12px;
 }

@@ -1,4 +1,9 @@
 .c-comments {
+    h2 {
+        font-size: 31px;
+        line-height: 39px;
+        color: $grey-v13;
+    }
     h5 {
         @extend .u-display-inline;
         font-family: Source Sans Pro;

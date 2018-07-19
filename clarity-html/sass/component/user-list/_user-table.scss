@@ -25,6 +25,7 @@
             @extend .u-display-in-block;
             word-wrap: break-word;
             vertical-align: top;
+
             &--name {
                 font-size: $all-zero + 13;
                 width: 20%;
@@ -237,6 +238,7 @@
             &--moreoptionfield {
                 width: 10%;
             }
+            
         }
     }
 }

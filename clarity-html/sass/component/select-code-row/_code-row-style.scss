@@ -1,18 +1,23 @@
 .c-coderow {
+    &:last-child {
+        .select-row-container {
+            border-bottom: none;
+        }
+    }
     .select-row-container {
         @extend .u-display-flex;
         border-bottom: $all-zero + 1 solid $grey-v5;
-        width: $all-zero + 500;
+        max-width: $all-zero + 500;
+        width:100%;
         align-items: center;
         height: $all-zero + 60;
         font-family: 'Source Sans Pro';
-
     }
     .code {
         font-weight: 600;
         font-size: $all-zero + 18;
         color: $dark-v1;
-        margin: $all-zero $all-zero $all-zero $all-zero + 10;
+        //margin: $all-zero $all-zero $all-zero $all-zero + 10;
         @extend .u-txt-uppercase;
     }
     .code-description {
@@ -21,13 +26,13 @@
         @extend .u-relative;
         font-size: $all-zero + 16;
         color: $grey-v7;
-        margin: $all-zero $all-zero $all-zero $all-zero + 27;
-        width: $all-zero + 204;
+        //margin: $all-zero $all-zero $all-zero $all-zero + 27;
+        //width: $all-zero + 204;
     }
 
     .count-container {
         @extend .u-display-flex;
-        margin-left: $all-zero + 30;
+        //margin-left: $all-zero + 30;
     }
 
     .negative-count {
@@ -35,6 +40,13 @@
         font-weight: 600;
         font-size: $all-zero + 16;
         color: $red-v3;
+        margin: $all-zero $all-zero + 9;
+    }
+    .positive-count {
+        @extend .u-relative;
+        font-weight: 600;
+        font-size: $all-zero + 16;
+        color: $green-v2;
         margin: $all-zero $all-zero + 9;
     }
 
