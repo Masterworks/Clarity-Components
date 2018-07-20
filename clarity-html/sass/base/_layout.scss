@@ -112,6 +112,13 @@
             color: $grey-v4;
         }
     }
+    &-shadowboxdata {
+        @extend .u-bg-color-fff;
+        @include border-radius(3px);
+        padding: $all-zero + 15 $all-zero + 15 $all-zero + 19;
+        border: $all-zero + 1 solid $grey-v3;
+        box-shadow: 0px 1px 4px rgba(19, 53, 84, 0.04), 0px 8px 13px rgba(0, 52, 101, 0.03);
+    }
 }
 
 .c-enable-text {

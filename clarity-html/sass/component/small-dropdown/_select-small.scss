@@ -38,7 +38,7 @@
         @include border-radius (3px 3px 3px 3px);
         background-color: $white;
         @extend .u-appearance-none;
-        background-image: url(../../images/dropdown-arrow-dark.svg  );
+        background-image: url(../images/dropdown-arrow-dark.svg  );
         @extend .u-background-norepeat;
         background-position: right 15px top 14px;
 

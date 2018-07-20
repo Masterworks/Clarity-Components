@@ -27,3 +27,15 @@
         }
     }
 }
+
+.edit_text__button {
+    @extend .u-absolute;
+    @extend .u-no-border;
+    @extend .u-no-outline;
+    @extend .u-pointer-event-cursor;
+    background: url(../images/pencil.svg) 0 0 no-repeat $transparent;
+    top: $all-zero + 9;
+    right: $all-zero;
+    width: $all-zero + 16;
+    height: $all-zero + 16;
+}
