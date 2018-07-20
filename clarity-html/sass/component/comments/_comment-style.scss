@@ -46,3 +46,25 @@
         @include border-radius(3px 3px 3px 3px);
     }
 }
+
+// comment box
+.c {
+    &-comments {
+        &__box {
+            ul {
+                @extend .u-margin-left-0;
+                @extend .u-padding-left-27;
+                @extend .u-display-block;
+                @extend .u-relative;
+                &:before {}
+                li {
+                    color: $grey-v6;
+                    line-height: $all-zero + 24;
+                    @extend .u-margin-bottom-20;
+                    @extend .u-relative;
+                    @extend .u-list-style--none;
+                }
+            }
+        }
+    }
+}

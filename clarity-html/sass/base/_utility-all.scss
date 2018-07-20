@@ -126,6 +126,9 @@
     &--427 {
         width: $all-zero + 427;
     }
+    &--540 {
+        width: $all-zero + 540;
+    }
 }
 
 //color
@@ -315,6 +318,10 @@
     border: none !important;
 }
 
+.u-no-box-shadow {
+    @include box-shadow(none);
+}
+
 .u-no-outline {
     outline: none !important;
 }
@@ -404,10 +411,11 @@
         border-bottom: 1px dashed $grey-v5 !important;
     }
 }
+
 //pipe 
 .u {
     &-pipe {
-        width:1px;
+        width: 1px;
         height: 34px;
         border-left: $green-v4 solid 1px;
         display: inline-block;
@@ -416,13 +424,26 @@
         opacity: 0.3;
         &--dashed {
             @extend .u-pipe;
-            border-left: $green-v4 dashed 1px;        
+            border-left: $green-v4 dashed 1px;
         }
     }
-    
+
 }
+
 .u-refresh-icon {
     position: absolute;
-    top:15px;
+    top: 15px;
     right: 12px;
+}
+
+//color
+.red-v1 {
+    color: $red-v1;
+}
+
+// font
+.u-ProximaNova {
+    &-Semibold {
+        font-family: $ProximaNova-Semibold;
+    }
 }
