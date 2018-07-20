@@ -327,6 +327,12 @@
 }
 
 // box shadow
+.u-content {
+    &--blank {
+        content: '';
+    }
+}
+
 // text-transform
 .u-txt-uppercase {
     text-transform: uppercase;
