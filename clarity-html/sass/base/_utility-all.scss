@@ -447,9 +447,21 @@
     color: $red-v1;
 }
 
+.dark-v1 {
+    color: $dark-v1 $important;
+}
+
 // font
 .u-ProximaNova {
     &-Semibold {
         font-family: $ProximaNova-Semibold;
+    }
+}
+
+.u-border {
+    &--dotted {
+        &--bottom {
+            border-bottom: 1px dotted #D0D7DF;
+        }
     }
 }

@@ -71,6 +71,7 @@
                     color: $grey-v6;
                     line-height: $all-zero + 24;
                     @extend .u-margin-bottom-20;
+                    top: -5px;
                     &.c-comments__list {
                         &--normal {
                             &:before {
@@ -138,6 +139,37 @@
                 }
                 p {
                     padding: $all-zero $all-zero $all-zero $all-zero + 17;
+                }
+            }
+        }
+    }
+    &-addcomment {
+        h2 {
+            display: block;
+            text-align: center;
+            color: #273A4B;
+            font-size: 25px;
+            line-height: 31px;
+            padding-bottom: 20px;
+            padding-top: 30px;
+        }
+        &__block {
+            width: 580px;
+            margin: 0 auto;
+            textarea {
+                width: 100%;
+                border-radius: 3px;
+                padding: 16px;
+                color: #9DAAB5;
+                height: 170px;
+                resize: none;
+                display: block;
+                font-size: 16px;
+                line-height: 19px;
+                margin-bottom: 20px;
+                border: 1px solid #BEC6CE;
+                &:focus {
+                    outline: none;
                 }
             }
         }
