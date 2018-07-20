@@ -39,5 +39,15 @@
             background: #FFFDF5;
             border-color: #E3AF62;
         }
+        &-submitted {
+            color: $blue-v6;
+            background: #F7FCFF;
+            border-color: $blue-v6;
+        }
+        &-modeling {
+            color: #A175E9;
+            background: rgba(161, 117, 233, 0.05);
+            border-color: #A175E9;
+        }
     }
 }

@@ -86,6 +86,30 @@
                                 left: -23px;
                             }
                         }
+                        &--complete {
+                            &:before {
+                                @extend .u-content--blank;
+                                @extend .u-absolute;
+                                @extend .u-display-block;
+                                @include border-radius (50%);
+                                width: $all-zero + 29;
+                                height: $all-zero + 29;
+                                border: $all-zero + 3 solid $white;
+                                background: #F5FFF9;
+                                top: $all-zero + 5;
+                                left: -30px;
+                            }
+                            &:after {
+                                @extend .u-content--blank;
+                                @extend .u-absolute;
+                                @extend .u-display-block;
+                                width: $all-zero + 15;
+                                height: $all-zero + 10;
+                                top: $all-zero + 15;
+                                left: -21px;
+                                background: url('../images/greentick.svg') no-repeat 0 0 transparent;
+                            }
+                        }
                     }
                 }
             }
