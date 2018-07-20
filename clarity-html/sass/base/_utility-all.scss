@@ -319,7 +319,7 @@
 }
 
 .u-no-box-shadow {
-    @include box-shadow(none);
+    box-shadow: none !important;
 }
 
 .u-no-outline {
