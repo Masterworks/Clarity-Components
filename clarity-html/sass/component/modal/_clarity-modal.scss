@@ -281,7 +281,7 @@ a.button:active {
             @extend .u-relative;
             h2 {
                 @extend .u-margin-top-24;
-                @extend .u-margin-bottom-8;
+                @extend .u-margin-bottom-6;
                 color: $dark-v1;
                 font-size: $all-zero + 31;
                 line-height: $all-zero + 39;
@@ -290,7 +290,7 @@ a.button:active {
                 font-size: $all-zero + 13;
                 line-height: $all-zero + 15;
                 @extend .u-margin-top-0;
-                @extend .u-margin-bottom-0;
+                @extend .u-margin-bottom-28;
                 @extend .u-txt-uppercase;
                 color: $grey-v7;
                 letter-spacing: 2.5px;
@@ -299,6 +299,14 @@ a.button:active {
             p {
                 padding: $all-zero $all-zero + 50;
                 color: $grey-v4;
+            }
+            span {
+                color: $grey-v7;
+                @extend .u-font-style--italic;
+                font-size: $all-zero + 14;
+                line-height: $all-zero + 18;
+                @extend .u-display-in-block;
+                @extend .u-padding-top-2;
             }
         }
         &__close {
@@ -312,6 +320,12 @@ a.button:active {
         &__footer {
             height: $all-zero + 95;
             background: $grey-v16;
+        }
+        &--exportwarning {
+            height: $all-zero + 316;
+            &__body {
+                height: $all-zero + 221;
+            }
         }
     }
 }

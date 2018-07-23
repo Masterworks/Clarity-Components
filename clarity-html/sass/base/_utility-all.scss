@@ -129,6 +129,9 @@
     &--540 {
         width: $all-zero + 540;
     }
+    &--148 {
+        width: $all-zero + 148;
+    }
 }
 
 //color
@@ -374,7 +377,7 @@
 
 // transparent
 .u-transparent {
-    background-color: transparent;
+    background-color: transparent $important;
 }
 
 .u-normal {

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Clarity | Submit-Confirmation</title>
+    <title>Clarity | Export-Warning</title>
 
     <!-- main style sheet -->
     <link href="css/style.css" rel="stylesheet">
@@ -234,20 +234,19 @@
     <div class="c-overlay"></div>
     <!-- modal overlay -->
     <!-- modal window -->
-    <div class="c-modal">
-        <div class="c-modal__body u-aligntext--center">
+    <div class="c-modal c-modal--exportwarning">
+        <div class="c-modal__body c-modal--exportwarning__body u-aligntext--center">
             <hgroup>
-                <h2>Ready to sumbit?</h2>
+                <h2>Review Before Export</h2>
                 <h4>Please Confirm</h4>
             </hgroup>
             <p>Please take a moment to review and confirm that this this data select request is complete and accurate to the best of your knowledge. There is no turning back.</p>
-            <span>Client list last uploaded: 6/20/18</span>
             <a class="c-modal__close"><img src="images/close.svg" alt="close"></a>
         </div>
         <div class="c-modal__footer">
             <div class="u-aligntext--center u-padding-top-25">
+                <a href="javascript:void(0);" class="button-outlined button-outlined--default u-display-in-block u-margin-right-16 u-padding-left-0 u-padding-right-0 u-width--148">Export Now</a>
                 <a href="javascript:void(0);" class="button-outlined u-display-in-block u-transparent u-padding-left-0 u-padding-right-0 u-width--148">Review Request</a>
-                <a href="javascript:void(0);" class="button-outlined button-outlined--default u-display-in-block u-margin-left-16 u-padding-left-0 u-padding-right-0 u-width--148">Submit Request</a>
             </div>
         </div>
     </div>
