@@ -108,11 +108,17 @@
 //width
 .u-width {
     width: $all-zero;
+    &--113 {
+        width: $all-zero + 113 $important;
+    }
     &--172 {
         width: $all-zero + 172;
     }
     &--192 {
         width: $all-zero + 192;
+    }
+    &--292 {
+        width: $all-zero + 292 $important;
     }
     &--223 {
         width: $all-zero + 223;

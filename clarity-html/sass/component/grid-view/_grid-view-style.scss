@@ -236,6 +236,9 @@
         background-image: url('../images/grid-view-item-project.svg');
         background-size: 293px;
         background-position: center bottom;
+        &--img {
+            background-image: url('../images/header-thing.png');
+        }
     }
 
     &--report {
@@ -250,7 +253,7 @@
             @media screen and (max-width: 1000px) {
                 background-size: 92%;
             }
-            
+
             @media screen and (max-width: 400px) {
                 background-size: 63%;
             }
