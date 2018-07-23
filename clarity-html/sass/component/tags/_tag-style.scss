@@ -9,6 +9,9 @@
     box-sizing: border-box;
     border-radius: 3px;
     padding: 0px 8px;
+    &--lineheight21 {
+        line-height: 21px;
+    }
     &-received {
         color: #FFA179;
         background: #FFFAF7;

@@ -249,3 +249,69 @@ a.button:active {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+/*# submit confermation modal */
+
+.c {
+    &-overlay {
+        background-color: rgba(27, 39, 50, 0.81);
+        @extend .u-absolute;
+        @extend .u-top-0;
+        @extend .u-left-0;
+        @extend .u-width-100;
+        height: $page-grid-height-100vh;
+        z-index: 20;
+    }
+    &-modal {
+        width: $all-zero + 540;
+        height: $all-zero + 346;
+        @extend .u-bg-color-fff;
+        @extend .u-absolute;
+        top: 50%;
+        left: 50%;
+        @include transform(translate(-50%, -50%));
+        @include border-radius (3px);
+        z-index: 25;
+        @extend .u-oflowhidden;
+        &__body {
+            height: $all-zero + 250;
+            @extend .u-width-100;
+            @extend .u-display-in-block;
+            @extend .u-txt-valign-top;
+            @extend .u-relative;
+            h2 {
+                @extend .u-margin-top-24;
+                @extend .u-margin-bottom-8;
+                color: $dark-v1;
+                font-size: $all-zero + 31;
+                line-height: $all-zero + 39;
+            }
+            h4 {
+                font-size: $all-zero + 13;
+                line-height: $all-zero + 15;
+                @extend .u-margin-top-0;
+                @extend .u-margin-bottom-0;
+                @extend .u-txt-uppercase;
+                color: $grey-v7;
+                letter-spacing: 2.5px;
+                font-family: 'ProximaNova-Semibold';
+            }
+            p {
+                padding: $all-zero $all-zero + 50;
+                color: $grey-v4;
+            }
+        }
+        &__close {
+            @extend .u-absolute;
+            top: $all-zero + 13;
+            right: $all-zero + 13;
+            width: $all-zero + 10;
+            height: $all-zero + 10;
+            @extend .u-pointer-event-cursor;
+        }
+        &__footer {
+            height: $all-zero + 95;
+            background: $grey-v16;
+        }
+    }
+}
