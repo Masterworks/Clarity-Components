@@ -9,6 +9,7 @@
     font-weight: normal;
     font-style: normal;
 }
+
 // font-family: 'ProximaNova-Bold';
 @font-face {
     font-family: 'ProximaNova-Bold';
@@ -25,16 +26,18 @@
     font-weight: normal;
     font-style: normal;
 }
-@font-face{
+
+@font-face {
     font-family: 'Fira Code Regular';
     src: url('../fonts/eot/FiraCode-Regular.eot');
     src: url('../fonts/eot/FiraCode-Regular.eot') format('embedded-opentype'),
-         url('../fonts/woff2/FiraCode-Regular.woff2') format('woff2'),
-         url('../fonts/woff/FiraCode-Regular.woff') format('woff'),
-         url('../fonts/ttf/FiraCode-Regular.ttf') format('truetype');
+    url('../fonts/woff2/FiraCode-Regular.woff2') format('woff2'),
+    url('../fonts/woff/FiraCode-Regular.woff') format('woff'),
+    url('../fonts/ttf/FiraCode-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
+
 body {
     @extend .u-height-100;
     font-family: 'Source Sans Pro', sans-serif;

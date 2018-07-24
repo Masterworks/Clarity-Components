@@ -108,14 +108,38 @@
 //width
 .u-width {
     width: $all-zero;
+    &--83 {
+        width: $all-zero + 83 $important;
+    }
+    &--91 {
+        width: $all-zero + 91 $important;
+    }
+    &--95 {
+        width: $all-zero + 95 $important;
+    }
+    &--100 {
+        width: $all-zero + 95 $important;
+    }
     &--113 {
         width: $all-zero + 113 $important;
+    }
+    &--147 {
+        width: $all-zero + 147 $important;
+    }
+    &--166 {
+        width: $all-zero + 166 $important;
     }
     &--172 {
         width: $all-zero + 172;
     }
+    &--176 {
+        width: $all-zero + 176 $important;
+    }
     &--192 {
         width: $all-zero + 192;
+    }
+    &--194 {
+        width: $all-zero + 194 $important;
     }
     &--292 {
         width: $all-zero + 292 $important;
@@ -241,6 +265,10 @@
 
 .u-container-bg {
     background: rgba(240, 242, 243, 0.5);
+}
+
+.grey-v11 {
+    color: $grey-v11 $important;
 }
 
 // img object styles
