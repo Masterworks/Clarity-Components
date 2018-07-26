@@ -509,3 +509,20 @@
         }
     }
 }
+@include b($bem-utility + -expan-button) {
+    padding: $all-zero + 12 $all-zero + 10 $all-zero + 12 $all-zero + 18;
+    @include m(border-left){
+        border-left: $grey-v1 1px dashed;
+    }
+    img {
+        transition: all .15s ease-in-out;
+        -webkit-font-smoothing: antialiased;
+        &:hover {
+            transform: translateY(-1px);
+        }
+        &:active {
+            transform: translateY(1px);
+        }
+    }
+    
+}

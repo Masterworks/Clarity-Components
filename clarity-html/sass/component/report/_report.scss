@@ -3,8 +3,9 @@
     border: $grey-v18 1px solid;
     @include border-radius(3px);
     padding: $all-zero + 12 $all-zero + 15;
+    margin-bottom: $all-zero + 13;
     @include m(negativePosition){
-        margin: $all-zero - 1 $all-zero - 3 $all-zero;
+        margin: $all-zero - 1 $all-zero - 3 $all-zero + 13;
     }
 }
 

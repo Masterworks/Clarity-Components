@@ -1,5 +1,5 @@
 @include b($bem-utility + -btn-outline-icon){
-    padding: 11px 23px 11px 23px;
+    padding: 8px 15px 8px 15px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -24,5 +24,6 @@
         width: $all-zero + 12;
         height: $all-zero + 12;
         @extend .u-display-in-block;
+        margin-right: 5px;
     }
 }
