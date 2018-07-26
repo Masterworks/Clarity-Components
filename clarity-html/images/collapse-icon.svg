@@ -1,0 +1,6 @@
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0H6V6" transform="translate(18 8) rotate(-180)" stroke="#059CAF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M7 0L0 7" transform="translate(19 8) rotate(-180)" stroke="#059CAF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6 6H0V0" transform="translate(8 18) rotate(-180)" stroke="#059CAF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M0 7L7 0" transform="translate(8 19) rotate(-180)" stroke="#059CAF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

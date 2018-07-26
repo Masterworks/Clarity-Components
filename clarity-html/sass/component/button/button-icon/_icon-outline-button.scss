@@ -1,0 +1,28 @@
+@include b($bem-utility + -btn-outline-icon){
+    padding: 11px 23px 11px 23px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    font-size: 16px;
+    text-align: center;
+    color: #059CAF;
+    border: 2px solid #059CAF;
+    box-sizing: border-box;
+    box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+    text-decoration: none;
+    background: $white;
+    transition: all .15s ease-in-out;
+    -webkit-font-smoothing: antialiased;
+    &:hover {
+        transform: translateY(-1px);
+    }
+    &:active {
+        transform: translateY(1px);
+    }
+    i {
+        width: $all-zero + 12;
+        height: $all-zero + 12;
+        @extend .u-display-in-block;
+    }
+}

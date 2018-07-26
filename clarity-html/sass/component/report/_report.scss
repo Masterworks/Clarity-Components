@@ -1,0 +1,11 @@
+@include b($bem-component + -gray-block) {
+    background: $grey-v17;
+    border: $grey-v18 1px solid;
+    @include border-radius(3px);
+    padding: $all-zero + 12 $all-zero + 15;
+    @include m(negativePosition){
+        margin: $all-zero - 1 $all-zero - 3 $all-zero;
+    }
+}
+
+

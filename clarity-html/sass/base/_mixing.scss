@@ -140,3 +140,37 @@ $gutter: 20px;
 
     }
 }
+// BEM 
+$bem-component: 'c';
+$bem-object: 'o';
+$bem-javacript: 'js';
+$bem-utility: 'u';
+$elementSeparator: '__'; 
+$modifierSeparator: '--';
+ 
+@mixin b($block) {
+   .#{$block} {
+       @content; 
+   }
+}
+@mixin e($element) {
+    @at-root {
+        #{&}#{$elementSeparator+$element} {
+            @content;
+        }
+    }
+}
+@mixin m($modifier) {
+    @at-root {
+        #{&}#{$modifierSeparator+$modifier} {
+            @content;
+        }
+    }
+}
+// border-radius
+@mixin border-radius($value){
+    border-radius:$value;
+    -moz-border-radius: $value;
+    -webkit-border-radius: $value;
+}
+
