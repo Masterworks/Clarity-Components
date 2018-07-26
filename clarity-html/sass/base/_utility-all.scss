@@ -444,6 +444,13 @@
         @extend .u-oflowhidden;
         background-color: $grey-v5;
     }
+    &--v2 {
+        @extend .u-no-border;
+        margin-top: $all-zero + 30;
+        height: $all-zero + 2;
+        @extend .u-oflowhidden;
+        background-color: $grey-v5;
+    }
 }
 
 .u-border {

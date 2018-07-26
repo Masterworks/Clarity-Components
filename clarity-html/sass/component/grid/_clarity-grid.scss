@@ -61,6 +61,7 @@
 
 .grid-sm-6 {
     width: $page-grid-width-100 / 2;
+    vertical-align: top;
     @extend .u-display-in-block;
     padding: $all-zero $all-zero + 10;
     @include box-sizing(border-box);
