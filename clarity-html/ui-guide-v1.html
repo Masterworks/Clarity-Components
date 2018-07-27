@@ -71,11 +71,34 @@
                         </li>
                     </ul>
                 </div>
-                <a href="#" class="btn-user-account"></a>
+                <div class="c-header__user u-relative">
+                    <a class="c-header__user__btn" onclick="myFunction2()">
+                        <i class="c-header__user__img"><img class="myClass" src="images/generic-avatar.svg" alt="" /></i>
+                    </a>
+                    <ul id="myDropdown2" class="c-dropdown-content c-level-1-dropdown c-level-1-dropdown--user">
+                            <li>
+                                <a class="c-dropdown-content__link" href="#">
+                                    <div class="c-dropdown-content__user-profile-pic">
+                                        <img src="images/generic-avatar.svg" alt="" />
+                                    </div>
+                                    <div class="c-dropdown-content__user-profile-name">
+                                        <p>Daniel Golden<span>dgolden@masterworks.com</span></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="level-1-dropdown-link" href="#">Admin</a>
+                            </li>
+                            <li>
+                                <a class="level-1-dropdown-link" href="#">Logout</a>
+                            </li>
+                        </ul>
+                </div>
+                <!-- <a href="#" class="btn-user-account"></a>
                 <ul class="c-signout js-signout">
                     <li><a href="#">Loream Ipsum</a></li>
                     <li><a href="#">Log Out</a></li>
-                </ul>
+                </ul> -->
             </div>
         </div>
     </div>
@@ -89,17 +112,32 @@
             document.getElementById("myDropdown").classList.toggle("show");
         }
 
+        function myFunction2() {
+            console.log('Clicked', document.querySelector('#myDropdown2'));
+            document.querySelector('#myDropdown2').classList.toggle("show");
+            //document.getElementById("myDropdown2").classList.toggle("show");
+        }
+
         // Close the dropdown menu if the user clicks outside of it
         window.onclick = function(event) {
+            console.log(event.target);
             if (!event.target.matches('.c-btn-notifications')) {
 
                 var dropdowns = document.getElementsByClassName("c-dropdown-content");
-                var i;
-                for (i = 0; i < dropdowns.length; i++) {
-                    var openDropdown = dropdowns[i];
-                    if (openDropdown.classList.contains('show')) {
-                        openDropdown.classList.remove('show');
-                    }
+                //var i;
+                //for (i = 0; i < dropdowns.length; i++) {
+                //    var openDropdown = dropdowns[i];
+                //    if (openDropdown.classList.contains('show')) {
+                //        openDropdown.classList.remove('show');
+                //    }
+                //}
+                if (document.getElementById("myDropdown").classList.contains('show')) {
+                    document.getElementById("myDropdown").classList.remove('show');
+                }
+            }
+            if(!event.target.matches('.myClass')){
+                if (document.getElementById("myDropdown2").classList.contains('show')) {
+                    document.getElementById("myDropdown2").classList.remove('show');
                 }
             }
         }
@@ -109,6 +147,7 @@
         $(".btn-user-account").click(function() {
             $(".js-signout").toggleClass("active");
         });
+        
 
     </script>
     <!-- Header Script End -->
