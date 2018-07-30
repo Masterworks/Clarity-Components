@@ -111,5 +111,9 @@
         font-size: $all-zero + 13;
         @extend .u-display-in-block;
         @extend .u-txt-uppercase;
+        &--dark {
+            @extend .c-input__label;
+            font-weight: 600;
+        }
     }
 }

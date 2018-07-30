@@ -1,5 +1,5 @@
 .tag {
-    // font-family: 'Proxima Nova';
+    font-family: 'Proxima Nova';
     font-weight: bold;
     font-size: 11px;
     text-align: center;
@@ -8,7 +8,7 @@
     border: 1px solid;
     box-sizing: border-box;
     border-radius: 3px;
-    padding: 0px 8px;
+    padding: 0px calc(8px - 0.15em)  0 8px;
     &--lineheight21 {
         line-height: 21px;
     }

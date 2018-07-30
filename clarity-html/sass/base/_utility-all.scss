@@ -474,7 +474,7 @@
         opacity: 0.3;
         &--dashed {
             @extend .u-pipe;
-            border-left: $green-v4 dashed 1px;
+            border-left: $green-v4 dotted 1px;
         }
     }
 

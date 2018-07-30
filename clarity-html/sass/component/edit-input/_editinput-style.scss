@@ -3,6 +3,28 @@
         &__wrap {
             @extend .u-padding-right-33;
             @extend .u-relative;
+            &--bordered {
+                position: relative;
+                &::after {
+                    background-image: linear-gradient(to right, transparent 55%, $grey-v1 50%);
+                    background-size: 10px 100%;
+                    height: $all-zero + 1;
+                    bottom: 0;
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                }
+                input[type='text'] {
+                    @extend .u-no-border;
+                    @extend .u-no-outline;
+                    @extend .u-width-100;
+                    @extend .u-padding-bottom-5;
+                    font-size: $all-zero + 24;
+                    color: $grey-v11;
+                    line-height: $all-zero + 30;
+                    border-bottom: none;
+                } 
+            }
             input[type='text'] {
                 @extend .u-no-border;
                 @extend .u-no-outline;
