@@ -44,6 +44,12 @@
                 h2 {
                     color: $grey-v7;
                     letter-spacing: 2px;
+                    padding-bottom: 7px;
+                }
+                p {
+                    color: $grey-v7 !important;
+                    line-height: 23px;
+                    padding: $all-zero $all-zero + 20;
                 }
             }
            
