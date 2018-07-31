@@ -5,11 +5,14 @@
             @extend .u-relative;
             &--bordered {
                 position: relative;
+                @extend .u-display-block;
+                width: auto;
+                margin-right: 33px;
                 &::after {
                     background-image: linear-gradient(to right, transparent 55%, $grey-v1 50%);
                     background-size: 10px 100%;
                     height: $all-zero + 1;
-                    bottom: 0;
+                    bottom: $all-zero - 2;
                     content: "";
                     position: absolute;
                     width: 100%;
@@ -23,7 +26,7 @@
                     color: $grey-v11;
                     line-height: $all-zero + 30;
                     border-bottom: none;
-                } 
+                }
             }
             input[type='text'] {
                 @extend .u-no-border;
@@ -35,17 +38,17 @@
                 line-height: $all-zero + 30;
                 border-bottom: $all-zero + 1 dashed $grey-v1 $important;
             }
-            .edit_text__button {
-                @extend .u-absolute;
-                @extend .u-no-border;
-                @extend .u-no-outline;
-                @extend .u-pointer-event-cursor;
-                background: url(../images/pencil.svg) 0 0 no-repeat $transparent;
-                top: $all-zero + 9;
-                right: $all-zero;
-                width: $all-zero + 16;
-                height: $all-zero + 16;
-            }
+        }
+        .edit_text__button {
+            @extend .u-no-border;
+            @extend .u-no-outline;
+            @extend .u-pointer-event-cursor;
+            float: right;
+            position: static;
+            background: url(../images/pencil.svg) 0 0 no-repeat $transparent;
+            margin: $all-zero + 8 $all-zero $all-zero;
+            width: $all-zero + 16;
+            height: $all-zero + 16;
         }
     }
 }

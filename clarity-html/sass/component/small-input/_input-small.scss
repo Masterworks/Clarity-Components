@@ -114,6 +114,7 @@
         &--dark {
             @extend .c-input__label;
             font-weight: 600;
+            margin-top: 5px;
         }
     }
 }

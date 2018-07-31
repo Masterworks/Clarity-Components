@@ -34,6 +34,7 @@
     &--background {
         background: linear-gradient(85.99deg, rgba(248, 54, 0, 0.4) 1.87%, rgba(249, 212, 35, 0.4) 98.13%), #EE6C4D;
         box-shadow: 0px 3px 7px rgba(238, 108, 77, 0.2), 0px 3px 3px rgba(238, 108, 77, 0.1), inset 0px -1px 0px rgba(0, 0, 0, 0.05);
+        margin-top: -5px;
         &:hover {
             box-shadow: 0px 3px 7px rgba(238, 108, 77, 0.2), 0px 3px 3px rgba(238, 108, 77, 0.1), inset 0px -1px 0px rgba(0, 0, 0, 0.05);
         }

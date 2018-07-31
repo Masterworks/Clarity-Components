@@ -173,4 +173,11 @@ $modifierSeparator: '--';
     -moz-border-radius: $value;
     -webkit-border-radius: $value;
 }
-
+// Placeholder mixin
+@mixin placeholder {
+    ::-webkit-input-placeholder { @content }
+    :-moz-placeholder           {@content}
+    ::-moz-placeholder          {@content}
+    :-ms-input-placeholder      {@content}  
+  }
+  

@@ -9,6 +9,7 @@
     box-sizing: border-box;
     border-radius: 3px;
     padding: 0px calc(8px - 0.15em)  0 8px;
+    line-height: normal;
     &--lineheight21 {
         line-height: 21px;
     }
@@ -18,7 +19,7 @@
         border-color: #F69F8A;
     }
     &-complete {
-        color: #68BE8C;
+        color: #20A95B;
         background: #F5FFF9;
         border-color: #68BE8C;
     }

@@ -181,13 +181,15 @@
                 padding: $all-zero + 16;
                 color: $grey-v7;
                 height: $all-zero + 170;
-                font-family: "Lato", sans-serif;
                 resize: none;
                 @extend .u-display-block;
                 font-size: $all-zero + 16;
                 line-height: $all-zero + 19;
                 margin-bottom: $all-zero + 20;
                 border: $all-zero + 1 solid $grey-v1;
+                &::-webkit-input-placeholder{
+                    color: $grey-v7;
+                }
                 &:focus {
                     @extend .u-no-outline;
                 }
