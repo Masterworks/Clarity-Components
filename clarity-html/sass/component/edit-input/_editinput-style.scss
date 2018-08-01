@@ -26,6 +26,23 @@
                     color: $grey-v11;
                     line-height: $all-zero + 30;
                     border-bottom: none;
+                    font-family: 'Source Sans Pro', sans-serif;
+                    &::-webkit-input-placeholder {
+                        color: $grey-v11;
+                        font-family: 'Source Sans Pro', sans-serif;
+                    }
+                    &::-moz-placeholder {
+                        color: $grey-v11;
+                        font-family: 'Source Sans Pro', sans-serif;
+                    }
+                    &:-ms-input-placeholder {
+                        color: $grey-v11;
+                        font-family: 'Source Sans Pro', sans-serif;
+                    }
+                    &:-moz-placeholder {
+                        color: $grey-v11;
+                        font-family: 'Source Sans Pro', sans-serif;
+                    }
                 }
             }
             input[type='text'] {
@@ -37,6 +54,23 @@
                 color: $grey-v11;
                 line-height: $all-zero + 30;
                 border-bottom: $all-zero + 1 dashed $grey-v1 $important;
+                font-family: 'Source Sans Pro', sans-serif;
+                &::-webkit-input-placeholder {
+                    color: $grey-v11;
+                    font-family: 'Source Sans Pro', sans-serif;
+                }
+                &::-moz-placeholder {
+                    color: $grey-v11;
+                    font-family: 'Source Sans Pro', sans-serif;
+                }
+                &:-ms-input-placeholder {
+                    color: $grey-v11;
+                    font-family: 'Source Sans Pro', sans-serif;
+                }
+                &:-moz-placeholder {
+                    color: $grey-v11;
+                    font-family: 'Source Sans Pro', sans-serif;
+                }
             }
         }
         .edit_text__button {

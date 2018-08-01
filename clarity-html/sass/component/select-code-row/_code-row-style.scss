@@ -11,7 +11,7 @@
         width:100%;
         align-items: center;
         height: $all-zero + 60;
-        font-family: 'Source Sans Pro';
+        font-family: 'Source Sans Pro', sans-serif;
     }
     .code {
         font-weight: 600;
@@ -76,7 +76,7 @@
         background-color: $white;
         -webkit-appearance: none;
         -moz-appearance: none;
-
+        font-family: 'Source Sans Pro', sans-serif;
         &:focus {
             @extend .u-no-outline;
         }

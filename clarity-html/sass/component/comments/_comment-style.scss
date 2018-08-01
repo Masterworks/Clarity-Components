@@ -157,7 +157,7 @@
                     padding: $all-zero $all-zero $all-zero $all-zero + 17;
                     position: relative;
                     z-index: 1;
-                    margin: $all-zero + 9 $all-zero $all-zero + 18 $all-zero;
+                    margin: $all-zero + 12 $all-zero $all-zero + 12 $all-zero;
                 }
             }
         }
@@ -179,7 +179,7 @@
                 @extend .u-width-100;
                 @include border-radius (3px 3px 3px 3px);
                 padding: $all-zero + 16;
-                color: $grey-v7;
+                color: $grey-v15;
                 height: $all-zero + 170;
                 resize: none;
                 @extend .u-display-block;
