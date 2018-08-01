@@ -88,6 +88,7 @@
                             }
                         }
                         &--complete {
+                            top:0;
                             &:before {
                                 @extend .u-content--blank;
                                 @extend .u-absolute;
@@ -97,7 +98,7 @@
                                 height: $all-zero + 29;
                                 border: $all-zero + 3 solid $white;
                                 background: #F5FFF9;
-                                top: $all-zero + 5;
+                                top: $all-zero - 2;
                                 left: -30px;
                             }
                             &:after {
@@ -106,7 +107,7 @@
                                 @extend .u-display-block;
                                 width: $all-zero + 15;
                                 height: $all-zero + 10;
-                                top: $all-zero + 15;
+                                top: $all-zero + 8;
                                 left: -21px;
                                 background: url('../images/greentick.svg') no-repeat 0 0 transparent;
                             }
