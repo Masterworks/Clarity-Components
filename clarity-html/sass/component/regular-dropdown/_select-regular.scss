@@ -20,6 +20,7 @@
         padding: $all-zero;
         text-transform: none;
         letter-spacing: normal;
+        font-family: 'Source Sans Pro';
     }
 
 
@@ -37,7 +38,7 @@
         background-color: $white;
         -webkit-appearance: none;
         -moz-appearance: none;
-
+        font-family: 'Source Sans Pro';
         &:focus {
             @extend .u-no-outline;
         }

@@ -19,6 +19,8 @@
         cursor: default;
         transform: none;
         padding: 0;
+        text-transform: none;
+        letter-spacing: normal;
         &--font14 {
             font-size: $all-zero + 14;
             top: $all-zero + 8;
@@ -30,6 +32,7 @@
     }
 
     .input-box {
+        font-family: 'Source Sans Pro';
         @extend .u-width-100;
         @extend .u-height-100;
         padding-left: $all-zero + 15;
