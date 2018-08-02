@@ -1,0 +1,13 @@
+@include keyframes(spin-object) {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.u-rotating {
+    display: inline-block;
+    @include animation('spin-object 2s linear infinite');
+}

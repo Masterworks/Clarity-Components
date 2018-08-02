@@ -82,3 +82,13 @@ $('select').find(':selected').each(function () {
         $(this).parents('.c-select').addClass('input-has-text');
     }
 });
+
+$('.svg-img').each(function (i) {
+    var path = $(this).attr('src'),
+        self = $(this);
+    $.get(path, function (data) {
+        var svg_data = data.childNodes;
+        //console.log(svg_data);
+        self.parent().html(svg_data);
+    });
+});

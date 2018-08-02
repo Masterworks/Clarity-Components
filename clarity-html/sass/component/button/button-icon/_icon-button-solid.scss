@@ -1,0 +1,74 @@
+@include b($bem-utility + -btn-solid-icon) {
+    font-weight: 600;
+    font-size: $all-zero + 16;
+    padding: $all-zero + 12 $all-zero + 15;
+    color: $white;
+    border-color: none;
+    @include border-radius(3px);
+    @extend .u-display-in-block;
+    @extend .u-normal--font-style;
+    @extend .u-normal--line-height;
+    @extend .u-aligntext--center;
+    @extend .u-text-decoration--none;
+    transition: all .15s ease-in-out;
+    -webkit-font-smoothing: antialiased;
+    line-height: $all-zero + 20;
+    i {
+        background: none;
+        width: $all-zero + 4;
+        height: $all-zero + 8;
+        @extend .u-display-in-block;
+        margin: $all-zero $all-zero $all-zero $all-zero + 6;
+    }
+    &:hover {
+        transform: translateY(-1px);
+    }
+    &:active {
+        transform: translateY(1px);
+    }
+    
+    @include m(blue) {
+        background: linear-gradient(105.23deg, rgba(17, 0, 209, 0.3) -17.68%, rgba(255, 255, 255, 0.3) 111.97%), #059CAF;
+        background-blend-mode: overlay, normal;
+        box-shadow: 0px 3px 7px rgba(5, 136, 152, 0.2), 0px 1px 1px rgba(15, 60, 66, 0.1), inset 0px -1px 0px rgba(0, 0, 0, 0.05);
+        &:hover {
+            box-shadow: 0px 4px 10px rgba(5, 136, 152, 0.2), 0px 1px 1px rgba(15, 60, 66, 0.1), inset 0px -1px 0px rgba(0, 0, 0, 0.05);
+        }
+        &:active {
+            box-shadow: 0px 2px 3px rgba(5, 136, 152, 0.3), 0px 1px 1px rgba(15, 60, 66, 0.1), inset 0px -1px 0px rgba(0, 0, 0, 0.05);
+        }
+    }
+    @include m(orange){
+        background: linear-gradient(85.99deg, rgba(248, 54, 0, 0.4) 1.87%, rgba(249, 212, 35, 0.4) 98.13%), #EE6C4D;
+        box-shadow: 0px 3px 7px rgba(238, 108, 77, 0.2), 0px 3px 3px rgba(238, 108, 77, 0.1), inset 0px -1px 0px rgba(0, 0, 0, 0.05);
+        &:hover {
+            box-shadow: 0px 3px 7px rgba(238, 108, 77, 0.2), 0px 3px 3px rgba(238, 108, 77, 0.1), inset 0px -1px 0px rgba(0, 0, 0, 0.05);
+        }
+        &:active {
+            box-shadow: 0px 1px 7px rgba(238, 108, 77, 0.2), 0px 3px 3px rgba(238, 108, 77, 0.1), inset 0px -1px 0px rgba(0, 0, 0, 0.05);
+        }
+    }
+    @include m(disable) {
+        box-shadow: none;
+        background: $grey-v19;
+        padding: $all-zero + 12 $all-zero + 15 $all-zero + 10;
+        border-bottom: $grey-v20 solid 2px;
+        cursor: not-allowed;
+        pointer-events: unset;
+        &.u-btn-solid-icon--small {
+            padding: $all-zero + 8 $all-zero + 15 $all-zero + 6;
+        }
+        &:hover {
+            transform: translateY(0);
+            box-shadow: none;
+        }
+        &:active {
+            transform: translateY(0);
+            box-shadow: none;
+        }
+         
+    }
+    @include m(small) {
+        padding: $all-zero + 8 $all-zero + 15;
+    }
+}
