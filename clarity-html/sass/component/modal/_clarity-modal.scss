@@ -270,8 +270,7 @@ a.button:active {
         z-index: 20;
     }
     &-modal {
-        width: $all-zero + 540;
-        height: $all-zero + 346;
+        width: $all-zero + 440;
         @extend .u-bg-color-fff;
         @extend .u-absolute;
         top: 50%;
@@ -281,7 +280,6 @@ a.button:active {
         z-index: 25;
         @extend .u-oflowhidden;
         &__body {
-            height: $all-zero + 250;
             @extend .u-width-100;
             @extend .u-display-in-block;
             @extend .u-txt-valign-top;
@@ -304,7 +302,7 @@ a.button:active {
                 font-family: 'ProximaNova-Semibold';
             }
             p {
-                padding: $all-zero $all-zero + 50;
+                padding: $all-zero $all-zero + 35;
                 color: $grey-v4;
             }
             span {
