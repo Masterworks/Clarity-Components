@@ -51,3 +51,59 @@ a.button-regular {
         color: $white;
     }
 }
+
+// BEM
+@include b($bem-utility + -button-regular) {
+    padding: $all-zero $all-zero + 26 $all-zero $all-zero + 26;
+    height: $all-zero + 45;
+    line-height: $all-zero + 45;
+    font-family: 'Source Sans Pro';
+    @extend .u-normal--font-style;
+    font-weight: 600;
+    font-size: $all-zero + 16;
+    @extend .u-aligntext--center;
+    @extend .u-text-decoration--none;
+    color: $white;
+    background: linear-gradient(104.45deg, rgba(17, 0, 209, 0.15) -17.83%, rgba(255, 255, 255, 0.15) 111.94%), #059CAF;
+    background-blend-mode: overlay, normal;
+    box-shadow: 0px 3px 7px rgba(5, 136, 152, 0.2),
+    0px 1px 1px rgba(15, 60, 66, 0.1),
+    inset 0px -1px 0px rgba(0, 0, 0, 0.05);
+    @include border-radius(3px 3px 3px 3px);
+    transition: all .15s ease-in-out;
+    -webkit-font-smoothing: antialiased;
+
+    &:hover {
+        transform: translateY(-1px);
+        box-shadow: 0px 4px 10px rgba(5, 136, 152, 0.2),
+        0px 1px 1px rgba(15, 60, 66, 0.1),
+        inset 0px -1px 0px rgba(0, 0, 0, 0.05);
+    }
+
+    &:active {
+        transform: translateY(1px);
+        box-shadow: 0px 2px 3px rgba(5, 136, 152, 0.2),
+        0px 1px 1px rgba(15, 60, 66, 0.1),
+        inset 0px -1px 0px rgba(0, 0, 0, 0.05);
+    }
+    @include m(email-sent){
+        background: #00AE81; //        url(../images/tick.svg) no-repeat 0 0
+        padding: $all-zero $all-zero + 42;
+        max-width: $all-zero + 117;
+    }
+    @include m(btn){
+        padding: $all-zero + 12 $all-zero + 26;
+        @extend .u-height-auto;
+        @extend .u-normal--line-height;
+        @extend .u-display-in-block;
+    }
+    @include m(send) {
+        padding: $all-zero $all-zero + 10 $all-zero;
+        min-width: $all-zero + 117;
+    }
+    @include m(sending) {
+        background-color: $grey-v6;
+        color: $white;
+    }
+}
+
