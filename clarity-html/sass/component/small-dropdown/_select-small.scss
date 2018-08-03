@@ -52,6 +52,9 @@
         &:focus {
             @extend .u-no-outline;
         }
+        &:disabled {
+            background-color: #F2F2F2;
+        }
         &--grey {
             background-image: url(../images/dropdown-arrow-grey.svg);
         }
