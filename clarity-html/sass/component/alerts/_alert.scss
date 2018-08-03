@@ -1,0 +1,41 @@
+.alert-text {
+    display: none;
+    width: 100%;
+    height: 30px;
+    box-sizing: border-box;
+    margin-top: 0;
+    padding: 0 0 0 10px;
+    font-size: 14px;
+    font-family: 'source sans pro';
+    line-height: 30px;
+    border-radius: 0 0 3px 3px;
+}
+
+.alert-error .alert-text {
+    color: #B13535;
+    background-color: rgba(177, 53, 53, 0.05);
+}
+
+.alert-success .alert-text {
+    color: #0F6E37;
+}
+@include b($bem-javascript + -alert-text) {
+    display: none;
+    width: 100%;
+    height: 20px;
+    box-sizing: border-box;
+    margin-top: 0;
+    padding: 0 0 0 10px;
+    font-size: 13px;
+    font-family: 'source sans pro';
+    line-height: 20px;
+    border-radius: 0 0 3px 3px;
+    @include m(error) {
+        color: #B13535;
+        background-color: rgba(177, 53, 53, 0.05);
+    }
+    @include m(success) {
+        color: #0F6E37;
+        background: rgba(33,150,83, 0.6);
+    }
+}
