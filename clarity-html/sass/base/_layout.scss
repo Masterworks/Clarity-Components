@@ -168,7 +168,7 @@ input[type="checkbox"] {
     @include appearance (none);
     background: url('../images/checkbox.svg') no-repeat 0 0 $white;
     @extend .u-relative;
-    width: $all-zero + 22;
+    width: $all-zero + 24;
     height: $all-zero + 22;
     border-width: $all-zero;
     @include transition (all .3s linear);
