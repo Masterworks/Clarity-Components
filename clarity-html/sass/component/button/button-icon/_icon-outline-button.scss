@@ -1,4 +1,4 @@
-@include b($bem-utility + -btn-outline-icon){
+@include b($bem-component + -btn-outline-icon){
     font-weight: 600;
     font-size: $all-zero + 16;
     padding: $all-zero + 10 $all-zero + 15;
@@ -30,7 +30,6 @@
         }
     }
     @include m(orange) {
-        @extend .u-btn-outline-icon;
         color: $orange-v1;
         border: $orange-v1 solid 2px;
         i {
@@ -40,7 +39,6 @@
         }
     }
     @include m(grey) {
-        @extend .u-btn-outline-icon;
         color: $grey-v4;
         border: $grey-v6 solid 2px;
         i {

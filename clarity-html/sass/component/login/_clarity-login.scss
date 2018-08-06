@@ -76,8 +76,7 @@
         @extend .u-text-decoration--none;
     }
 }
-
-.u-clarity-logo {
+.clarity-logo {
     @extend .u-absolute;
     @extend .u-left-0;
     @extend .u-width-100;
@@ -88,5 +87,36 @@
     img {
         width: 208px;
         height: 33px;
+    }
+}
+//BEM 
+.c-clarity-logo {
+    @extend .u-absolute;
+    @extend .u-left-0;
+    @extend .u-width-100;
+    @extend .u-aligntext--center;
+    height: auto;
+    top: -63px;
+
+    img {
+        width: 208px;
+        height: 33px;
+    }
+}
+@include b($bem-component + -formbottom) {
+    @include m(topmargin) {
+        margin: $all-zero + 40 $all-zero $all-zero;
+        @extend .u-aligntext--center;
+        font-size: $all-zero + 10;
+    }
+}
+
+@include b($bem-component + -forget-password) {
+    padding-top: 10px;
+    text-align: center;
+    a {
+        color: #059CAF;
+        font-size: 14px;
+        @extend .u-text-decoration--none;
     }
 }

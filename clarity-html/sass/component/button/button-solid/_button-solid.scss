@@ -1,4 +1,4 @@
-@include b($bem-component + -btn-solid-icon) {
+@include b($bem-component + -btn-solid) {
     font-weight: 600;
     font-size: $all-zero + 16;
     padding: $all-zero + 12 $all-zero + 15;
@@ -13,13 +13,6 @@
     transition: all .15s ease-in-out;
     -webkit-font-smoothing: antialiased;
     line-height: $all-zero + 20;
-    i {
-        background: none;
-        width: $all-zero + 4;
-        height: $all-zero + 8;
-        @extend .u-display-in-block;
-        margin: $all-zero $all-zero $all-zero $all-zero + 6;
-    }
     &:hover {
         transform: translateY(-1px);
     }
@@ -55,7 +48,7 @@
         border-bottom: $grey-v20 solid 2px;
         cursor: not-allowed;
         pointer-events: unset;
-        &.c-btn-solid-icon--small {
+        &.c-btn-solid--small {
             padding: $all-zero + 8 $all-zero + 15 $all-zero + 6;
         }
         &:hover {
@@ -68,14 +61,17 @@
         }
          
     }
-    @include m(green){
-        background: #00AE81;
-        padding: $all-zero $all-zero + 42;
-        i{
-            margin-left: $all-zero + 5;
-        }
-    }
     @include m(small) {
         padding: $all-zero + 8 $all-zero + 15;
+    }
+    @include m(full) {
+        width: 100%;
+        font-size: 16px;
+        font-weight: 400;
+        border: none;
+        box-shadow: none;
+        &:focus, &:hover {
+            outline: none;
+        }
     }
 }

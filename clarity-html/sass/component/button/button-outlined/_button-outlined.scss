@@ -47,13 +47,11 @@ a.button-outlined {
     }
 }
 
-@include b($bem-utility + -btn-outline) { 
-    padding: 11px 23px 11px 23px;
-    font-family: 'Source Sans Pro';
-    font-style: normal;
+@include b($bem-component + -btn-outline){
     font-weight: 600;
-    line-height: normal;
-    font-size: 16px;
+    font-size: $all-zero + 16;
+    padding: $all-zero + 10 $all-zero + 15;
+    font-style: normal;
     text-align: center;
     color: #059CAF;
     border: 2px solid #059CAF;
@@ -61,7 +59,27 @@ a.button-outlined {
     box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.05);
     border-radius: 3px;
     text-decoration: none;
+    @extend .u-display-in-block;
     background: $white;
     transition: all .15s ease-in-out;
     -webkit-font-smoothing: antialiased;
+    line-height: $all-zero + 20;
+    &:hover {
+        transform: translateY(-1px);
+    }
+    &:active {
+        transform: translateY(1px);
+    }
+    
+    @include m(orange) {
+        color: $orange-v1;
+        border: $orange-v1 solid 2px;
+    }
+    @include m(grey) {
+        color: $grey-v4;
+        border: $grey-v6 solid 2px;
+    }
+    @include m(small) {
+        padding: $all-zero + 6 $all-zero + 15;
+    }
 }
