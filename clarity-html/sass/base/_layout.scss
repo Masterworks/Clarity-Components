@@ -255,22 +255,22 @@ input[type="checkbox"]:focus {
     &-clientinfo {
         h2 {
             span {
-                padding-left: 11px;
+                padding-left: 42px;
                 color: $green-v2;
                 font-size: 14px;
                 line-height: 18px;
                 position: relative;
-                top: -3px;
+                top: -2px;
                 i {
+                    position: absolute;
+                    left: 9px;
+                    top: -3px;
                     background: #DCF1E5;
                     width: 25px;
                     height: 25px;
                     line-height: 25px;
                     @include border-radius(100%);
                     text-align: center;
-                    vertical-align: middle;
-                    display: inline-block;
-                    margin-right: 9px;
                 }
             }
         }
