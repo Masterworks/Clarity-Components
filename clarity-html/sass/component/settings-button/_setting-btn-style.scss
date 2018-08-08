@@ -54,7 +54,7 @@
             font-family: 'Source Sans Pro';
             font-size: $all-zero + 14;
             color: $grey-v4;
-            width: 93%;
+            width: 100%;
             height: 100%;
             @extend .u-whitespace-nowrap;
             margin-top: $all-zero;
@@ -381,5 +381,393 @@
     &--style {
         @extend .u-display-in-block;
         @extend .u-static;
+    }
+}
+
+
+// BEM 
+
+@include b($bem-component + -settingBtn) {
+    @include m(makecenter) {
+        @extend .u-relative;
+        margin-top: $all-zero + 100;
+    }
+    @include e(inner) {
+        @extend .u-display-flex;
+        @extend .u-height-100;
+        justify-content: center;
+        align-items: center;
+        @extend .u-absolute;
+        @extend .u-top-0;
+        @extend .u-right-0;
+        @extend .u-bot-0;
+        @extend .u-left-0;
+        .c-dropdown-content {
+            @extend .u-absolute;
+        }
+    }
+    @include e(container) {
+        @extend .u-relative;
+        &:focus .c-dropdown-content {
+            display: block;
+        }
+    }
+    @include e(gear-icon) {
+        top: $all-zero + 7;
+        left: $all-zero + 9;
+        @extend .u-absolute;
+        @extend .u-pointer-event-none;
+    }
+    h5 {
+        @extend .u-relative;
+        font-family: 'Source Sans Pro';
+        @extend .u-normal--font-style;
+        @extend .u-normal--font-weight;
+        @extend .u-normal--line-height;
+        font-size: $all-zero + 20;
+        @extend .u-aligntext--center;
+        color: $dark-v1;
+        margin: 0 0 $all-zero + 15;
+        top:0;
+    }
+    .input-wrap {
+        @extend .u-relative;
+        @extend .u-width-100;
+        height: auto;
+        .input-label {
+            @extend .u-absolute;
+            left: $all-zero + 12;
+            top: $all-zero + 1;
+            font-size: $all-zero + 14;
+            color: $grey-v7;
+            font-family: 'Source Sans Pro';
+            transition: .2s all ease-out;
+            letter-spacing: normal;
+            transform-origin: top left;
+            z-index: 10;
+            cursor: default;
+            @extend .u-pointer-event-none;
+            @extend .u-text-transform-none;
+        }
+    }
+    .create-select-codes-wrap {
+        top: -22px;
+    }
+    
+
+    
+
+    
+
+    .input-wrap .input-box:focus + .input-label {
+        padding: $all-zero $all-zero + 5;
+        font-size: $all-zero + 14;
+        transform: translate(-2px, -4px) scale(0.75);
+        color: $grey-v7;
+        background-color: $white;
+        line-height: $all-zero + 13;
+        @extend .u-txt-uppercase;
+        letter-spacing: $all-zero + 2;
+    }
+
+    .input-box:valid + .input-label {
+        padding: $all-zero $all-zero + 5;
+        font-size: $all-zero + 14;
+        transform: translate(-2px, -4px) scale(0.75);
+        color: $grey-v7;
+        background-color: $white;
+        line-height: $all-zero + 13;
+        @extend .u-txt-uppercase;
+        letter-spacing: $all-zero + 2;
+    }
+
+    .input-box {
+        @extend .u-width-100;
+        height: $all-zero + 32;
+        padding-left: $all-zero + 12;
+        font-family: 'Source Sans Pro';
+        font-size: $all-zero + 14;
+        color: $dark-v1;
+        border: $all-zero + 1 solid $grey-v1;
+        @extend .u-box-module--borderbox;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.04);
+        border-radius: 3px;
+        background-color: #ffffff;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .input-icon {
+        position: absolute;
+        right: $all-zero + 14;
+        top: $all-zero + 14;
+    }
+    .create-codes-input {
+        @extend .u-absolute;
+        width: $all-zero + 248;
+        height: $all-zero + 33;
+        top: -12px;
+        left: $all-zero + 19;
+        font-size: $all-zero + 14;
+    }
+
+    a.button {
+        @extend .u-relative;
+        top:0;
+        left: auto;
+        width: $all-zero + 145;
+        padding: $all-zero $all-zero + 18;
+        margin: $all-zero + 20 $all-zero $all-zero;
+        font-family: 'Source Sans Pro';
+        @extend .u-normal--font-style;
+        font-weight: 700;
+        font-size: $all-zero + 16;
+        @extend .u-aligntext--center;
+        @extend .u-text-decoration--none;
+        @extend .u-no-border;
+        color: $white;
+        @include border-radius(3px 3px 3px 3px);
+        background: linear-gradient(102.52deg, rgba(17, 0, 209, 0.3) -18.15%, rgba(255, 255, 255, 0.3) 111.87%), #059CAF;
+        background-blend-mode: overlay, normal;
+        box-shadow: 0px 3px 7px rgba(5, 136, 152, 0.2), 0px 1px 1px rgba(15, 60, 66, 0.1), inset 0px -1px 0px rgba(0, 0, 0, 0.05);
+        height: $all-zero + 39;
+        line-height: $all-zero + 39;
+    }
+    &--menuleft {
+        .level-2-dropdown {
+            left: -100%;
+        }
+        .create-codes-dropdown {
+            left: -100%;
+            margin-left: -30px;
+        }
+    }
+}
+// Settings button
+@include b($bem-component + -settings-button) {
+    @extend .u-relative;
+    width: $all-zero + 52;
+    height: $all-zero + 33;
+    @include border-radius(3px 3px 3px 3px);
+    @extend .u-cursor-pointer;
+    background-color: rgba(190, 198, 206, 0.3);
+    background-image: url(../images/dropdown-arrow.svg);
+    @extend .u-background-norepeat;
+    border: none;
+    background-position: top 15px left 34px;
+    @include e(gear-icon) {
+        top: $all-zero + 7;
+        left: $all-zero + 9;
+        @extend .u-absolute;
+        @extend .u-pointer-event-none;
+    }
+    &:focus {
+        @extend .u-no-outline;
+        &+.c-dropdown-content {
+            @extend .u-display-block;
+            @extend .u-absolute;
+            top: $all-zero + 34;
+            outline: none;
+        }
+    }
+}
+// dropdown
+@include b($bem-component + -dropdown-content) {
+    display: none;
+    min-width: $all-zero + 200;
+    @extend .u-list-style--none;
+    border-radius: $all-zero + 3;
+    box-shadow: 0px 1px 4px rgba(19, 53, 84, 0.04),
+    0px 8px 13px rgba(0, 52, 101, 0.03),
+    0px 11px 20px rgba(0, 0, 0, 0.05);
+    padding-left: $all-zero;
+    background-color: $white;
+    &:hover {
+        @extend .u-display-block;
+    }
+    a {
+        display: inline-block;
+        padding: $all-zero $all-zero + 15;
+        @extend .u-text-decoration--none;
+        font-family: 'Source Sans Pro';
+        font-size: $all-zero + 14;
+        color: $grey-v4;
+        width: 93%;
+        height: 100%;
+        @extend .u-whitespace-nowrap;
+        margin-top: $all-zero;
+    }
+
+    li {
+        @extend .u-box-module--borderbox;
+        padding: $all-zero $all-zero + 15 $all-zero $all-zero;
+        @extend .u-width-100;
+        line-height: $all-zero + 39;
+        border-bottom: $all-zero + 1 solid $grey-v5;
+
+        &:first-child {
+            border-top: $all-zero + 1 solid $grey-v5;
+            border-right: $all-zero + 1 solid $grey-v5;
+            border-left: $all-zero + 1 solid $grey-v5;
+            @include border-radius(3px 3px 0 0);
+        }
+
+        &:last-child {
+            border-bottom: $all-zero + 1 solid $grey-v5;
+            border-right: $all-zero + 1 solid $grey-v5;
+            border-left: $all-zero + 1 solid $grey-v5;
+            border-top: none;
+            @include border-radius(0px 0px 3px 3px);
+        }
+
+        &:not(:first-child),
+        &:not(:last-child) {
+            border-right: $all-zero + 1 solid $grey-v5;
+            border-left: $all-zero + 1 solid $grey-v5;
+        }
+
+        &:not(:first-child):hover {
+            //                    height: 41px;
+            margin-top: -1px;
+            border-bottom: $all-zero + 1 solid $blue-v3;
+            border-top: $all-zero + 1 solid $blue-v3;
+        }
+
+        &:first-child:hover {
+            border-top: $all-zero + 1 solid $blue-v3;
+            border-right: $all-zero + 1 solid $blue-v3;
+            border-left: $all-zero + 1 solid $blue-v3;
+            border-bottom: $all-zero + 1 solid $blue-v3;
+
+            .c-dropdown-content__level-2 {
+                display: block;
+            }
+        }
+
+        &:last-child:hover {
+            border-top: $all-zero + 1 solid $blue-v3;
+            border-right: $all-zero + 1 solid $blue-v3;
+            border-left: $all-zero + 1 solid $blue-v3;
+            border-bottom: $all-zero + 1 solid $blue-v3;
+        }
+
+        &:hover {
+            background-color: $blue-v4;
+        }
+    }
+    @include e(level-1) {
+        margin: $all-zero;
+        top: $all-zero + 34;
+        left: $all-zero;
+        z-index: 10;
+
+        & > li {
+            width: 100%; 
+            //height: 40px;
+            border-bottom: $all-zero + 1 solid $grey-v5;
+
+            &:first-child:hover {
+                border-top: $all-zero + 1 solid $blue-v3;
+                border-right: $all-zero + 1 solid $blue-v3;
+                border-left: $all-zero + 1 solid $blue-v3;
+                border-bottom: $all-zero + 1 solid $blue-v3;
+                @include border-radius(3px 3px 0 0);
+                background-color: $blue-v4;
+            }
+        }
+    }
+    @include e(level-2) {
+        @extend .u-absolute;
+        top: 0%;
+        left: 100%;
+        margin-right: -1px;
+        z-index: 100;
+
+        li {
+            border-bottom: $all-zero + 1 solid $grey-v5;
+
+            &:first-child {
+                border-top: $all-zero + 1 solid $grey-v5;
+                border-right: $all-zero + 1 solid $grey-v5;
+                border-left: $all-zero + 1 solid $grey-v5;
+                @include border-radius(3px 3px 0 0);
+                background-color: $white;
+                @extend .u-box-module--borderbox;
+                padding: $all-zero + 13 $all-zero + 16 $all-zero + 8 $all-zero + 16;
+            }
+
+            &:first-child:hover {
+                border-top: $all-zero + 1 solid $grey-v5;
+                border-right: $all-zero + 1 solid $grey-v5;
+                border-left: $all-zero + 1 solid $grey-v5;
+                border-bottom: $all-zero + 1 solid $grey-v5;
+                @include border-radius(3px 3px 0 0);
+                background-color: $white;
+            }
+        }
+    }
+    @include e(create-codes-dropdown) {
+        min-width: $all-zero + 288;
+        font-family: 'Source Sans Pro';
+        @extend .u-normal--font-style;
+        @extend .u-normal--font-weight;
+        @extend .u-normal--line-height;
+        font-size: $all-zero + 20;
+        @extend .u-aligntext--center;
+        color: $dark-v1;
+        @extend .u-absolute;
+        top: 32%;
+        margin-top: $all-zero + 1;
+        left: 100%;
+        margin-right: -1px;
+        border: $all-zero + 1 solid $grey-v3;
+        @extend .u-box-module--borderbox;
+        padding: 13px 16px 22px 16px;
+    }
+
+    @include e(create-codes-container) {
+        
+        &:hover {
+            .c-dropdown-content__create-codes-dropdown {
+                display: block;
+            }
+        }
+    }
+
+    @include e(create-codes-label) {
+        @extend .u-absolute;
+        left: $all-zero + 12;
+        top: 7px;
+        font-size: $all-zero + 14;
+        font-family: 'Source Sans Pro';
+        color: $grey-v7;
+        transition: .2s all ease-out;
+        pointer-events: none;
+        transform-origin: top left;
+        z-index: 10;
+        cursor: default;
+    }
+    .input-wrap .input-box:focus + .c-dropdown-content__create-codes-label {
+        padding: $all-zero $all-zero + 5;
+        font-size: $all-zero + 14;
+        transform: translate(-2px, -13px) scale(0.75);
+        color: $grey-v7;
+        background-color: $white;
+        line-height: $all-zero + 13;
+        @extend .u-txt-uppercase;
+        letter-spacing: $all-zero + 2;
+    }
+
+    .input-box:valid + .c-dropdown-content__create-codes-label {
+        padding: $all-zero $all-zero + 5;
+        font-size: $all-zero + 14;
+        transform: translate(-2px, -13px) scale(0.75);
+        color: $grey-v7;
+        background-color: $white;
+        line-height: $all-zero + 13;
+        @extend .u-txt-uppercase;
+        letter-spacing: $all-zero + 2;
     }
 }

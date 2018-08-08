@@ -230,8 +230,6 @@
 .c-grid-view-item {
     &--request .grid-view-item__preview {
         background-image: url('../images/faux-docs.png');
-        background-size: 100%;
-        background-position: center bottom -1px;
     }
 
     &--project .grid-view-item__preview {
@@ -239,7 +237,7 @@
         background-size: 293px;
         background-position: center bottom;
         &--img {
-            background-image: url('../images/grid-view-item-request.svg');
+            background-image: url('../images/header-thing.png');
         }
     }
 

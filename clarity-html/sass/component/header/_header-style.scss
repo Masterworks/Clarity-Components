@@ -265,13 +265,14 @@
     font-family: 'Source Sans Pro';
     font-size: $all-zero + 14;
     color: $grey-v4;
-    width: 93%;
+    width: 100%;
     line-height: $all-zero + 17;
     margin: -7px 0 18px 0;
     @extend .u-display-in-block;
     @extend .u-text-decoration--none;
     @extend .u-height-100;
-
+    display: block !important;
+    white-space: initial;
 }
 
 b {
@@ -284,7 +285,7 @@ b {
 }
 
 .show {
-    display: block;
+    display: block !important;
 }
 
 //header bottom
@@ -586,7 +587,7 @@ b {
         }
         &__link {
             padding: $all-zero $all-zero + 20;
-            width: 93%;
+            width: 100%;
             font-family: 'Source Sans Pro';
             font-size: $all-zero + 14;
             color: $grey-v4;
@@ -609,12 +610,14 @@ b {
             font-family: 'Source Sans Pro';
             font-size: $all-zero + 14;
             color: $grey-v4;
-            width: 93%;
+            width: 100%;
             line-height: $all-zero + 17;
             margin: -7px 0 18px 0;
             @extend .u-display-in-block;
             @extend .u-text-decoration--none;
             @extend .u-height-100;
+            display: block !important;
+            white-space: initial;
             b {
                 font-family: 'Source Sans Pro';
                 font-style: normal;
@@ -643,7 +646,7 @@ b {
 }
 
 .show, .show1 {
-    display: block;
+    display: block !important;
 }
 
 

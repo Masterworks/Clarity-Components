@@ -1,22 +1,56 @@
 //notification start
+// function myFunction() {
+//     document.getElementById("myDropdown").classList.toggle("show");
+// }
+
+// // Close the dropdown menu if the user clicks outside of it
+// window.onclick = function (event) {
+//     if (!event.target.matches('.btn-notifications')) {
+
+//         var dropdowns = document.getElementsByClassName("dropdown-content");
+//         var i;
+//         for (i = 0; i < dropdowns.length; i++) {
+//             var openDropdown = dropdowns[i];
+//             if (openDropdown.classList.contains('show')) {
+//                 openDropdown.classList.remove('show');
+//             }
+//         }
+//     }
+// }
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
+}
+function myFunction2() {
+    //console.log('Clicked', document.querySelector('#myDropdown2'));
+    document.querySelector('#myDropdown2').classList.toggle("show");
+    //document.getElementById("myDropdown2").classList.toggle("show");
 }
 
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function (event) {
-    if (!event.target.matches('.btn-notifications')) {
+    //console.log(event.target);
+    if (!event.target.matches('.c-btn-notifications')) {
 
-        var dropdowns = document.getElementsByClassName("dropdown-content");
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
-            }
+        var dropdowns = document.getElementsByClassName("c-dropdown-content");
+        //var i;
+        //for (i = 0; i < dropdowns.length; i++) {
+        //    var openDropdown = dropdowns[i];
+        //    if (openDropdown.classList.contains('show')) {
+        //        openDropdown.classList.remove('show');
+        //    }
+        //}
+        if (document.getElementById("myDropdown").classList.contains('show')) {
+            document.getElementById("myDropdown").classList.remove('show');
+        }
+    }
+    if (!event.target.matches('.myClass')) {
+        if (document.getElementById("myDropdown2").classList.contains('show')) {
+            document.getElementById("myDropdown2").classList.remove('show');
         }
     }
 }
+
+
 //notification end
 
 $(".btn-user-account").click(function () {
@@ -82,7 +116,7 @@ $('select').find(':selected').each(function () {
         $(this).parents('.c-select').addClass('input-has-text');
     }
 });
-
+// Svg img conversion
 $('.svg-img').each(function (i) {
     var path = $(this).attr('src'),
         self = $(this);
