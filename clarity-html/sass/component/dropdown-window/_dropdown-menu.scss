@@ -183,3 +183,191 @@
         }
     }
 }
+
+
+// BEM 
+.c-dropdown {
+    .c-dropdown__content a {
+        display: inline-block;
+        padding: $all-zero $all-zero + 15;
+        @extend .u-text-decoration--none;
+        font-family: 'Source Sans Pro';
+        font-size: $all-zero + 14;
+        color: $grey-v4;
+        width: 93%;
+        @extend .u-height-100;
+        margin: $all-zero;
+    }
+
+    .c-dropdown__search-bar {
+        @extend .u-box-module--borderbox;
+    }
+
+    .c-dropdown__content {
+        @extend .u-relative;
+        @extend .u-display-block;
+        min-width: $all-zero + 200;
+        @extend .u-list-style--none;
+        @include border-radius(3px 3px 3px 3px);
+        box-shadow: 0px 1px 4px rgba(19, 53, 84, 0.04),
+        0px 8px 13px rgba(0, 52, 101, 0.03),
+        0px 11px 20px rgba(0, 0, 0, 0.05);
+        padding-left: $all-zero;
+        background-color: $white;
+
+        &:hover {
+            @extend .u-display-block;
+        }
+
+        li {
+            @extend .u-box-module--borderbox;
+            padding: $all-zero $all-zero + 15 $all-zero $all-zero;
+            @extend .u-width-100;
+            line-height: $all-zero + 43;
+            border-bottom: $all-zero + 1 solid $grey-v5;
+            @extend .u-relative;
+
+            &:first-child {
+                border-top: $all-zero + 1 solid $grey-v5;
+                border-right: $all-zero + 1 solid $grey-v5;
+                border-left: $all-zero + 1 solid $grey-v5;
+                @include border-radius(3px 3px 0 0);
+            }
+
+            &:last-child {
+                border-bottom: $all-zero + 1 solid $grey-v5;
+                border-right: $all-zero + 1 solid $grey-v5;
+                border-left: $all-zero + 1 solid $grey-v5;
+                border-top: none;
+                @include border-radius(0 0 3px 3px);
+            }
+
+            &:not(:first-child),
+            &:not(:last-child) {
+                border-right: $all-zero + 1 solid $grey-v5;
+                border-left: $all-zero + 1 solid $grey-v5;
+            }
+
+            &:not(:first-child):hover {
+                //                height: 41px;
+                margin-top: -1px;
+                border-bottom: 1px solid $blue-v3;
+                border-top: 1px solid $blue-v3;
+            }
+
+            &:first-child:hover {
+                border-top: $all-zero + 1 solid $blue-v3;
+                border-right: $all-zero + 1 solid $blue-v3;
+                border-left: $all-zero + 1 solid $blue-v3;
+                border-bottom: $all-zero + 1 solid $blue-v3;
+                @include border-radius(3px 3px 0 0);
+                background-color: $blue-v4;
+            }
+
+            &:last-child:hover {
+                border-top: 1px solid $blue-v3;
+                border-right: 1px solid $blue-v3;
+                border-left: 1px solid $blue-v3;
+                border-bottom: 1px solid $blue-v3;
+            }
+
+            &:hover {
+                background-color: $blue-v4;
+            }
+        }
+    }
+
+    .c-dropdown__level-1 {
+        margin: $all-zero;
+        top: $all-zero;
+        left: $all-zero;
+        z-index: 0;
+
+
+        & > li {
+            width: 100%; //            height: 40px;
+            border-bottom: $all-zero + 1 solid $grey-v5;
+
+            &:first-child:hover {
+                border-top: $all-zero + 1 solid $blue-v3;
+                border-right: $all-zero + 1 solid $blue-v3;
+                border-left: 1px solid #BAD0E5;
+                border-bottom: 1px solid #BAD0E5;
+                border-radius: 3px 3px 0 0;
+                background-color: #EDF8FE;
+
+                .c-dropdown__level-2 {
+                    @extend .u-display-block;
+                }
+            }
+        }
+    }
+
+    .c-dropdown__level-2 {
+        @extend .u-absolute;
+        top: 0%;
+        right: 100%;
+        margin-right: -1px;
+        z-index: 100;
+        display: none;
+    }
+    &--centerposition {
+        @extend .u-display-flex;
+        @extend .u-height-100;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+    &--user {
+        .c-dropdown__level-2 {
+            left: 100%;
+        }
+        .c-dropdown__content {
+            @extend .u-width-100;
+            box-shadow: none;
+            border: $all-zero + 1 solid $grey-v3;
+            box-shadow: 0px 1px 4px rgba(19, 53, 84, 0.04), 0px 8px 13px rgba(0, 52, 101, 0.03);
+            li {
+                border-left: $all-zero + 3 solid $transparent !important;
+                background-image: url(../images/right-arrow.svg);
+                background-repeat: no-repeat;
+                background-position: 95% center;
+                border-right: none !important;
+                a {
+                    color: $blue-v1;
+                    font-size: $all-zero + 16;
+                }
+                &:not(:first-child):hover {
+                    border-bottom: $all-zero + 1 solid $grey-v5;
+                    border-top: $all-zero + 1 solid $grey-v5;
+                }
+                &:hover,
+                &:active {
+                    background-color: $transparent;
+                    background-image: url(../images/right-arrow.svg) !important; //                    border-left: $all-zero + 3 solid $blue-v1 !important;
+                    border-bottom: $all-zero + 1 solid $grey-v5;
+                }
+                &.is-active {
+                    border-left: $all-zero + 3 solid $blue-v1 !important;
+                }
+                &:first-child {
+                    background-image: url(../images/right-arrow.svg) !important;
+                    background-repeat: no-repeat !important;
+                    background: $transparent;
+                    background-position: 95% center;
+                    border-top: none !important;
+                    &:hover {
+                        background-color: transparent; //                        border-left: $all-zero + 3 solid $blue-v1 !important;
+                        border-bottom: $all-zero + 1 solid $grey-v5;
+                    }
+                }
+                &:last-child {
+                    border-bottom: none !important;
+                }
+            }
+        }
+    }
+}
