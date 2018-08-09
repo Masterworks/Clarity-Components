@@ -339,20 +339,27 @@ a.button:active {
 
 // BEM 
 @include b($bem-component + -modal) {
-    @include m(active) {
-        &::after {
-            content: "";
-            display: block;
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            z-index: 10000;
-            background-color: rgba(27, 39, 50, 0.81);
-        }
+    width: 100%;
+    height: 100%;
+    @extend .u-bg-color-fff;
+    @extend .u-fixed;
+    top: 50%;
+    left: 50%;
+    @include transform(translate(-50%, -50%));
+    @include border-radius (3px);
+    z-index: 25;
+    @extend .u-oflowhidden;
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 10000;
+        background-color: rgba(27, 39, 50, 0.81);
     }
-    
     @include e(container) {
         width: 440px;
         box-sizing: border-box;
@@ -363,6 +370,8 @@ a.button:active {
         box-shadow: 0px 1px 4px rgba(19, 53, 84, 0.04), 0px 6px 40px rgba(25, 36, 46, 0.5);
         border-radius: 3px;
         z-index: 100000;
+        top:50%;
+        @include translate(0,-50%);
     }
     @include e(content) {
         padding: 35px;
