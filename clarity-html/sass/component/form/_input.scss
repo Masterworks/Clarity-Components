@@ -92,18 +92,18 @@
                 letter-spacing: 0.12em;
             }
         }
-        &:valid {
-            outline: none;
-             + .c-input-wrap__label {
-                padding: 0 5px;
-                font-size: 16px;
-                transform: translate(-1px, -22px) scale(0.75);
-                color: #9DAAB5;
-                background-color: #fff;    
-                text-transform: uppercase;
-                letter-spacing: 0.12em;
-            }
-        }
+        // &:valid {
+        //     outline: none;
+        //      + .c-input-wrap__label {
+        //         padding: 0 5px;
+        //         font-size: 16px;
+        //         transform: translate(-1px, -22px) scale(0.75);
+        //         color: #9DAAB5;
+        //         background-color: #fff;    
+        //         text-transform: uppercase;
+        //         letter-spacing: 0.12em;
+        //     }
+        // }
         &[type = "number"] {
             -moz-appearance:textfield;
             &::-webkit-inner-spin-button, &::-webkit-outer-spin-button {

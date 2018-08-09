@@ -430,11 +430,11 @@
         margin: 0 0 $all-zero + 15;
         top:0;
     }
-    .input-wrap {
+    .c-input-wrap {
         @extend .u-relative;
         @extend .u-width-100;
         height: auto;
-        .input-label {
+        .c-input-wrap__label {
             @extend .u-absolute;
             left: $all-zero + 12;
             top: $all-zero + 1;
@@ -459,7 +459,7 @@
 
     
 
-    .input-wrap .input-box:focus + .input-label {
+    .c-input-wrap .c-input-wrap__box:focus + .c-input-wrap__label {
         padding: $all-zero $all-zero + 5;
         font-size: $all-zero + 14;
         transform: translate(-2px, -4px) scale(0.75);
@@ -470,7 +470,7 @@
         letter-spacing: $all-zero + 2;
     }
 
-    .input-box:valid + .input-label {
+    .c-input-wrap__box:valid + .c-input-wrap__label {
         padding: $all-zero $all-zero + 5;
         font-size: $all-zero + 14;
         transform: translate(-2px, -4px) scale(0.75);
@@ -481,7 +481,7 @@
         letter-spacing: $all-zero + 2;
     }
 
-    .input-box {
+    .c-input-wrap__box {
         @extend .u-width-100;
         height: $all-zero + 32;
         padding-left: $all-zero + 12;
@@ -499,7 +499,7 @@
         }
     }
 
-    .input-icon {
+    .c-input-wrap__input-icon {
         position: absolute;
         right: $all-zero + 14;
         top: $all-zero + 14;
@@ -749,7 +749,7 @@
         z-index: 10;
         cursor: default;
     }
-    .input-wrap .input-box:focus + .c-dropdown-content__create-codes-label {
+    .c-input-wrap .c-input-wrap__box:focus + .c-dropdown-content__create-codes-label {
         padding: $all-zero $all-zero + 5;
         font-size: $all-zero + 14;
         transform: translate(-2px, -13px) scale(0.75);
@@ -760,7 +760,7 @@
         letter-spacing: $all-zero + 2;
     }
 
-    .input-box:valid + .c-dropdown-content__create-codes-label {
+    .c-input-wrap__box:valid + .c-dropdown-content__create-codes-label {
         padding: $all-zero $all-zero + 5;
         font-size: $all-zero + 14;
         transform: translate(-2px, -13px) scale(0.75);

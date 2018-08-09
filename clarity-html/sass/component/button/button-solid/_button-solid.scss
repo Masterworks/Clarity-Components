@@ -13,6 +13,7 @@
     transition: all .15s ease-in-out;
     -webkit-font-smoothing: antialiased;
     line-height: $all-zero + 20;
+    min-width: 85px;
     cursor: pointer;
     &:hover {
         transform: translateY(-1px);

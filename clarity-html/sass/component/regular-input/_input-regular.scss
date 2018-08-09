@@ -102,3 +102,113 @@
         }
     }
 }
+
+
+
+
+//BEM
+
+.c-input {
+    &--regular {
+        .c-input-wrap {
+            @extend .u-relative;
+            @extend .u-width-100;
+            height: $all-zero + 45;
+
+            &.js-has-alert .js-alert-text {
+                @extend .u-display-block;
+            }
+        }
+
+        .c-input-wrap .c-input-wrap__label {
+            @extend .u-absolute;
+            top: $all-zero + 13;
+            left: $all-zero + 15;
+            font-size: $all-zero + 16;
+            color: $grey-v7;
+            transition: .2s all ease-out;
+            letter-spacing: normal;
+            @extend .u-pointer-event-none;
+            transform-origin: top left;
+            z-index: 10;
+            cursor: default;
+            @extend .u-text-transform-none;
+        }
+
+        .c-input-wrap .c-input-wrap__box:focus + .c-input-wrap__label {
+            padding: $all-zero $all-zero + 5;
+            font-size: $all-zero + 16;
+            transform: translate(-1px, -20px) scale(0.7);
+            color: $grey-v7;
+            background-color: $white;
+            @extend .u-txt-uppercase;
+            letter-spacing: $all-zero + 2;
+        }
+
+        .c-input-wrap__box:valid + .c-input-wrap__label,
+        input:-webkit-autofill ~ .c-input-wrap__label {
+            padding: $all-zero $all-zero + 5;
+            font-size: $all-zero + 11;
+            transform: translate(-1px, -20px);
+            color: $grey-v7;
+            background-color: $white;
+            @extend .u-txt-uppercase;
+            letter-spacing: $all-zero + 2;
+        }
+
+        .c-input-wrap__box {
+            @extend .u-width-100;
+            height: $all-zero + 45;
+            padding-left: $all-zero + 15;
+            font-size: $all-zero + 16;
+            color: $dark-v1;
+            border: $all-zero + 1 solid $grey-v1;
+            @extend .u-box-module--borderbox;
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.04);
+            @include border-radius (3px 3px 3px 3px);
+            @extend .u-bg-color-fff;
+
+            &:focus {
+                @extend .u-no-outline;
+            }
+
+            .js-alert-text--error & {
+                border: $all-zero + 1 solid $red-v1;
+                color: $red-v2;
+            }
+            .js-alert-text--success & {
+                border: $all-zero + 1 solid $green-v2;
+                color: $green-v3;
+            }
+        }
+
+        .c-input-wrap__input-icon {
+            @extend .u-absolute;
+            right: $all-zero + 18;
+            top: $all-zero + 18;
+        }
+
+        .js-alert-text {
+            display: none;
+            @extend .u-width-100;
+            height: $all-zero + 20;
+            @extend .u-box-module--borderbox;
+            margin-top: $all-zero;
+            padding: $all-zero $all-zero $all-zero $all-zero + 10;
+            font-size: $all-zero + 13;
+            font-family: 'source sans pro';
+            line-height: $all-zero + 20;
+            @include border-radius (0 0 3px 3px);
+
+            .js-alert-text--error & {
+                color: $red-v1;
+                background-color: rgba(177, 53, 53, .05);
+            }
+
+            .js-alert-text-success & {
+                color: $green-v4;
+                background-color: rgba(33, 150, 83, .05);
+            }
+        }
+    }
+}

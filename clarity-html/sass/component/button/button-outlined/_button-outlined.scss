@@ -64,6 +64,7 @@ a.button-outlined {
     transition: all .15s ease-in-out;
     -webkit-font-smoothing: antialiased;
     line-height: $all-zero + 20;
+    min-width: 85px;
     &:hover {
         transform: translateY(-1px);
     }

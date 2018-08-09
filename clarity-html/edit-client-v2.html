@@ -125,10 +125,10 @@
                                         <a class="c-dropdown-content__level-1__link" href="#">Apply Select Codes Template</a>
                                         <ul class="c-dropdown-content c-dropdown-content__level-2">
                                             <li class="c-dropdown__search-bar">
-                                                <div class="input-wrap">
-                                                    <img class="input-icon" src="images/search-icon.svg" alt="search">
-                                                    <input class="input-box" type="text" required>
-                                                    <label class="input-label">Label</label>
+                                                <div class="c-input-wrap">
+                                                    <img class="c-input-wrap__input-icon" src="images/search-icon.svg" alt="search">
+                                                    <input class="c-input-wrap__box" type="text" required>
+                                                    <label class="c-input-wrap__label">Label</label>
                                                 </div>
                                             </li>
                                             <li>
@@ -159,8 +159,8 @@
                                         <ul>
                                             <div class="c-dropdown-content c-dropdown-content__create-codes-dropdown">
                                                 <h5>Create Select Codes Template</h5>
-                                                <div class="input-wrap c-dropdown-content__create-select-codes-wrap">
-                                                    <input class="input-box c-dropdown-content__create-codes-input" type="text" required>
+                                                <div class="c-input-wrap c-dropdown-content__create-select-codes-wrap">
+                                                    <input class="c-input-wrap__box c-dropdown-content__create-codes-input" type="text" required>
                                                     <label class="c-dropdown-content__create-codes-label">Template Title</label>
                                                     <a href="#" class="button">Save Template</a>
                                                 </div>
@@ -177,7 +177,9 @@
                     <!-- setting button -->
                     <!-- add user -->
                     <div class="o-adduser u-display-in-block u-pull--right">
-                        <a class="buttonimg buttonimg--buttonicon" href="#">Add New User <i class="u-margin-left-5"></i></a>
+                        <a class="c-btn-solid-icon c-btn-solid-icon--blue" href="#"> Add New User
+                            <i><img src="images/plus.svg" alt="plus" /></i>
+                        </a>
                     </div>
                     <!-- !~add user -->
                 </div>
@@ -205,27 +207,6 @@
                         <ul class="dropdown-content level-1-dropdown">
                             <li>
                                 <a class="level-1-dropdown-link" href="#">View/Edit Users</a>
-
-                                <!--
-                                <ul class="dropdown-content level-2-dropdown">
-                                    <li>
-                                        <a class="level-2-dropdown-link" href="#">July Jubilee</a>
-                                    </li>
-                                    <li>
-                                        <a class="level-2-dropdown-link" href="#">July Jubilee</a>
-                                    </li>
-                                    <li>
-                                        <a class="level-2-dropdown-link" href="#">Let Freedom Ring</a>
-                                    </li>
-                                    <li>
-                                        <a class="level-2-dropdown-link" href="#">Camp O the Pines</a>
-                                    </li>
-                                    <li>
-                                        <a class="level-2-dropdown-link" href="#">Blue Mtn Parkway</a>
-                                    </li>
-                                </ul> 
--->
-
                             </li>
                             <li class="is-active">
                                 <a class="level-1-dropdown-link" href="#">Selects Clients</a>
@@ -256,9 +237,9 @@
                                 <div class="grid-sm-6">
                                     <!-- input box -->
                                     <div class="c-input c-input--regular">
-                                        <div class="input-wrap">
-                                            <input class="input-box" type="text" required="">
-                                            <label class="input-label">Name</label>
+                                        <div class="c-input-wrap">
+                                            <input class="c-input-wrap__box" type="text" required="">
+                                            <label class="c-input-wrap__label">Name</label>
                                         </div>
                                     </div>
                                     <!-- input box -->
@@ -266,9 +247,9 @@
                                 <div class="grid-sm-6 u-txt-valign-bottom">
                                     <!-- input box -->
                                     <div class="c-input c-input--regular">
-                                        <div class="input-wrap">
-                                            <input class="input-box" type="text" required="">
-                                            <label class="input-label">Abbreviation</label>
+                                        <div class="c-input-wrap">
+                                            <input class="c-input-wrap__box" type="text" required="">
+                                            <label class="c-input-wrap__label">Abbreviation</label>
                                         </div>
                                     </div>
                                     <!-- input box -->
@@ -280,14 +261,14 @@
                                 <div class="grid-sm-6">
                                     <!-- select box -->
                                     <div class="c-select">
-                                        <div class="input-wrap">
-                                            <select class="input-box" name="input-box">
+                                        <div class="c-input-wrap">
+                                            <select class="c-input-wrap__box" name="input-box">
                                                  <option disabled="" selected="" value="" style="display:none"></option>
                                                   <option value="option2">option2</option>
                                                   <option value="option3">option3</option>
                                                   <option value="option4">option4</option>
                                             </select>
-                                            <label class="input-label">Fiscal Year</label>
+                                            <label class="c-input-wrap__label">Fiscal Year</label>
                                             <div class="dropdown-arrow"></div>
                                         </div>
                                     </div>
@@ -296,16 +277,7 @@
                                 <div class="grid-sm-6 u-txt-valign-bottom">
                                     <!-- input box -->
                                     <div class="c-input c-input--regular">
-                                        <div class="input-wrap">
-                                            <!--
-                                            <div class="c-dropzone">
-                                                <form class="u-relative" action="" method="post" enctype="multipart/form-data">
-                                                    <input type="file" accept="">
-                                                    <a class="c-choosefile" href="#">File</a>
-                                                    <label class="c-choosefile__label">Logo Upload</label>
-                                                </form>
-                                            </div>
--->
+                                        <div class="c-input-wrap">
                                             <div class="c-dropzone">
                                                 <form class="u-relative" action="" method="post" enctype="multipart/form-data">
                                                     <div id="logo">
@@ -313,8 +285,8 @@
                                                         <label class="c-choosefile__label">Logo Upload</label>
                                                     </div>
                                                     <div id="urltype" style="display:none;">
-                                                        <input class="input-box" type="text" required="">
-                                                        <label class="input-label">Client External ID</label>
+                                                        <input class="c-input-wrap__box" type="text" required="">
+                                                        <label class="c-input-wrap__label">Client External ID</label>
                                                     </div>
                                                     <span class="c-choosefile">
                                                         <select id="filetype"> 
@@ -335,9 +307,9 @@
                                 <div class="grid-sm-6">
                                     <!-- input box -->
                                     <div class="c-input c-input--regular">
-                                        <div class="input-wrap">
-                                            <input class="input-box" type="text" required="">
-                                            <label class="input-label">Client External ID</label>
+                                        <div class="c-input-wrap">
+                                            <input class="c-input-wrap__box" type="text" required="">
+                                            <label class="c-input-wrap__label">Client External ID</label>
                                         </div>
                                     </div>
                                     <!-- input box -->
@@ -345,9 +317,9 @@
                                 <div class="grid-sm-6">
                                     <!-- input box -->
                                     <div class="c-input c-input--regular">
-                                        <div class="input-wrap">
-                                            <input class="input-box" type="text" required="">
-                                            <label class="input-label">Client Internal ID</label>
+                                        <div class="c-input-wrap">
+                                            <input class="c-input-wrap__box" type="text" required="">
+                                            <label class="c-input-wrap__label">Client Internal ID</label>
                                         </div>
                                     </div>
                                     <!-- input box -->
@@ -359,8 +331,8 @@
                         <div class="row">
                             <div class="col">
                                 <div class="u-aligntext--right u-padding-top-5">
-                                    <a href="javascript:void(0);" class="button-outlined u-display-in-block">Cancel</a>
-                                    <a href="javascript:void(0);" class="button-outlined button-outlined--default u-display-in-block u-margin-left-12">Save</a>
+                                    <a href="javascript:void(0);" class="c-btn-outline u-display-in-block">Cancel</a>
+                                    <a href="javascript:void(0);" class="c-btn-solid c-btn-solid--blue u-display-in-block u-margin-left-12">Save</a>
                                 </div>
                             </div>
                         </div>
