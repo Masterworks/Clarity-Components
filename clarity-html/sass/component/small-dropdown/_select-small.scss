@@ -85,3 +85,93 @@
         }
     }
 }
+
+//BEM
+
+.c-select-small {
+    .c-input-wrap {
+        @extend .u-relative;
+        @extend .u-width-100;
+        height: $all-zero + 33;
+        font-family: 'Source Sans Pro';
+    }
+
+    .c-input-wrap .c-input-wrap__label {
+        @extend .u-absolute;
+        top: $all-zero + 6;
+        left: $all-zero + 13;
+        font-size: $all-zero + 16;
+        color: $grey-v7;
+        @extend .u-pointer-event-none;
+        transition: .2s all ease-out;
+        transform-origin: top left;
+        z-index: 10;
+        cursor: default;
+        transform: none;
+        padding: 0;
+        text-transform: none;
+        letter-spacing: normal;
+        &--font14 {
+            font-size: $all-zero + 14;
+            top: $all-zero + 8;
+        }
+        &--font16 {
+            font-size: 16px;
+            top: $all-zero + 8;
+        }
+    }
+
+    .c-input-wrap__box {
+        font-family: 'Source Sans Pro';
+        @extend .u-width-100;
+        @extend .u-height-100;
+        padding-left: $all-zero + 15;
+        padding-right: $all-zero + 20;
+        font-size: $all-zero + 14;
+        color: $dark-v1;
+        border: $all-zero + 1 solid $grey-v1;
+        @extend .u-box-module--borderbox;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.04);
+        @include border-radius (3px 3px 3px 3px);
+        background-color: $white;
+        @extend .u-appearance-none;
+        background-image: url(../images/dropdown-arrow-dark.svg  );
+        @extend .u-background-norepeat;
+        background-position: right 15px top 14px;
+
+        &:focus {
+            @extend .u-no-outline;
+        }
+        &--grey {
+            background-image: url(../images/dropdown-arrow-grey.svg);
+        }
+    }
+    .c-input-wrap .c-input-wrap__box:focus + .c-input-wrap__label,
+    .c-input-wrap__label.is-selected {
+        padding: $all-zero $all-zero + 5;
+        font-size: $all-zero + 14;
+        transform: translate(-2px, -15px) scale(0.75);
+        color: $grey-v7;
+        background-color: $white;
+        text-transform: uppercase;
+        letter-spacing: $all-zero + 2;
+    }
+
+    .no-label {
+        .c-input-wrap__label {
+            display: none;
+        }
+    }
+}
+
+.c-client {
+    .c-input-wrap__box {
+        background-image: url(../images/dropdown-arrow-grey.svg);
+        &--blackarrow {
+            background-image: url(../images/dropdown-arrow-dark-grey.svg);
+            background-position: right 6px top 17px;
+            font-size: $all-zero + 16;
+            color: $grey-v11;
+        }
+    }
+}
