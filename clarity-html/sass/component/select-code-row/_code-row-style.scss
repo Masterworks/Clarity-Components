@@ -82,3 +82,89 @@
         }
     }
 }
+
+
+// BEM
+
+.c-coderow {
+    &:last-child {
+        .c-coderow__select-row-container {
+            border-bottom: none;
+        }
+    }
+    .c-coderow__select-row-container {
+        @extend .u-display-flex;
+        border-bottom: $all-zero + 1 solid $grey-v5;
+        max-width: $all-zero + 500;
+        width:100%;
+        align-items: center;
+        height: $all-zero + 60;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+    .c-code {
+        font-weight: 600;
+        font-size: $all-zero + 18;
+        color: $dark-v1;
+        //margin: $all-zero $all-zero $all-zero $all-zero + 10;
+        @extend .u-txt-uppercase;
+    }
+    .c-code-description {
+        @extend .u-display-flex;
+        align-items: center;
+        @extend .u-relative;
+        font-size: $all-zero + 16;
+        color: $grey-v7;
+        //margin: $all-zero $all-zero $all-zero $all-zero + 27;
+        //width: $all-zero + 204;
+    }
+    .c-count {
+        @extend .u-display-flex;
+    }
+
+    .c-count--negative {
+        @extend .u-relative;
+        font-weight: 600;
+        font-size: $all-zero + 16;
+        margin: $all-zero $all-zero + 9;
+        color: $red-v3;
+    }
+    .c-count--positive {
+        @extend .u-relative;
+        font-weight: 600;
+        font-size: $all-zero + 16;
+        margin: $all-zero $all-zero + 9;
+        color: $green-v2;
+    }
+
+    .c-dropdown-container {
+        width: $all-zero + 129;
+        height: $all-zero + 33;
+    }
+    .c-input-wrap {
+        @extend .u-relative;
+        @extend .u-width-100;
+        height: $all-zero + 33;
+    }
+
+    .c-input-wrap__box {
+        @extend .u-width-100;
+        height: $all-zero + 33;
+        padding-left: $all-zero + 13;
+        font-size: $all-zero + 14;
+        color: $dark-v1;
+        border: $all-zero + 1 solid $grey-v1;
+        @extend .u-box-module--borderbox;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.04);
+        @include border-radius (3px 3px 3px 3px);
+        background-image: url(../images/dropdown-arrow-dark.svg);
+        @extend .u-background-norepeat;
+        background-position: $all-zero + 106 $all-zero + 13;
+        background-color: $white;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        font-family: 'Source Sans Pro', sans-serif;
+        &:focus {
+            @extend .u-no-outline;
+        }
+    }
+}

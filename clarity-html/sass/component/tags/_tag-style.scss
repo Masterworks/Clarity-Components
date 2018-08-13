@@ -56,3 +56,63 @@
         }
     }
 }
+
+//BEM
+.c-tag {
+    // font-family: 'Proxima Nova';
+    // font-weight: bold;
+    font-family: 'ProximaNova-Bold';
+    font-size: 11px;
+    text-align: center;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    border: 1px solid;
+    box-sizing: border-box;
+    border-radius: 3px;
+    padding: 0px calc(8px - 0.15em)  0 8px;
+    line-height: normal;
+    &--lineheight21 {
+        line-height: 21px;
+    }
+    &--received {
+        color: #FFA179;
+        background: #FFFAF7;
+        border-color: #F69F8A;
+    }
+    &--complete {
+        color: #20A95B;
+        background: #F5FFF9;
+        border-color: #68BE8C;
+    }
+    &--select {
+        &__underway {
+            color: #2080B7;
+            background: #F7FCFF;
+            border-color: #2080B7;
+        }
+    }
+    &--modeling {
+        &__underway {
+            color: #11545F;
+            background: #F1FDFF;
+            border-color: #096A7A;
+        }
+    }
+    &--prep {
+        &__underway {
+            color: #CC9036;
+            background: #FFFDF5;
+            border-color: #E3AF62;
+        }
+        &__submitted {
+            color: $blue-v6;
+            background: #F7FCFF;
+            border-color: $blue-v6;
+        }
+        &__modeling {
+            color: #A175E9;
+            background: rgba(161, 117, 233, 0.05);
+            border-color: #A175E9;
+        }
+    }
+}

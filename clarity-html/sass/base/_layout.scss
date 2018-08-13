@@ -112,6 +112,22 @@
         @extend .u-txt-uppercase;
         @extend .u-normal--font-weight;
     }
+    &-select-client__name {
+        background: url('../images/greyarrow.svg') no-repeat 95% center $transparent;
+        font-size: $all-zero + 13;
+        letter-spacing: $all-zero + 2.5;
+        margin-top: $all-zero + 7;
+        line-height: $all-zero + 15;
+        color: $grey-v7;
+        font-family: 'ProximaNova-Regular';
+        max-width: $all-zero + 150;
+        @extend .u-padding-right-20;
+        @include appearance (none);
+        @extend .u-no-border;
+        @extend .u-no-outline;
+        @extend .u-txt-uppercase;
+        @extend .u-normal--font-weight;
+    }
 }
 
 .o {

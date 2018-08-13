@@ -56,6 +56,9 @@
         border-bottom: $grey-v20 solid 2px;
         cursor: not-allowed;
         pointer-events: unset;
+        @include m(negative) {
+            margin-top: -7px;
+        }
         &.c-btn-solid-icon--small {
             padding: $all-zero + 8 $all-zero + 15 $all-zero + 6;
         }

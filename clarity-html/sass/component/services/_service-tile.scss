@@ -82,5 +82,35 @@
                 }
             }
         }
+        &__btn {
+            border-top: 1px dotted $grey-v1;
+            font-size: $all-zero + 16;
+            height: $all-zero + 47;
+            line-height: $all-zero + 47;
+            color: $blue-v1;
+            @extend .u-text-decoration--none;
+            @extend .u-absolute;
+            @extend .u-bot-0;
+            @extend .u-display-block;
+            @extend .u-width-100;
+            @extend .u-aligntext--center;
+            i {
+                background: url(../images/arrow-right.png) no-repeat center transparent;
+                width: $all-zero + 6;
+                height: $all-zero + 10;
+                margin: $all-zero $all-zero $all-zero $all-zero + 10;
+                @extend .u-display-in-block;
+                transition: all 0.5s ease-in-out;
+                -webkit-transition: all 0.2s ease-in-out;
+                @extend .u-relative;
+                left: $all-zero;
+            }
+            &:hover {
+                i {
+                    position: relative;
+                    left: $all-zero + 3;
+                }
+            }
+        }
     }
 }
