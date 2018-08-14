@@ -653,3 +653,36 @@ b {
 .mobile-only-link {
     display: none;
 }
+
+.c-view-controls {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: $all-zero + 13;
+
+    .c-view__grid,
+    .c-view__list {
+        background-color: $transparent;
+        border: none;
+        padding: $all-zero;
+        @extend .u-relative;
+        @extend .u-cursor-pointer;
+    }
+
+    .c-view__grid {
+        top: $all-zero;
+        padding: $all-zero + 5;
+    }
+
+    .c-view__list {
+        bottom: $all-zero + 3;
+        padding: $all-zero + 5;
+    }
+    .c-view__icon--active {
+        stroke: $blue-v1;
+    }
+    
+    .c-view__icon {
+        stroke: $grey-v7;
+    }
+}
+
