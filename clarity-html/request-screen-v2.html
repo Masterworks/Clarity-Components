@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Clarity | Request-Screen</title>
+
+    <!-- main style sheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- header start -->
+    <div class="o-header">
+        <div class="container">
+            <div class="header">
+                <a href="#" class="logo">Clarity</a>
+                <ul class="primary-nav">
+                    <li class="primary-nav-item">
+                        <a href="#" class="primary-nav-link">Dashboard</a>
+                    </li>
+                    <li class="primary-nav-item">
+                        <a href="#" class="primary-nav-link">Projects</a>
+                    </li>
+                    <li class="primary-nav-item">
+                        <a href="#" class="primary-nav-link">Creative Briefs</a>
+                    </li>
+                    <li class="primary-nav-item">
+                        <a href="#" class="primary-nav-link">Reporting</a>
+                    </li>
+                    <li class="primary-nav-item">
+                        <a href="#" class="primary-nav-link">Data Selects</a>
+                    </li>
+                    <li class="primary-nav-item">
+                        <a href="#" class="primary-nav-link">CPP</a>
+                    </li>
+                </ul>
+                <div class="notification-container">
+                    <a onclick="myFunction()" class="btn-notifications">
+                        <svg class="notification-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="notification-icon" d="M17.003 12.7523H0C0.676422 12.7523 1.32514 12.4836 1.80344 12.0052C2.28174 11.5269 2.55045 10.8782 2.55045 10.2018V5.95105C2.55045 4.37274 3.17744 2.85906 4.29348 1.74302C5.40951 0.626984 6.92319 -8.86776e-08 8.50151 -8.86776e-08C10.0798 -8.86776e-08 11.5935 0.626984 12.7095 1.74302C13.8256 2.85906 14.4526 4.37274 14.4526 5.95105V10.2018C14.4526 10.8782 14.7213 11.5269 15.1996 12.0052C15.6779 12.4836 16.3266 12.7523 17.003 12.7523ZM9.97227 16.1529C9.8228 16.4105 9.60827 16.6244 9.35015 16.7731C9.09203 16.9217 8.79938 17 8.50151 17C8.20363 17 7.91098 16.9217 7.65286 16.7731C7.39474 16.6244 7.18021 16.4105 7.03075 16.1529"
+                                transform="translate(1 1)" fill="#273A4B" />
+                            <path class="notification-icon" d="M17.003 12.7523H0C0.676422 12.7523 1.32514 12.4836 1.80344 12.0052C2.28174 11.5269 2.55045 10.8782 2.55045 10.2018V5.95105C2.55045 4.37274 3.17744 2.85906 4.29348 1.74302C5.40951 0.626984 6.92319 -8.86776e-08 8.50151 -8.86776e-08C10.0798 -8.86776e-08 11.5935 0.626984 12.7095 1.74302C13.8256 2.85906 14.4526 4.37274 14.4526 5.95105V10.2018C14.4526 10.8782 14.7213 11.5269 15.1996 12.0052C15.6779 12.4836 16.3266 12.7523 17.003 12.7523ZM9.97227 16.1529C9.8228 16.4105 9.60827 16.6244 9.35015 16.7731C9.09203 16.9217 8.79938 17 8.50151 17C8.20363 17 7.91098 16.9217 7.65286 16.7731C7.39474 16.6244 7.18021 16.4105 7.03075 16.1529H9.97227Z"
+                                transform="translate(1 1)" stroke="#273A4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            />
+                        </svg>
+                        <img class="new-notification-dot" src="images/ellipse.svg" alt="new-notification" />
+                    </a>
+                    <script>
+
+
+                    </script>
+                    <ul id="myDropdown" class="dropdown-content level-1-dropdown">
+                        <li>
+                            <a class="level-1-dropdown-link" href="#">
+                                <span class="time-tag">5/22/18 at 1:42 PM</span>
+                                <img class="unread-marker" src="images/unread-marker.svg" alt="unread-marker">
+                                <p class="notification-text">Your request has been
+                                    <b>received</b> by Data Services: Newsletter EOY 2018 (SUGM)</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="level-1-dropdown-link" href="#">
+                                <span class="time-tag">5/15/18 at 11:25 AM</span>
+                                <p class="notification-text">Your request has been
+                                    <b>fulfilled</b> by Data Services: Christmas 2018 Catalog (SIM)</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="level-1-dropdown-link" href="#">
+                                <span class="time-tag">4/1/18 at 8:04 AM</span>
+                                <p class="notification-text">
+                                    <b>Jovie S.</b> left a comment on your request: Secret Santa 04-104-29 (PF)</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#" class="btn-user-account"></a>
+                <ul class="c-signout js-signout">
+                    <li>
+                        <a href="#">Loream Ipsum</a>
+                    </li>
+                    <li>
+                        <a href="#">Log Out</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- header end -->
+    <!-- bottom header -->
+    <div class="c-headerBottom u-margin-top-20">
+        <div class="bx-container">
+            <div class="bx-container__row clearfix">
+                <div class="col_16">
+                    <!-- project title -->
+                    <div class="u-pull--left">
+                        <div class="c-input c-input--edit u-display-in-block u-txt-valign-top u-width--223">
+                            <input type="submit" class="c-input--edit__button" id="editButton" name="" value="" /><div class="c-input__wrap--bordered">
+                                <input class="" readonly type="text" required="" placeholder=" Enter Project Title">
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="u-pipe--dashed  u-txt-valign-top"></div>
+                        <div class="u-display-in-block u-padding-top-5 u-txt-valign-top"><p class="c-tag c-tag--prep__underway u-padding-top-5 u-padding-bottom-4">Draft</p></div>
+                    </div>
+                    <!-- project title -->
+
+                    <!-- client -->
+                    <!-- add user -->
+                    <div class="o-adduser u-display-in-block u-pull--right">
+                        <div class="c-settingBtn u-display-in-block u-txt-valign-top u-margin-right-15">
+                            <div class="c-settingBtn__inner u-display-in-block u-static c-settingBtn__inner--menuleft">
+                                <div class="c-settingBtn__container">
+                                    <button class="c-settings-button"> 
+                                        <img src="images/gear-icon.svg" alt="gear-icon" class="c-settings-button__gear-icon">
+                                    </button>
+                                    <ul class="c-dropdown-content c-dropdown-content__level-1">
+                                        <li>
+                                            <a class="c-dropdown-content__level-1__link" href="#">Apply Select Codes Template</a>
+                                            <ul class="c-dropdown-content c-dropdown-content__level-2">
+                                                <li class="c-dropdown__search-bar">
+                                                    <div class="c-input-wrap">
+                                                        <img class="c-input-wrap__input-icon" src="images/search-icon.svg" alt="search">
+                                                        <input class="c-input-wrap__box" type="text" required>
+                                                        <label class="c-input-wrap__label">Label</label>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <a class="c-dropdown-content__level-2__link" href="#">July Jubilee</a>
+                                                </li>
+                                                <li>
+                                                    <a class="c-dropdown-content__level-2__link" href="#">Let Freedom Ring</a>
+                                                </li>
+                                                <li>
+                                                    <a class="c-dropdown-content__level-2__link" href="#">Camp O the Pines</a>
+                                                </li>
+                                                <li>
+                                                    <a class="c-dropdown-content__level-2__link" href="#">Blue Mtn Parkway</a>
+                                                </li>
+                                                <li>
+                                                    <a class="c-dropdown-content__level-2__link" href="#">Outreach Retreat</a>
+                                                </li>
+                                                <li>
+                                                    <a class="c-dropdown-content__level-2__link" href="#">Reaching Creatures Conference</a>
+                                                </li>
+                                                <li>
+                                                    <a class="c-dropdown-content__level-2__link" href="#">Hearts of Hope</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="c-dropdown-content__create-codes-container">
+                                            <a class="c-dropdown-content__level-1__link" href="#">Create Select Codes Template</a>
+                                            <ul>
+                                                <div class="c-dropdown-content c-dropdown-content__create-codes-dropdown">
+                                                    <h5>Create Select Codes Template</h5>
+                                                    <div class="c-input-wrap c-dropdown-content__create-select-codes-wrap">
+                                                        <input class="c-input-wrap__box c-dropdown-content__create-codes-input" type="text" required>
+                                                        <label class="c-dropdown-content__create-codes-label">Template Title</label>
+                                                        <a href="#" class="button">Save Template</a>
+                                                    </div>
+                                                </div>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a class="c-dropdown-content__level-1__link" href="#">Download Request as PDF</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="c-btn-solid-icon c-btn-solid-icon--orange c-btn-solid-icon--orange--negative u-txt-valign-top " href="#">Submit Request <i class="u-margin-left-5"><img src="images/chevron-right.svg" alt="" ></i></a>
+                        <div class="c-upload-date u-padding-right-13 u-margin-top-6">
+                            Last uploaded: <span>6/20/18</span>
+                        </div>
+                    </div>
+                    <!-- !~add user -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- bottom header -->
+    <!-- banner section -->
+    <div class="c-banner">
+        <div class="container">
+            <div class="c-banner__inner u-padding-top-35 u-padding-bottom-55">
+                <h1 class="u-margin-bottom-0 u-margin-top-0">Data Select Request</h1>
+                <div class="c-select-client">
+                    <select class="c-select-client__name">
+                        <option>Select Client</option>
+                        <option>Client1</option>
+                        <option>Client2</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- banner section end -->
+    <!-- body section  gary part-->
+    <div class="u-container-bg u-padding-top-35 u-padding-bottom-35">
+        <div class="bx-container">
+            <div class="bx-container__row clearfix">
+                <!-- side nav -->
+                <div class="col_4">
+                    <div class="o-shadowbox u-padding-top-25 u-padding-right-20 u-padding-left-20 u-padding-bottom-20">
+                        <!-- select box -->
+                        <div class="c-select">
+                            <div class="c-input-wrap">
+                                <select class="c-input-wrap__box" name="input-box">
+                                    <option disabled="" selected="" value="" style="display:none"></option>
+                                    <option value="option2">Channel1</option>
+                                    <option value="option3">Channel2</option>
+                                    <option value="option4">Channel3</option>
+                                </select>
+                                <label class="c-input-wrap__label">Channel</label>
+                                <div class="dropdown-arrow"></div>
+                            </div>
+                        </div>
+                        <!-- select box -->
+                        <!-- select box -->
+                        <div class="c-select u-margin-top-18 u-margin-bottom-24">
+                            <div class="c-input-wrap">
+                                <select class="c-input-wrap__box" name="input-box">
+                                    <option disabled="" selected="" value="" style="display:none"></option>
+                                    <option value="option2">JB201</option>
+                                    <option value="option3">JB302</option>
+                                    <option value="option4">JB504</option>
+                                </select>
+                                <label class="c-input-wrap__label">Job ID</label>
+                                <div class="dropdown-arrow"></div>
+                            </div>
+                        </div>
+                        <!-- select box -->
+                        <!-- count box -->
+                        <div class="c-target u-relative u-padding-top-20 u-padding-bottom-20">
+                            <!-- input box -->
+                            <div class="c-input">
+                                <div class="c-input-wrap">
+                                    <input class="c-input-wrap__box" type="text" required="">
+                                    <label class="c-input-wrap__label">Target Count</label>
+                                </div>
+                            </div>
+                            <!-- input box -->
+                        </div>
+                        <!-- ~!count box -->
+                        <!-- input box -->
+                        <div class="c-input u-margin-top-23">
+                            <div class="c-input-wrap">
+                                <input class="c-input-wrap__box" type="text" required="">
+                                <label class="c-input-wrap__label">Select Drop Date 1</label>
+                            </div>
+                        </div>
+                        <!-- input box -->
+                        <!-- input box -->
+                        <div class="c-input u-margin-top-18">
+                            <div class="c-input-wrap">
+                                <input class="c-input-wrap__box" type="text" required="">
+                                <label class="c-input-wrap__label">Select Drop Date 2</label>
+                            </div>
+                        </div>
+                        <!-- input box -->
+                        <!-- input box -->
+                        <div class="c-input u-margin-top-18">
+                            <div class="c-input-wrap">
+                                <input class="c-input-wrap__box" type="text" required="">
+                                <label class="c-input-wrap__label">Select a Due Date</label>
+                            </div>
+                        </div>
+                        <!-- input box -->
+                    </div>
+                </div>
+                <!-- !~side nav end -->
+                <!-- Middle section -->
+                <div class="col_8">
+                    <div class="o-shadowbox u-relative">
+                        <!-- select code column -->
+                        <div class="c-column">
+                            <!-- middle content -->
+                            <div class="c-column__midcontent">
+                                <figure> <img src="images/column.svg" alt="image"> </figure>
+                                <figcaption>
+                                    <h2>Select Codes Column</h2>
+                                    <p>
+                                        Fill out the column to the left <br>to view select codes here
+                                    </p>
+                                </figcaption>
+                            </div>
+                            <!-- middle content -->
+                        </div>
+                        <!-- ~!select code column -->
+                    </div>
+                </div>
+                <!-- !~Middle section -->
+                <!-- Right panel -->
+                <div class="col_4">
+                    <div class="o-shadowbox u-relative">
+                        <div class="c-column">
+                            <!-- middle content -->
+                            <div class="c-column__midcontent">
+                                <figure> <img src="images/dollar-sign.svg" alt="image"> </figure>
+                                <figcaption>
+                                    <h2>Count Column</h2>
+                                    <p>
+                                        The count and budget <br>will be displayed here
+                                    </p>
+                                </figcaption>
+                            </div>
+                            <!-- middle content -->
+                        </div>
+                    </div>
+                </div>
+                <!-- !~Right panel -->
+            </div>
+        </div>
+    </div>
+    <!-- !~body section gary part end -->
+    <!-- comment section -->
+    <div class="c-comments u-padding-top-50 u-padding-bottom-50">
+        <div class="container">
+            <h2 class="u-aligntext--center">No Comments</h2>
+        </div>
+    </div>
+    <!-- /comment section -->
+    <!-- jQuery -->
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/custom.js"></script>
+</body>
+
+</html>
