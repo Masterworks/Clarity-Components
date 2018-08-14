@@ -71,6 +71,7 @@
     border-radius: 3px;
     padding: 0px calc(8px - 0.15em)  0 8px;
     line-height: normal;
+    margin: $all-zero;
     &--lineheight21 {
         line-height: 21px;
     }
