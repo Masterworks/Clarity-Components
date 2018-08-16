@@ -363,7 +363,7 @@
     margin-right: -3px;
     @extend .u-relative;
     bottom: $all-zero + 3;
-    &--user {
+    @include m(user) {
         margin-left: $all-zero;
         margin-right: $all-zero;
         padding: $all-zero + 7 $all-zero + 15;
@@ -372,7 +372,56 @@
         @extend .u-no-border;
         @extend .u-cursor-pointer;
     }
+    @include e(icon-more-vert) {
+        display: inline-block;
+        @extend .u-relative;
+        width: $all-zero + 6;
+        height: $all-zero + 6;
+        margin: $all-zero $all-zero + 4;
+        @include border-radius (50%);
+        background-color: $grey-v1;
+    
+        &:before,
+        &:after {
+            content: "";
+            display: block;
+            @extend .u-absolute;
+            width: $all-zero + 6;
+            height: $all-zero + 6;
+            @include border-radius (50%);
+            background-color: $grey-v1;
+        }
+    
+        &:before {
+            top: -12px;
+        }
+    
+        &:after {
+            bottom: -12px;
+        }
+        @include m(user) {
+            width: $all-zero + 4;
+            height: $all-zero + 4;
+            &:before,
+            &:after {
+                content: "";
+                display: block;
+                width: $all-zero + 4;
+                height: $all-zero + 4;
+            }
+            &:after {
+                bottom: -9px;
+            }
+            &:before {
+                top: -9px;
+            }
+            &:hover {
+                @extend .u-cursor-pointer;
+            }
+        }
+    }
 }
+
 .c-btn-menu--list-view {
     margin-left: $all-zero + 20;
     margin-right: -3px;
@@ -438,17 +487,17 @@
     }
 }
 
-.btn-menu-istoogle:focus {
+.c-btn-menu--istoogle:focus {
     @extend .u-no-outline;
 }
 
-.btn-menu-istoogle:focus + .useraction {
-    display: block; //    top: $all-zero + 40;
+.c-btn-menu--istoogle:focus + .c-useraction {
+    display: block; 
     top: $all-zero - 8;
     @extend .u-no-outline;
 }
 
-.useraction {
+.c-useraction {
     padding-left: $all-zero;
     background-color: $white;
     min-width: $all-zero + 200;
