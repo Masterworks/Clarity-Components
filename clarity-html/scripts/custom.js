@@ -126,3 +126,16 @@ $('.svg-img').each(function (i) {
         self.parent().html(svg_data);
     });
 });
+
+// Check textarea value 
+document.querySelector('.c-textarea-wrap__box').addEventListener('keyup', function(){
+    var content = this.value;
+    if(content.length<1) {
+        document.querySelector('.c-textarea-wrap').classList.remove('js-has-value');
+        return false;
+    } else {
+        //alert('hhh');
+        document.querySelector('.c-textarea-wrap').classList.add('js-has-value');
+        return false;
+   }
+});
