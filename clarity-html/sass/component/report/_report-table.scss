@@ -86,6 +86,9 @@
             }
             &--statusfield {
                 width: 15%;
+                font-size: $all-zero + 16;
+                color: $grey-v4;
+                font-weight:400;
             }
             &--moreoption {
                 width: 5%;
@@ -104,5 +107,12 @@
 
     @include m(blue) {
         background:#2D9CDB;
+    }
+    @include m(orange) {
+        background:#EE6C4D;
+    }
+    @include m(green) {
+        background:#219653;
+        opacity: 0.5;
     }
 }
