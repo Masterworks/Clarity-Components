@@ -62,7 +62,17 @@ $('#editButton').click(function () {
 })
 // select box
 $(function () {
-    var $select = $('.input-box'),
+    var $select = $('.c-input-wrap__box'),
+        $label = $('.c-input-wrap__label');
+
+    $select.on('change', function () {
+        //$images.removeClass('is-selected');
+        $(this).next().addClass('is-selected');
+    })
+});
+
+$(function () {
+    var $select = $('.cinput-box'),
         $label = $('.input-label');
 
     $select.on('change', function () {

@@ -1,0 +1,108 @@
+.c {
+    &-report-table {
+        @extend .u-width-100;
+        &__row {
+            font-size: $all-zero;
+            background: $green-v1;
+            border-radius: $all-zero + 3;
+            padding: $all-zero + 8 $all-zero + 12;
+            color: $grey-v8;
+            @extend .u-txt-uppercase;
+        }
+        &__rowbody {
+            font-size: $all-zero;
+            color: $grey-v8;
+            padding: $all-zero + 13 $all-zero;
+            border-bottom: $all-zero + 1 solid $grey-v5;
+            &--noborder {
+                border-bottom: none;
+            }
+            &:last-child {
+                @extend .u-no-border;
+            }
+        }
+        &__block {
+            @extend .u-display-in-block;
+            word-wrap: break-word;
+            vertical-align: top;
+            a {
+                color: $grey-v8;
+                @extend .u-text-decoration--none;
+                padding-right: $all-zero + 15;
+                background: url(../images/filter-arrow-down.svg) no-repeat center right transparent;
+            }
+            &--active {
+                color: #273A4B;
+                a {
+                    color: #273A4B;
+                    background: url(../images/filter-arrow-up.svg) no-repeat center right transparent;
+                }
+            }
+            &--title {
+                font-size: $all-zero + 13;
+                width: 40%;
+                font-weight: 600;
+                letter-spacing: $all-zero + 1;
+                
+                
+            }
+            &--titlefield {
+                font-size: $all-zero + 16;
+                width: 40%;
+                color: $blue-v1;
+                padding-left: $all-zero + 0;
+                a {
+                    @extend .u-text-decoration--none;
+                    color: $blue-v1;
+                }
+            }
+            &--category {
+                font-size: $all-zero + 13;
+                width: 25%;
+                font-weight: 600;
+                letter-spacing: $all-zero + 1;
+            }
+            &--categoryfield {
+                font-size: $all-zero + 16;
+                width: 25%;
+                color: $grey-v4;
+                font-weight:400;
+            }
+            &--color {
+                font-size: $all-zero + 13;
+                width: 15%;
+                font-weight: 600;
+                letter-spacing: $all-zero + 1;
+            }
+            &--colorfield {
+                font-size: $all-zero + 13;
+                width: 15%;
+            }
+            &--status {
+                font-size: $all-zero + 13;
+                width: 15%;
+                font-weight: 600;
+                letter-spacing: $all-zero + 1;
+            }
+            &--statusfield {
+                width: 15%;
+            }
+            &--moreoption {
+                width: 5%;
+            }
+            
+        }
+    }
+}
+@include b($bem-component + -report-color) {
+    width: $all-zero + 12;
+    height: $all-zero + 12;
+    @include border-radius(100%);
+    display: inline-block;
+    margin-left: $all-zero + 15;
+    @extend .u-txt-valign-middle;
+
+    @include m(blue) {
+        background:#2D9CDB;
+    }
+}

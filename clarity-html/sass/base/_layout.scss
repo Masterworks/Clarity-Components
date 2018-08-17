@@ -247,6 +247,15 @@ input[type="checkbox"]:focus {
         margin:-5px 0 -5px 5px;
     }
 }
+.c-btn-menu {
+    &--user {
+        @extend .u-no-border;
+        @extend .u-txt-valign-top;
+        padding: 6px 10px;
+        cursor: pointer;
+        margin:-2px 0 -10px 5px;
+    }
+}
 
 ._edit-projects-base {
     @extend .u-bg-color-fff;
