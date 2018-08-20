@@ -348,7 +348,11 @@
         }
     }
 }
-
+.c-list-view-item__select-count {
+    font-family: 'Fira Code Regular';
+    color: $dark-v1;
+    font-size: $all-zero + 16;
+}
 .c-list-view-item__preview-number span {
     line-height: $all-zero + 21;
     font-size: $all-zero + 16;
@@ -569,8 +573,4 @@
     }
 }
 
-.select__count {
-    font-family: 'Fira Code Regular';
-    color: $dark-v1;
-    font-size: $all-zero + 16;
-}
+

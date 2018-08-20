@@ -30,6 +30,9 @@
             stroke: #059CAF;
         }
     }
+    @include m(transparent) {
+        background: transparent;
+    }
     @include m(orange) {
         color: $orange-v1;
         border: $orange-v1 solid 2px;

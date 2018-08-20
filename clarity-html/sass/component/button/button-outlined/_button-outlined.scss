@@ -87,6 +87,9 @@ a.button-outlined {
         padding: 0px 15px 0px 15px;
         line-height: 30px !important;
     }
+    @include m(transparent){
+        background: transparent;
+    }
     @include m(small) {
         padding: $all-zero + 6 $all-zero + 15;
     }
