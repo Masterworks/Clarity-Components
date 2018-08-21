@@ -66,6 +66,13 @@
     padding: $all-zero $all-zero + 10;
     @include box-sizing(border-box);
 }
+.grid-sm-12 {
+    width: $page-grid-width-100;
+    vertical-align: top;
+    @extend .u-display-in-block;
+    padding: $all-zero $all-zero + 10;
+    @include box-sizing(border-box);
+}
 
 .right-body {
     width: $all-zero + 817;

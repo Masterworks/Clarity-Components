@@ -25,7 +25,7 @@
             @extend .u-display-in-block;
             word-wrap: break-word;
             vertical-align: top;
-            a {
+            > a {
                 color: $grey-v8;
                 @extend .u-text-decoration--none;
                 padding-right: $all-zero + 15;
@@ -33,7 +33,7 @@
             }
             &--active {
                 color: #273A4B;
-                a {
+                > a {
                     color: #273A4B;
                     background: url(../images/filter-arrow-up.svg) no-repeat center right transparent;
                 }

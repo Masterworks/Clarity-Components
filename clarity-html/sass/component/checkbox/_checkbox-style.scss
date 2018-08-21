@@ -60,14 +60,14 @@
         margin-right: $all-zero + 12;
     }
 
-    .description-container {
+    .c-description-container {
         width: $all-zero + 363;
         height: $all-zero + 58;
         bottom: $all-zero + 1;
         @extend .u-relative;
     }
 
-    .check-box-description {
+    .c-check-box-description {
         font-family: 'Source Sans Pro';
         margin-top: $all-zero;
         line-height: $all-zero + 20;

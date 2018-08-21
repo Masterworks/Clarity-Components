@@ -138,7 +138,7 @@ $('.svg-img').each(function (i) {
 });
 
 // Check textarea value 
-document.querySelector('.c-textarea-wrap__box').addEventListener('keyup', function(){
+document.querySelector('textarea.c-textarea-wrap__box').addEventListener('keyup', function(){
     var content = this.value;
     if(content.length<1) {
         document.querySelector('.c-textarea-wrap').classList.remove('js-has-value');

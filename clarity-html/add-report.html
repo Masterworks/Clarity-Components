@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Clarity | Add-Report</title>
+
+    <!-- main style sheet -->
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+</head>
+
+<body>
+    <!-- header start -->
+    <div class="o-header">
+        <div class="container">
+            <div class="c-header">
+                <a href="#" class="c-header__logo">Clarity</a>
+                <ul class="c-header__primary-nav">
+                    <li class="c-header__primary-nav-item">
+                        <a href="#" class="c-header__primary-nav-link">Dashboard</a>
+                    </li>
+                    <li class="c-header__primary-nav-item">
+                        <a href="#" class="c-header__primary-nav-link">New Request</a>
+                    </li>
+                    <li class="c-header__primary-nav-item">
+                        <a href="#" class="c-header__primary-nav-link">Templates</a>
+                    </li>
+                </ul>
+                <div class="c-header__notification-container">
+                    <a onclick="myFunction()" class="c-btn-notifications">
+                        <svg class="notification-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="notification-icon" d="M17.003 12.7523H0C0.676422 12.7523 1.32514 12.4836 1.80344 12.0052C2.28174 11.5269 2.55045 10.8782 2.55045 10.2018V5.95105C2.55045 4.37274 3.17744 2.85906 4.29348 1.74302C5.40951 0.626984 6.92319 -8.86776e-08 8.50151 -8.86776e-08C10.0798 -8.86776e-08 11.5935 0.626984 12.7095 1.74302C13.8256 2.85906 14.4526 4.37274 14.4526 5.95105V10.2018C14.4526 10.8782 14.7213 11.5269 15.1996 12.0052C15.6779 12.4836 16.3266 12.7523 17.003 12.7523ZM9.97227 16.1529C9.8228 16.4105 9.60827 16.6244 9.35015 16.7731C9.09203 16.9217 8.79938 17 8.50151 17C8.20363 17 7.91098 16.9217 7.65286 16.7731C7.39474 16.6244 7.18021 16.4105 7.03075 16.1529"
+                                transform="translate(1 1)" fill="#273A4B" />
+                            <path class="notification-icon" d="M17.003 12.7523H0C0.676422 12.7523 1.32514 12.4836 1.80344 12.0052C2.28174 11.5269 2.55045 10.8782 2.55045 10.2018V5.95105C2.55045 4.37274 3.17744 2.85906 4.29348 1.74302C5.40951 0.626984 6.92319 -8.86776e-08 8.50151 -8.86776e-08C10.0798 -8.86776e-08 11.5935 0.626984 12.7095 1.74302C13.8256 2.85906 14.4526 4.37274 14.4526 5.95105V10.2018C14.4526 10.8782 14.7213 11.5269 15.1996 12.0052C15.6779 12.4836 16.3266 12.7523 17.003 12.7523ZM9.97227 16.1529C9.8228 16.4105 9.60827 16.6244 9.35015 16.7731C9.09203 16.9217 8.79938 17 8.50151 17C8.20363 17 7.91098 16.9217 7.65286 16.7731C7.39474 16.6244 7.18021 16.4105 7.03075 16.1529H9.97227Z"
+                                transform="translate(1 1)" stroke="#273A4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            />
+                        </svg>
+                        <img class="c-btn__new-notification-dot" src="images/ellipse.svg" alt="new-notification" />
+                    </a>
+                    <ul id="myDropdown" class="c-dropdown-content c-level-1-dropdown">
+                        <li>
+                            <a class="c-dropdown-content__link" href="#">
+                                <span class="c-dropdown-content__timetag">5/22/18 at 1:42 PM</span>
+                                <img class="c-dropdown-content__unread-marker" src="images/unread-marker.svg" alt="unread-marker">
+                                <p class="c-dropdown-content__notification-text">Your request has been
+                                    <b>received</b> by Data Services: Newsletter EOY 2018 (SUGM)</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="level-1-dropdown-link" href="#">
+                                <span class="time-tag">5/15/18 at 11:25 AM</span>
+                                <p class="notification-text">Your request has been
+                                    <b>fulfilled</b> by Data Services: Christmas 2018 Catalog (SIM)</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="level-1-dropdown-link" href="#">
+                                <span class="time-tag">4/1/18 at 8:04 AM</span>
+                                <p class="notification-text">
+                                    <b>Jovie S.</b> left a comment on your request: Secret Santa 04-104-29 (PF)</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="c-header__user u-relative">
+                    <a class="c-header__user__btn" onclick="myFunction2()">
+                        <i class="c-header__user__img">
+                            <img class="myClass" src="images/generic-avatar.svg" alt="" />
+                        </i>
+                    </a>
+                    <ul id="myDropdown2" class="c-dropdown-content c-level-1-dropdown c-level-1-dropdown--user">
+                        <li>
+                            <a class="c-dropdown-content__link" href="#">
+                                <div class="c-dropdown-content__user-profile-pic">
+                                    <img src="images/generic-avatar.svg" alt="" />
+                                </div>
+                                <div class="c-dropdown-content__user-profile-name">
+                                    <p>Daniel Golden
+                                        <span>dgolden@masterworks.com</span>
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="level-1-dropdown-link" href="#">Admin</a>
+                        </li>
+                        <li>
+                            <a class="level-1-dropdown-link" href="#">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- <a href="#" class="btn-user-account"></a>
+                <ul class="c-signout js-signout">
+                    <li><a href="#">Loream Ipsum</a></li>
+                    <li><a href="#">Log Out</a></li>
+                </ul> -->
+            </div>
+        </div>
+    </div>
+    <!-- header end -->
+    <!-- bottom header -->
+    <div class="c-headerBottom u-margin-top-20">
+        <div class="bx-container">
+            <div class="bx-container__row clearfix">
+                <div class="col_16">
+                    <!-- setting button -->
+                    <div class="c-settingBtn u-display-in-block">
+                        <div class="c-settingBtn__inner c-settingBtn--style">
+                            <div class="c-settingBtn__container">
+                                <button class="c-settings-button"> 
+                                    <img src="images/gear-icon.svg" alt="gear-icon" class="c-settings-button__gear-icon">
+                                </button>
+                                <ul class="c-dropdown-content c-dropdown-content__level-1">
+                                    <li>
+                                        <a class="c-dropdown-content__level-1__link" href="#">Apply Select Codes Template</a>
+                                        <ul class="c-dropdown-content c-dropdown-content__level-2">
+                                            <li class="c-dropdown__search-bar">
+                                                <div class="c-input-wrap">
+                                                    <img class="c-input-wrap__input-icon" src="images/search-icon.svg" alt="search">
+                                                    <input class="c-input-wrap__box" type="text" required>
+                                                    <label class="c-input-wrap__label">Label</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a class="c-dropdown-content__level-2__link" href="#">July Jubilee</a>
+                                            </li>
+                                            <li>
+                                                <a class="c-dropdown-content__level-2__link" href="#">Let Freedom Ring</a>
+                                            </li>
+                                            <li>
+                                                <a class="c-dropdown-content__level-2__link" href="#">Camp O the Pines</a>
+                                            </li>
+                                            <li>
+                                                <a class="c-dropdown-content__level-2__link" href="#">Blue Mtn Parkway</a>
+                                            </li>
+                                            <li>
+                                                <a class="c-dropdown-content__level-2__link" href="#">Outreach Retreat</a>
+                                            </li>
+                                            <li>
+                                                <a class="c-dropdown-content__level-2__link" href="#">Reaching Creatures Conference</a>
+                                            </li>
+                                            <li>
+                                                <a class="c-dropdown-content__level-2__link" href="#">Hearts of Hope</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="c-dropdown-content__create-codes-container">
+                                        <a class="c-dropdown-content__level-1__link" href="#">Create Select Codes Template</a>
+                                        <ul>
+                                            <div class="c-dropdown-content c-dropdown-content__create-codes-dropdown">
+                                                <h5>Create Select Codes Template</h5>
+                                                <div class="c-input-wrap c-dropdown-content__create-select-codes-wrap">
+                                                    <input class="c-input-wrap__box c-dropdown-content__create-codes-input" type="text" required>
+                                                    <label class="c-dropdown-content__create-codes-label">Template Title</label>
+                                                    <a href="#" class="button">Save Template</a>
+                                                </div>
+                                            </div>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a class="c-dropdown-content__level-1__link" href="#">Download Request as PDF</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- setting button -->
+                    
+                    <!-- add user -->
+                    <div class="o-adduser u-display-in-block u-pull--right">
+                        <a class="c-btn-solid-icon c-btn-solid-icon--blue" href="#">Add New Report <i><img src="images/plus.svg" alt="plus" class="svg-img" /></i></a>
+                    </div>
+                    <!-- !~add user -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- bottom header -->
+    <!-- banner section -->
+    <div class="c-banner">
+        <div class="container">
+            <div class="c-banner__inner u-padding-top-35 u-padding-bottom-55">
+                <h1 class="u-margin-bottom-0 u-margin-top-0">Administration</h1>
+                <h5 class="u-margin-bottom-0">Settings and preferences</h5>
+            </div>
+        </div>
+    </div>
+    <!-- banner section end -->
+    <!-- services section -->
+    <div class="u-container-bg u-padding-top-35 u-padding-bottom-35">
+        <div class="bx-container">
+            <div class="bx-container__row clearfix">
+                <!-- side nav -->
+                <div class="col_4">
+                    <div class="c-dropdown c-dropdown--user">
+                        <ul class="c-dropdown__content c-dropdown__level-1">
+                            <li>
+                                <a class="c-dropdown_level-1-link" href="#">View/Edit Users</a>
+                            </li>
+                            <li>
+                                <a class="c-dropdown_level-1-link" href="#">Selects Clients</a>
+                            </li>
+                            <li>
+                                <a class="c-dropdown_level-1-link" href="#">Edit Roles</a>
+                            </li>
+                            <li>
+                                <a class="c-dropdown_level-1-link" href="#">Edit Permission Sets</a>
+                            </li>
+                            <li class="is-active">
+                                <a class="c-dropdown_level-1-link" href="#">Reports</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- !~side nav end -->
+
+                <!-- user section -->
+                <div class="col_12">
+                    <div class="o-shadowbox u-padding-bottom-10">
+                        <h1 class="h1 h1--user">Reports</h1>
+                        <p>
+                            Choose a client in order to begin editing reports. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta <a class="o-shadowbox__link" href="#">gravida at eget</a> metus. Vestibulum id ligula porta felis euismod semper. Maecenas faucibus mollis interdum.
+                        </p>
+                        <div class="bx-container u-padding-top-11">
+                                <div class="bx-container__row clearfix u-font-0">
+                                    <div class="grid-sm-6">
+                                        <!-- account type -->
+                                        <div class="c-select u-width--377">
+                                            <div class="c-input-wrap">
+                                                <select class="c-input-wrap__box" name="input-box">
+                                                     <option disabled="" selected="" value="" style="display:none"></option>
+                                                      <option value="option2">Account Executive</option>
+                                                      <option value="option3">Account Executive</option>
+                                                      <option value="option4">Account Executive</option>
+                                                </select>
+                                                <label class="c-input-wrap__label">Client</label>
+                                                <div class="dropdown-arrow"></div>
+                                            </div>
+                                        </div>
+                                        <!-- ~account type -->
+                                    </div>
+                                </div>
+                            </div>
+                        <hr class="u-hr--v1">
+                        <!-- user table -->
+                        <div class="u-margin-top-30">
+                            <!-- single row -->
+                            <div class="u-pull-10 u-font-0 u-margin-bottom-40">
+                                <div class="grid-sm-6">
+                                    <!-- input box -->
+                                    <div class="c-input c-input--regular">
+                                        <div class="c-input-wrap">
+                                            <input class="c-input-wrap__box" type="text" required="">
+                                            <label class="c-input-wrap__label">Title</label>
+                                        </div>
+                                    </div>
+                                    <!-- input box -->
+                                </div>
+                                <div class="grid-sm-6 u-txt-valign-bottom">
+                                    <!-- input box -->
+                                    <div class="c-input c-input--regular">
+                                        <div class="c-input-wrap">
+                                            <input class="c-input-wrap__box" type="text" required="">
+                                            <label class="c-input-wrap__label">Looker Link</label>
+                                        </div>
+                                    </div>
+                                    <!-- input box -->
+                                </div>
+                            </div>
+                            <!-- edit user form section -->
+                            <!-- single row -->
+                            <div class="u-pull-10 u-font-0 u-margin-bottom-40">
+                                <div class="grid-sm-6">
+                                    <!-- select box -->
+                                    <div class="c-select">
+                                        <div class="c-input-wrap">
+                                            <select class="c-input-wrap__box" name="input-box">
+                                                 <option disabled="" selected="" value="" style="display:none"></option>
+                                                  <option value="option2">option2</option>
+                                                  <option value="option3">option3</option>
+                                                  <option value="option4">option4</option>
+                                            </select>
+                                            <label class="c-input-wrap__label">Category</label>
+                                            <div class="dropdown-arrow"></div>
+                                        </div>
+                                    </div>
+                                    <!-- select box -->
+                                </div>
+                                <div class="grid-sm-6 u-txt-valign-bottom">
+                                    <!-- input box -->
+                                    <div class="c-input c-input--regular">
+                                        <div class="c-input-wrap">
+                                            <input type="text" id="opacity" class="c-input-wrap__box demo" data-opacity="1.0" data-defaultValue="#000000">
+                                            <label class="c-input-wrap__label">Color</label>
+                                        </div>
+                                    </div>
+                                    <!-- input box -->
+                                </div>
+                            </div>
+                            <div class="u-pull-10 u-font-0 u-padding-bottom-40">
+                                <div class="grid-sm-12 u-relative">
+                                    <label class="js-quill-title">Project Description</label>
+                                    <div id="editor">
+                                        
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            
+                            <!-- edit user form section -->
+                            <!-- single row -->
+                            
+                            <!-- checkbox -->
+                            <div class="u-pull-10 u-font-0 u-margin-bottom-40">
+                                    <div class="clearfix"></div>
+                                    <div class="col u-font-0">
+                                        <div class="grid-sm-6">
+                                            <!-- input box -->
+                                            <div class="c-input c-input--regular">
+                                                <div class="c-input-wrap">
+                                                    <div class="c-dropzone">
+                                                        <form class="u-relative" action="" method="post" enctype="multipart/form-data">
+                                                            <div id="logo">
+                                                                <input type="file" accept="">
+                                                                <label class="c-choosefile__label">Logo Upload</label>
+                                                            </div>
+                                                            <div id="urltype" style="display:none;">
+                                                                <input class="c-input-wrap__box" type="text" required="">
+                                                                <label class="c-input-wrap__label">Client External ID</label>
+                                                            </div>
+                                                            <span class="c-choosefile">
+                                                                <select id="filetype"> 
+                                                                <option value="MY">File</option>
+                                                                <option value="JP">Url</option>
+                                                                </select>
+                                                            </span>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- input box -->
+                                        </div>
+                                        <div class="grid-sm-6">
+                                            <div class="c-checkbox">
+                                                <div class="c-input-wrap">
+                                                    <input id="check-box-square" class="c-check-box" type="checkbox" checked>
+                                                    <div class="c-description-container">
+                                                        <label class="c-input-wrap__label" for="check-box-square">Enabled</label>
+                                                        <p class="c-check-box-description">When checked this user will have access to all parts of the app you have allowed. When unchecked...</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <!-- ~checkbox -->
+                                <!-- checkbox -->
+                            <div class="row u-margin-bottom-35 ">
+                                    <div class="col u-font-0">
+                                        <div class="u-display-block u-border--dashedtop"></div>
+                                        <div class="grid-sm-6 u-pull--right">
+                                            <div class="u-aligntext--right u-padding-top-25">
+                                                <a href="javascript:void(0);" class="c-btn-outline u-display-in-block">Cancel</a>
+                                                <a href="javascript:void(0);" class="c-btn-solid c-btn-solid--blue u-display-in-block u-margin-left-12">Save</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- ~checkbox -->
+                            <!-- edit user form section -->
+                        </div>
+                        <!-- ~!user table -->
+                    </div>
+                    
+                </div>
+                <!-- !~user section end -->
+            </div>
+        </div>
+    </div>
+    <!-- services section -->
+    <!-- jQuery -->
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/jquery.ezdz.min.js"></script>
+    <script src="scripts/jquery.minicolors.js"></script>
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+    <script src="scripts/custom.js"></script>
+    
+    <script type="text/javascript">
+        // ezdz drop zone end
+
+        $('#filetype').on('change', function() {
+            //  alert( this.value ); // or $(this).val()
+            if (this.value == "MY") {
+                $('#logo').show();
+                $('#urltype').hide();
+            } else {
+                $('#logo').hide();
+                $('#urltype').show();
+            }
+        });
+        
+        $('[type="file"]').ezdz({
+            text: '<i></i>Drag to Upload or <a href="">Choose File</a>',
+            previewImage: false,
+            reject: function(file, errors) {
+                if (errors.mimeType) {
+                    alert(file.name + ' must be an image.');
+                }
+
+                if (errors.maxWidth) {
+                    alert(file.name + ' must be width:600px max.');
+                }
+
+                if (errors.maxHeight) {
+                    alert(file.name + ' must be height:400px max.');
+                }
+            }
+        });
+        $('.demo').each( function() {
+        //
+        // Dear reader, it's actually very easy to initialize MiniColors. For example:
+        //
+        //  $(selector).minicolors();
+        //
+        // The way I've done it below is just for the demo, so don't get confused
+        // by it. Also, data- attributes aren't supported at this time. Again,
+        // they're only used for the purposes of this demo.
+        //
+        $(this).minicolors({
+          control: $(this).attr('data-control') || 'hue',
+          defaultValue: $(this).attr('data-defaultValue') || 'hex',
+          format: $(this).attr('data-format') || 'hex',
+          keywords: $(this).attr('data-keywords') || '',
+          inline: $(this).attr('data-inline') === 'true',
+          letterCase: $(this).attr('data-letterCase') || 'lowercase',
+          opacity: $(this).attr('data-opacity'),
+          position: $(this).attr('data-position') || 'bottom',
+          swatches: $(this).attr('data-swatches') ? $(this).attr('data-swatches').split('|') : [],
+          change: function(hex, opacity) {
+            var log;
+            log = hex ? hex : 'transparent';
+              if( opacity ) log += ', ' + opacity;
+              console.log(log, "value");
+              $(this).value = log;
+            try {
+              log = hex ? hex : 'transparent';
+              if( opacity ) log += ', ' + opacity;
+              console.log(log, "value");
+
+            } catch(e) {}
+          },
+          theme: 'default'
+        });
+
+      });
+      var toolbarOptions = [['bold', 'italic', 'underline', 'strike'], ['code-block']];
+
+      var quill = new Quill('#editor', {
+        placeholder: 'This report is for...',
+        theme: 'snow',
+        modules: {
+            toolbar: toolbarOptions  
+        }
+    });
+    </script>
+</body>
+
+</html>
