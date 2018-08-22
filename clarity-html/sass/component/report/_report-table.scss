@@ -73,6 +73,11 @@
                 width: 15%;
                 font-weight: 600;
                 letter-spacing: $all-zero + 1;
+                &--short-disable {
+                    > a {
+                        background: none;
+                    }
+                }
             }
             &--colorfield {
                 font-size: $all-zero + 13;
