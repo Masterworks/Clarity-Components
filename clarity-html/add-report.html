@@ -301,7 +301,7 @@
                                     <!-- input box -->
                                     <div class="c-input c-input--regular">
                                         <div class="c-input-wrap">
-                                            <input type="text" id="opacity" class="c-input-wrap__box demo" data-opacity="1.0" data-defaultValue="#000000">
+                                            <input data-opacity="1.0" class="c-input-wrap__box demo" type="text" required="">
                                             <label class="c-input-wrap__label">Color</label>
                                         </div>
                                     </div>
@@ -428,43 +428,29 @@
                 }
             }
         });
-        $('.demo').each( function() {
-        //
-        // Dear reader, it's actually very easy to initialize MiniColors. For example:
-        //
-        //  $(selector).minicolors();
-        //
-        // The way I've done it below is just for the demo, so don't get confused
-        // by it. Also, data- attributes aren't supported at this time. Again,
-        // they're only used for the purposes of this demo.
-        //
-        $(this).minicolors({
-          control: $(this).attr('data-control') || 'hue',
-          defaultValue: $(this).attr('data-defaultValue') || 'hex',
-          format: $(this).attr('data-format') || 'hex',
-          keywords: $(this).attr('data-keywords') || '',
-          inline: $(this).attr('data-inline') === 'true',
-          letterCase: $(this).attr('data-letterCase') || 'lowercase',
-          opacity: $(this).attr('data-opacity'),
-          position: $(this).attr('data-position') || 'bottom',
-          swatches: $(this).attr('data-swatches') ? $(this).attr('data-swatches').split('|') : [],
-          change: function(hex, opacity) {
-            var log;
-            log = hex ? hex : 'transparent';
-              if( opacity ) log += ', ' + opacity;
-              console.log(log, "value");
-              $(this).value = log;
-            try {
-              log = hex ? hex : 'transparent';
-              if( opacity ) log += ', ' + opacity;
-              console.log(log, "value");
+        $('.demo').on('focus', function(){
+            $('.demo').each( function() {
+                $(this).minicolors({  
+                opacity: $(this).attr('data-opacity'),
+                change: function(hex, opacity) {
+                    var log;
+                    log = hex ? hex : 'transparent';
+                    if( opacity ) log += ', ' + opacity;
+                    console.log(log, "value");
+                    $(this).value = log;
+                    try {
+                    log = hex ? hex : 'transparent';
+                    if( opacity ) log += ', ' + opacity;
+                    console.log(log, "value");
 
-            } catch(e) {}
-          },
-          theme: 'default'
-        });
+                    } catch(e) {}
+                },
+                theme: 'default'
+                });
 
-      });
+            });
+        })
+        
       var toolbarOptions = [['bold', 'italic', 'underline', 'strike'], ['code-block']];
 
       var quill = new Quill('#editor', {
