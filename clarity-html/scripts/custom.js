@@ -138,14 +138,66 @@ $('.svg-img').each(function (i) {
 });
 
 // Check textarea value 
-document.querySelector('textarea.c-textarea-wrap__box').addEventListener('keyup', function(){
-    var content = this.value;
-    if(content.length<1) {
-        document.querySelector('.c-textarea-wrap').classList.remove('js-has-value');
-        return false;
-    } else {
-        //alert('hhh');
-        document.querySelector('.c-textarea-wrap').classList.add('js-has-value');
-        return false;
-   }
-});
+var elementExit = document.getElementsByClassName('.c-textarea-wrap__box');
+if(elementExit.length) {
+    document.querySelector('.c-textarea-wrap__box').addEventListener('keyup', function(){
+        var content = this.value;
+        if(content.length<1) {
+            document.querySelector('.c-textarea-wrap').classList.remove('js-has-value');
+            return false;
+        } else {
+            //alert('hhh');
+            document.querySelector('.c-textarea-wrap').classList.add('js-has-value');
+            return false;
+       }
+    });
+}
+
+
+// create a tooltips
+(function(){
+        
+  function createTip(ev){
+        var title = this.title;
+        this.title = '';
+        this.setAttribute("tooltip", title);
+        //creates div
+        var tooltipWrap = document.createElement("div"); 
+        //adds class
+        tooltipWrap.className = 'c-tooltip'; 
+        //add the text node to the newly created div.
+        tooltipWrap.appendChild(document.createTextNode(title)); 
+    
+        //gets the first elem after body
+        var newElement = document.getElementsByClassName('c-tooltip__container')[0];
+        //console.log(newElement);
+
+        var parentDiv = newElement.parentNode;
+        //console.log(parentDiv);
+        newElement.appendChild(tooltipWrap);
+
+        //parentDiv.insertBefore(tooltipWrap, newElement.nextSibling); //adds tt before elem 
+        var padding = 8;
+        var linkProps = this.getBoundingClientRect();
+        var tooltipProps = tooltipWrap.getBoundingClientRect(); 
+        console.log(linkProps, tooltipProps);
+
+        var topPos = (tooltipProps.height + linkProps.height) - 5;
+        tooltipWrap.setAttribute('style','bottom:-'+topPos+'px;'+'right:-10px;');
+    }
+    function cancelTip(ev){
+        var title = this.getAttribute("tooltip");
+        this.title = title;
+        this.removeAttribute("tooltip");
+        document.querySelector(".c-tooltip").remove();
+    }
+    var links = document.links;
+    for(var i=0; i < links.length; i++){
+        var a = links[i];
+        if(a.title !== ''){
+        a.addEventListener('mouseover',createTip);
+        a.addEventListener('mouseout',cancelTip);
+        }
+        //  console.log(a);
+    } 
+})()
