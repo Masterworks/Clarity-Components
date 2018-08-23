@@ -135,6 +135,14 @@
         -webkit-appearance: none;
         -moz-appearance: none;
         font-family: 'Source Sans Pro';
+        &--error {
+            border: #B13535 solid 1px;
+            color: #B13535;
+        }
+        &--success {
+            color: #0F6E37 !important;
+            border: #0F6E37 solid 1px;
+        }
         &:focus {
             @extend .u-no-outline;
         }
