@@ -199,10 +199,9 @@
         .js-alert-text {
             display: none;
             @extend .u-width-100;
-            height: $all-zero + 20;
             @extend .u-box-module--borderbox;
             margin-top: $all-zero;
-            padding: $all-zero $all-zero $all-zero $all-zero + 10;
+            padding: $all-zero +8  $all-zero $all-zero + 8 $all-zero + 10;
             font-size: $all-zero + 13;
             font-family: 'source sans pro';
             line-height: $all-zero + 20;
