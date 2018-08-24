@@ -114,12 +114,20 @@
         <div class="bx-container">
             <div class="bx-container__row clearfix">
                 <div class="col_16">
-                    <!--  -->
+                    <!-- Job Number  -->
+                    <div class="c-job u-display-in-block u-txt-valign-top">
+                        <p>JOb Number:
+                            <span class="c-count">3034</span>
+                        </p>
+                    </div>
+
+                    <div class="u-pipe--dashed u-txt-valign-top"></div>
+                    <!-- ~! Job Number -->
                     <!-- setting button -->
                     <div class="c-settingBtn u-display-in-block">
                         <div class="c-settingBtn__inner c-settingBtn--style">
                             <div class="c-settingBtn__container">
-                                <button class="c-settings-button"> 
+                                <button class="c-settings-button">
                                     <img src="images/gear-icon.svg" alt="gear-icon" class="c-settings-button__gear-icon">
                                 </button>
                                 <ul class="c-dropdown-content c-dropdown-content__level-1">
@@ -177,10 +185,23 @@
                         </div>
                     </div>
                     <!-- setting button -->
-                    
+                    <a class="c-btn-outline-icon c-btn-outline-icon--small u-display-in-block u-txt-valign-top u-margin-left-10">Distribute Costs
+                        <i>
+                            <img src="images/distributed.svg" alt="" />
+                        </i>
+                    </a>
+                    <a class="c-btn-outline-icon c-btn-outline-icon--grey c-btn-outline-icon--small u-display-in-block u-txt-valign-top u-margin-left-10">Add Kit Row
+                        <i>
+                            <img src="images/plus.svg" alt="" class="svg-img" />
+                        </i>
+                    </a>
                     <!-- add user -->
                     <div class="o-adduser u-display-in-block u-pull--right">
-                        <a class="c-btn-solid-icon c-btn-solid-icon--blue" href="#">Add New Report <i><img src="images/plus.svg" alt="plus" class="svg-img" /></i></a>
+                        <a class="c-btn-solid-icon c-btn-solid-icon--orange" href="#">Submit Request
+                            <i>
+                                <img src="images/chevron-right.svg" alt="plus" class="svg-img" />
+                            </i>
+                        </a>
                     </div>
                     <!-- !~add user -->
                 </div>
@@ -202,193 +223,72 @@
     <div class="u-container-bg u-padding-top-35 u-padding-bottom-35">
         <div class="bx-container">
             <div class="bx-container__row clearfix">
-                <!-- side nav -->
-                <div class="col_4">
-                    <div class="c-dropdown c-dropdown--user">
-                        <ul class="c-dropdown__content c-dropdown__level-1">
-                            <li>
-                                <a class="c-dropdown_level-1-link" href="#">View/Edit Users</a>
-                            </li>
-                            <li>
-                                <a class="c-dropdown_level-1-link" href="#">Selects Clients</a>
-                            </li>
-                            <li>
-                                <a class="c-dropdown_level-1-link" href="#">Edit Roles</a>
-                            </li>
-                            <li>
-                                <a class="c-dropdown_level-1-link" href="#">Edit Permission Sets</a>
-                            </li>
-                            <li class="is-active">
-                                <a class="c-dropdown_level-1-link" href="#">Reports</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- !~side nav end -->
 
                 <!-- user section -->
-                <div class="col_12">
+                <div class="col_16">
                     <div class="o-shadowbox u-padding-bottom-10">
-                        <h1 class="h1 h1--user">Reports</h1>
-                        <p>
-                            Choose a client in order to begin editing reports. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta <a class="o-shadowbox__link" href="#">gravida at eget</a> metus. Vestibulum id ligula porta felis euismod semper. Maecenas faucibus mollis interdum.
-                        </p>
+
                         <div class="bx-container u-padding-top-11">
-                                <div class="bx-container__row clearfix u-font-0">
-                                    <div class="grid-sm-6">
-                                        <!-- account type -->
-                                        <div class="c-select u-width--377">
-                                            <div class="c-input-wrap">
-                                                <select class="c-input-wrap__box" name="input-box">
-                                                     <option disabled="" selected="" value="" style="display:none"></option>
-                                                      <option value="option2">Account Executive</option>
-                                                      <option value="option3">Account Executive</option>
-                                                      <option value="option4">Account Executive</option>
-                                                </select>
-                                                <label class="c-input-wrap__label">Client</label>
-                                                <div class="dropdown-arrow"></div>
+                            <div class="bx-container__row clearfix u-font-0">
+                                <div class="u-margin-top-20">
+                                    <div class="c-usertable">
+                                        <div class="c-usertable__row">
+                                            <div class="c-usertable__block c-usertable__block--ccp-description">
+                                                DESCRIPTION
+                                            </div>
+                                            <div class="c-usertable__block c-usertable__block--ccp-qty">
+                                                QTY
+                                            </div>
+                                            <div class="c-usertable__block c-usertable__block--ccp-prof">
+                                                Prof
+                                            </div>
+                                            <div class="c-usertable__block c-usertable__block--ccp-oop">
+                                                OOP
+                                            </div>
+                                            <div class="c-usertable__block c-usertable__block--ccp-prod">
+                                                Prod
+                                            </div>
+                                            <div class="c-usertable__block c-usertable__block--ccp-post">
+                                                Post
                                             </div>
                                         </div>
-                                        <!-- ~account type -->
+                                        <!-- userlist single row -->
+                                        <div class="c-usertable__rowbody">
+                                            <div class="c-usertable__block c-usertable__block--client-enablefield">
+                                                <input id="check-box-square" class="c-check-box" type="checkbox" checked="">
+                                            </div>
+                                            <div class="c-usertable__block c-usertable__block--namev2field">
+                                                <a href="#">1.1 Donor Dashboard</a>
+                                            </div>
+                                            <div class="c-usertable__block c-usertable__block--client-descriptionfield u-aligntext--right">
+                                                <a href="#" class="c-tooltip__container c-tooltip__container--relative" title="Tooltips can be place to the right, above, or below any input."
+                                                    style="font-size: 14px;">
+                                                    <img src="images/info-icon.svg" alt="" />
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <!-- userlist single row -->
+                                        <!-- userlist single row -->
+                                        <div class="c-usertable__rowbody">
+                                            <div class="c-usertable__block c-usertable__block--client-enablefield">
+                                                <input id="check-box-square" class="c-check-box" type="checkbox" checked="">
+                                            </div>
+                                            <div class="c-usertable__block c-usertable__block--namev2field">
+                                                <a href="#">1.1 Donor Dashboard</a>
+                                            </div>
+                                            <div class="c-usertable__block c-usertable__block--client-descriptionfield u-aligntext--right">
+                                                <a href="#" class="c-tooltip__container c-tooltip__container--relative" title="Tooltips can be place to the right, above, or below any input."
+                                                    style="font-size: 14px;">
+                                                    <img src="images/info-icon.svg" alt="" />
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <!-- userlist single row -->
                                     </div>
                                 </div>
                             </div>
-                        <hr class="u-hr--v1">
-                        <!-- user table -->
-                        <div class="u-margin-top-30">
-                            <!-- single row -->
-                            <div class="u-pull-10 u-font-0 u-margin-bottom-40">
-                                <div class="grid-sm-6">
-                                    <!-- input box -->
-                                    <div class="c-input c-input--regular">
-                                        <div class="c-input-wrap js-has-alert">
-                                            <input class="c-input-wrap__box c-input-wrap__box--success" type="text" required="">
-                                            <label class="c-input-wrap__label">Title</label>
-                                            <p class="js-alert-text js-alert-text--success">abc</p>
-                                        </div>
-                                    </div>
-                                    <!-- input box -->
-                                </div>
-                                <div class="grid-sm-6 u-txt-valign-bottom">
-                                    <!-- input box -->
-                                    <div class="c-input c-input--regular">
-                                        <div class="c-input-wrap js-has-alert">
-                                            <input class="c-input-wrap__box c-input-wrap__box--error" type="text" required="">
-                                            <label class="c-input-wrap__label">Looker Link</label>
-                                            <p class="js-alert-text js-alert-text--error">abc</p>
-                                        </div>
-                                    </div>
-                                    <!-- input box -->
-                                </div>
-                            </div>
-                            <!-- edit user form section -->
-                            <!-- single row -->
-                            <div class="u-pull-10 u-font-0 u-margin-bottom-40">
-                                <div class="grid-sm-6">
-                                    <!-- select box -->
-                                    <div class="c-select">
-                                        <div class="c-input-wrap js-has-alert">
-                                            <select class="c-input-wrap__box c-input-wrap__box--error" name="input-box">
-                                                 <option disabled="" selected="" value="" style="display:none"></option>
-                                                  <option value="option2">option2</option>
-                                                  <option value="option3">option3</option>
-                                                  <option value="option4">option4</option>
-                                            </select>
-                                            <label class="c-input-wrap__label">Category</label>
-                                            <div class="dropdown-arrow"></div>
-                                            <p class="js-alert-text js-alert-text--error">abc</p>
-                                        </div>
-                                    </div>
-                                    <!-- select box -->
-                                </div>
-                                <div class="grid-sm-6 u-txt-valign-bottom">
-                                    <!-- input box -->
-                                    <div class="c-input c-input--regular">
-                                        <div class="c-input-wrap">
-                                            <a href="#" class="c-tooltip__container" title="Tooltips can be place to the right, above, or below any input." style="font-size: 14px;"><img src="images/info-icon.svg" alt="" /></a>
-                                            <input data-opacity="1.0" class="c-input-wrap__box demo" type="text" required="">
-                                            <label class="c-input-wrap__label">Color</label>
-                                        </div>
-                                    </div>
-                                    <!-- input box -->
-                                </div>
-                            </div>
-                            <div class="u-pull-10 u-font-0 u-padding-bottom-40">
-                                <div class="grid-sm-12 u-relative">
-                                    <label class="js-quill-title">Project Description</label>
-                                    <div id="editor">
-                                        
-                                    </div>
-                                </div>
-                                
-                            </div>
-                            
-                            <!-- edit user form section -->
-                            <!-- single row -->
-                            
-                            <!-- checkbox -->
-                            <div class="u-pull-10 u-font-0 u-margin-bottom-40">
-                                    <div class="clearfix"></div>
-                                    <div class="col u-font-0">
-                                        <div class="grid-sm-6">
-                                            <!-- input box -->
-                                            <div class="c-input c-input--regular">
-                                                <div class="c-input-wrap">
-                                                    <div class="c-dropzone">
-                                                        <form class="u-relative" action="" method="post" enctype="multipart/form-data">
-                                                            <div id="logo">
-                                                                <input type="file" accept="">
-                                                                <label class="c-choosefile__label">Logo Upload</label>
-                                                            </div>
-                                                            <div id="urltype" style="display:none;">
-                                                                <input class="c-input-wrap__box" type="text" required="">
-                                                                <label class="c-input-wrap__label">Client External ID</label>
-                                                            </div>
-                                                            <span class="c-choosefile">
-                                                                <select id="filetype"> 
-                                                                <option value="MY">File</option>
-                                                                <option value="JP">Url</option>
-                                                                </select>
-                                                            </span>
-                                                        </form>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- input box -->
-                                        </div>
-                                        <div class="grid-sm-6">
-                                            <div class="c-checkbox">
-                                                <div class="c-input-wrap">
-                                                    <input id="check-box-square" class="c-check-box" type="checkbox" checked>
-                                                    <div class="c-description-container">
-                                                        <label class="c-input-wrap__label" for="check-box-square">Enabled</label>
-                                                        <p class="c-check-box-description">When checked this user will have access to all parts of the app you have allowed. When unchecked...</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
-                                    </div>
-                                </div>
-                                <!-- ~checkbox -->
-                                <!-- checkbox -->
-                            <div class="row u-margin-bottom-35 ">
-                                    <div class="col u-font-0">
-                                        <div class="u-display-block u-border--dashedtop"></div>
-                                        <div class="grid-sm-6 u-pull--right">
-                                            <div class="u-aligntext--right u-padding-top-25">
-                                                <a href="javascript:void(0);" class="c-btn-outline u-display-in-block">Cancel</a>
-                                                <a href="javascript:void(0);" class="c-btn-solid c-btn-solid--blue u-display-in-block u-margin-left-12">Save</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- ~checkbox -->
-                            <!-- edit user form section -->
                         </div>
-                        <!-- ~!user table -->
                     </div>
-                    
                 </div>
                 <!-- !~user section end -->
             </div>
@@ -401,11 +301,11 @@
     <script src="scripts/jquery.minicolors.js"></script>
     <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
     <script src="scripts/custom.js"></script>
-    
+
     <script type="text/javascript">
         // ezdz drop zone end
 
-        $('#filetype').on('change', function() {
+        $('#filetype').on('change', function () {
             //  alert( this.value ); // or $(this).val()
             if (this.value == "MY") {
                 $('#logo').show();
@@ -415,11 +315,11 @@
                 $('#urltype').show();
             }
         });
-        
+
         $('[type="file"]').ezdz({
             text: '<i></i>Drag to Upload or <a href="">Choose File</a>',
             previewImage: false,
-            reject: function(file, errors) {
+            reject: function (file, errors) {
                 if (errors.mimeType) {
                     alert(file.name + ' must be an image.');
                 }
@@ -433,38 +333,38 @@
                 }
             }
         });
-        $('.demo').on('focus', function(){
-            $('.demo').each( function() {
-                $(this).minicolors({  
-                opacity: $(this).attr('data-opacity'),
-                change: function(hex, opacity) {
-                    var log;
-                    log = hex ? hex : 'transparent';
-                    if( opacity ) log += ', ' + opacity;
-                    console.log(log, "value");
-                    $(this).value = log;
-                    try {
-                    log = hex ? hex : 'transparent';
-                    if( opacity ) log += ', ' + opacity;
-                    console.log(log, "value");
+        $('.demo').on('focus', function () {
+            $('.demo').each(function () {
+                $(this).minicolors({
+                    opacity: $(this).attr('data-opacity'),
+                    change: function (hex, opacity) {
+                        var log;
+                        log = hex ? hex : 'transparent';
+                        if (opacity) log += ', ' + opacity;
+                        console.log(log, "value");
+                        $(this).value = log;
+                        try {
+                            log = hex ? hex : 'transparent';
+                            if (opacity) log += ', ' + opacity;
+                            console.log(log, "value");
 
-                    } catch(e) {}
-                },
-                theme: 'default'
+                        } catch (e) { }
+                    },
+                    theme: 'default'
                 });
 
             });
         })
-        
-      var toolbarOptions = [['bold', 'italic', 'underline', 'strike'], ['code-block']];
 
-      var quill = new Quill('#editor', {
-        placeholder: 'This report is for...',
-        theme: 'snow',
-        modules: {
-            toolbar: toolbarOptions  
-        }
-    });
+        var toolbarOptions = [['bold', 'italic', 'underline', 'strike'], ['code-block']];
+
+        var quill = new Quill('#editor', {
+            placeholder: 'This report is for...',
+            theme: 'snow',
+            modules: {
+                toolbar: toolbarOptions
+            }
+        });
     </script>
 </body>
 

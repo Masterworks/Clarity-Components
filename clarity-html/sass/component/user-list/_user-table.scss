@@ -281,7 +281,96 @@
             &--moreoptionfield {
                 width: 10%;
             }
-            
+            &--ccp-description {
+                font-size: $all-zero + 13;
+                width: 30%;
+                font-weight: 600;
+                letter-spacing: $all-zero + 1;
+            }
+            &--ccp-descriptionfield {
+                font-size: $all-zero + 16;
+                width: 30%;
+                padding-left: $all-zero + 10;
+                a {
+                    @extend .u-text-decoration--none;
+                    color: $blue-v1;
+                }
+            }
+            &--ccp-qty {
+                font-size: $all-zero + 13;
+                width: 6%;
+                font-weight: 600;
+                letter-spacing: $all-zero + 1;
+            }
+            &--ccp-qtyfield {
+                font-size: $all-zero + 16;
+                width: 10%;
+                padding-left: $all-zero + 10;
+                a {
+                    @extend .u-text-decoration--none;
+                    color: $blue-v1;
+                }
+            }
+            &--ccp-oop {
+                font-size: $all-zero + 13;
+                width: 16%;
+                font-weight: 600;
+                letter-spacing: $all-zero + 1;
+            }
+            &--ccp-oopfield {
+                font-size: $all-zero + 16;
+                width: 16%;
+                padding-left: $all-zero + 10;
+                a {
+                    @extend .u-text-decoration--none;
+                    color: $blue-v1;
+                }
+            }
+            &--ccp-prof {
+                font-size: $all-zero + 13;
+                width: 16%;
+                font-weight: 600;
+                letter-spacing: $all-zero + 1;
+            }
+            &--ccp-proffield {
+                font-size: $all-zero + 16;
+                width: 16%;
+                padding-left: $all-zero + 10;
+                a {
+                    @extend .u-text-decoration--none;
+                    color: $blue-v1;
+                }
+            }
+            &--ccp-prod {
+                font-size: $all-zero + 13;
+                width: 16%;
+                font-weight: 600;
+                letter-spacing: $all-zero + 1;
+            }
+            &--ccp-prodfield {
+                font-size: $all-zero + 16;
+                width: 16%;
+                padding-left: $all-zero + 10;
+                a {
+                    @extend .u-text-decoration--none;
+                    color: $blue-v1;
+                }
+            }
+            &--ccp-post {
+                font-size: $all-zero + 13;
+                width: 16%;
+                font-weight: 600;
+                letter-spacing: $all-zero + 1;
+            }
+            &--ccp-postfield {
+                font-size: $all-zero + 16;
+                width: 16%;
+                padding-left: $all-zero + 10;
+                a {
+                    @extend .u-text-decoration--none;
+                    color: $blue-v1;
+                }
+            }
         }
     }
 }
