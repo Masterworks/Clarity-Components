@@ -156,9 +156,10 @@ if(elementExit.length) {
 
 // create a tooltips
 (function(){
-        
-  function createTip(ev){
+     
+    function createTip(index){
         var title = this.title;
+        //console.log(this);
         this.title = '';
         this.setAttribute("tooltip", title);
         //creates div
@@ -167,20 +168,20 @@ if(elementExit.length) {
         tooltipWrap.className = 'c-tooltip'; 
         //add the text node to the newly created div.
         tooltipWrap.appendChild(document.createTextNode(title)); 
-    
+        
         //gets the first elem after body
-        var newElement = document.getElementsByClassName('c-tooltip__container')[0];
+        //var newElement = this;
         //console.log(newElement);
 
-        var parentDiv = newElement.parentNode;
+        var parentDiv = this.parentNode;
         //console.log(parentDiv);
-        newElement.appendChild(tooltipWrap);
+        this.appendChild(tooltipWrap);
 
         //parentDiv.insertBefore(tooltipWrap, newElement.nextSibling); //adds tt before elem 
         var padding = 8;
         var linkProps = this.getBoundingClientRect();
         var tooltipProps = tooltipWrap.getBoundingClientRect(); 
-        console.log(linkProps, tooltipProps);
+        //console.log(linkProps, tooltipProps);
 
         var topPos = (tooltipProps.height + linkProps.height) - 5;
         tooltipWrap.setAttribute('style','bottom:-'+topPos+'px;'+'right:-10px;');
