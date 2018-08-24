@@ -147,6 +147,11 @@
         }
         p {
             color: $grey-v4;
+            b {
+                font-weight: 700;
+                font-size: inherit;
+                color:inherit;
+            }
         }
     }
     &-shadowboxdata {
