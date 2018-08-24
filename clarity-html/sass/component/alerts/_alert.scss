@@ -58,6 +58,11 @@
         right: 10px;
         padding: 3px;
         font-size: 0;
+        &--relative {
+            position: relative !important;
+            top: 0;
+            right: 0
+        }
     }
   }
   .c-tooltip:before {
