@@ -177,7 +177,7 @@
 }
 
 .u-txt-valign-top {
-    vertical-align: top;
+    vertical-align: top !important;
 }
 
 .u-txt-valign-bottom {
@@ -450,6 +450,13 @@
         height: $all-zero + 3;
         @extend .u-oflowhidden;
         background-color: $grey-v5;
+    }
+    &--v3 {
+        margin-top: $all-zero + 0;
+        margin-bottom: $all-zero + 20;
+        @extend .u-oflowhidden;
+        border: none;
+        border-bottom: $grey-v5 1px dashed;
     }
 }
 

@@ -26,6 +26,7 @@
         width: $all-zero + 12;
         height: $all-zero + 12;
         @extend .u-display-in-block;
+        padding-left: 5px;
         path {
             stroke: #059CAF;
         }
@@ -37,6 +38,7 @@
         color: $orange-v1;
         border: $orange-v1 solid 2px;
         i {
+            padding-left: 5px;
             path {
                 stroke: $orange-v1;
             }
@@ -46,8 +48,10 @@
         color: $grey-v4;
         border: $grey-v6 solid 2px;
         i {
+            padding-left: 5px;
             path {
-                stroke: $grey-v4
+                stroke: $grey-v4;
+                fill:$grey-v4;
             }
         }
     }

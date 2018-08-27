@@ -279,6 +279,19 @@ a.button:active {
         z-index: 25;
         @extend .u-oflowhidden;
         box-shadow: 0px 1px 4px rgba(19, 53, 84, 0.04), 0px 6px 40px rgba(25, 36, 46, 0.5);
+        &--ccp-small {
+            width:440px;
+            .c-modal__body {
+                h4 {
+                    @extend .u-margin-top-24;
+                    @extend .u-margin-bottom-0;
+                }
+                h2 {
+                    @extend .u-margin-top-6;
+                    @extend .u-margin-bottom-24;
+                }
+            }
+        }
         &__body {
             @extend .u-width-100;
             @extend .u-display-in-block;
@@ -425,5 +438,11 @@ a.button:active {
         .c-btn-solid {
             min-width: 117px;
         }
+    }
+}
+.c-ccp-form {
+    padding: 35px;
+    > div {
+        margin-bottom: 20px;
     }
 }

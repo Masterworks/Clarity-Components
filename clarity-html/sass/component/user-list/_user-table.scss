@@ -14,6 +14,9 @@
             color: $grey-v8;
             padding: $all-zero + 13 $all-zero;
             border-bottom: $all-zero + 1 solid $grey-v5;
+            &--hor-pad {
+                padding: $all-zero + 13 $all-zero + 12;
+            }
             &--noborder {
                 border-bottom: none;
             }
@@ -283,14 +286,20 @@
             }
             &--ccp-description {
                 font-size: $all-zero + 13;
-                width: 30%;
+                width: 26%;
                 font-weight: 600;
                 letter-spacing: $all-zero + 1;
             }
             &--ccp-descriptionfield {
-                font-size: $all-zero + 16;
-                width: 30%;
-                padding-left: $all-zero + 10;
+                font-size: $all-zero + 14;
+                width: 26%;
+                color: #717A83;
+                padding-right: 20px;
+                box-sizing: border-box;
+                b {
+                    font-weight: 700;
+                    color: #717A83;
+                }
                 a {
                     @extend .u-text-decoration--none;
                     color: $blue-v1;
@@ -298,14 +307,14 @@
             }
             &--ccp-qty {
                 font-size: $all-zero + 13;
-                width: 6%;
+                width: 8%;
                 font-weight: 600;
                 letter-spacing: $all-zero + 1;
             }
             &--ccp-qtyfield {
                 font-size: $all-zero + 16;
-                width: 10%;
-                padding-left: $all-zero + 10;
+                width: 8%;
+                padding: $all-zero + 10 $all-zero; 
                 a {
                     @extend .u-text-decoration--none;
                     color: $blue-v1;
@@ -313,14 +322,13 @@
             }
             &--ccp-oop {
                 font-size: $all-zero + 13;
-                width: 16%;
+                width: 16.5%;
                 font-weight: 600;
                 letter-spacing: $all-zero + 1;
             }
             &--ccp-oopfield {
                 font-size: $all-zero + 16;
-                width: 16%;
-                padding-left: $all-zero + 10;
+                width: 16.5%;
                 a {
                     @extend .u-text-decoration--none;
                     color: $blue-v1;
@@ -328,14 +336,13 @@
             }
             &--ccp-prof {
                 font-size: $all-zero + 13;
-                width: 16%;
+                width: 16.5%;
                 font-weight: 600;
                 letter-spacing: $all-zero + 1;
             }
             &--ccp-proffield {
                 font-size: $all-zero + 16;
-                width: 16%;
-                padding-left: $all-zero + 10;
+                width: 16.5%;
                 a {
                     @extend .u-text-decoration--none;
                     color: $blue-v1;
@@ -343,14 +350,13 @@
             }
             &--ccp-prod {
                 font-size: $all-zero + 13;
-                width: 16%;
+                width: 16.5%;
                 font-weight: 600;
                 letter-spacing: $all-zero + 1;
             }
             &--ccp-prodfield {
                 font-size: $all-zero + 16;
-                width: 16%;
-                padding-left: $all-zero + 10;
+                width: 16.5%;
                 a {
                     @extend .u-text-decoration--none;
                     color: $blue-v1;
@@ -358,19 +364,52 @@
             }
             &--ccp-post {
                 font-size: $all-zero + 13;
-                width: 16%;
+                width: 16.5%;
                 font-weight: 600;
                 letter-spacing: $all-zero + 1;
             }
             &--ccp-postfield {
                 font-size: $all-zero + 16;
-                width: 16%;
-                padding-left: $all-zero + 10;
+                width: 16.5%;
                 a {
                     @extend .u-text-decoration--none;
                     color: $blue-v1;
                 }
             }
+        }
+    }
+}
+.c-total-count {
+    font-size: 20px;
+    color: #7F8E9E;
+    letter-spacing: 1px;
+    text-align: center;
+    padding-top: 5px;
+    text-transform: uppercase;
+    span {
+    font-family: "Fira Code Regular";
+    color: #2080B7;
+    font-size: 20px;
+    }
+    
+}
+.c-job {
+    p {
+        font-weight: 600;
+        line-height: normal;
+        font-size: 13px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #9DAAB5;
+        margin: 0;
+        span {
+            font-family: "Fira Code Regular";
+            color: #697886;
+            font-size: 20px;
+            font-weight: 400;
+            position: relative;
+            bottom: -3px;
+            padding-left: 3px;
         }
     }
 }

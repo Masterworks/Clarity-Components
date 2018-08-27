@@ -198,6 +198,7 @@
                 border: $all-zero + 1 solid $green-v2;
                 color: $green-v3;
             }
+            
         }
 
         .c-input-wrap__input-icon {
@@ -241,5 +242,12 @@
             font-weight: 600 !important;
             margin-top: 5px;
         }
+    }
+}
+.c-input-wrap {
+    .c-input-wrap__input-icon {
+        @extend .u-absolute;
+        right: $all-zero + 18;
+        top: $all-zero + 16;
     }
 }
