@@ -376,6 +376,140 @@
                     color: $blue-v1;
                 }
             }
+            &--ccp-listcode {
+                font-size: $all-zero + 13;
+                width: 10%;
+                font-weight: 600;
+                letter-spacing: $all-zero + 1;
+            }
+            &--ccp-listcodefield {
+                font-size: $all-zero + 14;
+                width: 10%;
+                padding-top: $all-zero + 10;
+                a {
+                    @extend .u-text-decoration--none;
+                    color: $blue-v1;
+                }
+            }
+            &--ccp-description2 {
+                font-size: $all-zero + 13;
+                width: 17%;
+                font-weight: 600;
+                letter-spacing: $all-zero + 1;
+            }
+            &--ccp-description2field {
+                font-size: $all-zero + 14;
+                width: 17%;
+                padding-top: $all-zero + 10;
+                a {
+                    @extend .u-text-decoration--none;
+                    color: $blue-v1;
+                }
+            }
+            &--ccp-qty2 {
+                font-size: $all-zero + 13;
+                width: 8%;
+                font-weight: 600;
+                letter-spacing: $all-zero + 1;
+            }
+            &--ccp-qty2field {
+                font-size: $all-zero + 14;
+                width: 8%;
+                padding-top: $all-zero + 10;
+                a {
+                    @extend .u-text-decoration--none;
+                    color: $blue-v1;
+                }
+            }
+            &--ccp-billed {
+                font-size: $all-zero + 13;
+                width: 10%;
+                font-weight: 600;
+                letter-spacing: $all-zero + 1;
+            }
+            &--ccp-billedfield {
+                font-size: $all-zero + 14;
+                width: 10%;
+                padding-top: $all-zero + 10;
+                a {
+                    @extend .u-text-decoration--none;
+                    color: $blue-v1;
+                }
+            }
+            &--ccp-oop2 {
+                font-size: $all-zero + 13;
+                width: 10%;
+                font-weight: 600;
+                letter-spacing: $all-zero + 1;
+            }
+            &--ccp-oop2field {
+                font-size: $all-zero + 14;
+                padding-top: $all-zero + 10;
+                width: 10%;
+                a {
+                    @extend .u-text-decoration--none;
+                    color: $blue-v1;
+                }
+            }
+            &--ccp-prod2 {
+                font-size: $all-zero + 13;
+                width: 10%;
+                font-weight: 600;
+                letter-spacing: $all-zero + 1;
+            }
+            &--ccp-prod2field {
+                font-size: $all-zero + 14;
+                width: 10%;
+                padding-top: $all-zero + 10;
+                a {
+                    @extend .u-text-decoration--none;
+                    color: $blue-v1;
+                }
+            }
+            &--ccp-postage {
+                font-size: $all-zero + 13;
+                width: 10%;
+                font-weight: 600;
+                letter-spacing: $all-zero + 1;
+            }
+            &--ccp-postagefield {
+                font-size: $all-zero + 14;
+                width: 10%;
+                padding-top: $all-zero + 10;
+                a {
+                    @extend .u-text-decoration--none;
+                    color: $blue-v1;
+                }
+            }
+            &--ccp-list {
+                font-size: $all-zero + 13;
+                width: 15%;
+                font-weight: 600;
+                letter-spacing: $all-zero + 1;
+            }
+            &--ccp-listfield {
+                font-size: $all-zero + 14;
+                width: 15%;
+                a {
+                    @extend .u-text-decoration--none;
+                    color: $blue-v1;
+                }
+            }
+            &--ccp-merge-prege {
+                font-size: $all-zero + 13;
+                width: 10%;
+                font-weight: 600;
+                letter-spacing: $all-zero + 1;
+            }
+            &--ccp-merge-pregefield {
+                font-size: $all-zero + 14;
+                width: 10%;
+                padding-top: $all-zero + 10;
+                a {
+                    @extend .u-text-decoration--none;
+                    color: $blue-v1;
+                }
+            }
         }
     }
 }
@@ -402,6 +536,7 @@
         text-transform: uppercase;
         color: #9DAAB5;
         margin: 0;
+        padding-top: 3px;
         span {
             font-family: "Fira Code Regular";
             color: #697886;

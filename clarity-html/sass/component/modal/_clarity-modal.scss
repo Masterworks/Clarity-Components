@@ -283,12 +283,17 @@ a.button:active {
             width:440px;
             .c-modal__body {
                 h4 {
-                    @extend .u-margin-top-24;
+                    @extend .u-margin-top-28;
                     @extend .u-margin-bottom-0;
                 }
                 h2 {
                     @extend .u-margin-top-6;
-                    @extend .u-margin-bottom-24;
+                    @extend .u-margin-bottom-0;
+                }
+                p {
+                    padding: $all-zero $all-zero + 40;
+                    color: $grey-v4;
+                    margin: 0;
                 }
             }
         }
@@ -441,7 +446,7 @@ a.button:active {
     }
 }
 .c-ccp-form {
-    padding: 35px;
+    padding: 35px 35px 12px 35px;
     > div {
         margin-bottom: 20px;
     }
