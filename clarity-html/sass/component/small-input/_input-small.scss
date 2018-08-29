@@ -204,7 +204,7 @@
         .c-input-wrap__input-icon {
             @extend .u-absolute;
             right: $all-zero + 18;
-            top: $all-zero + 12;
+            top: $all-zero + 12 !important;
         }
 
         .js-alert-text {
