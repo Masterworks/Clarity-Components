@@ -245,3 +245,22 @@ $modifierSeparator: '--';
  -webkit-transform-origin: $origin;
        transform-origin: $origin;
 }
+
+// Breakpoint 
+
+@mixin breakpoint($point) {
+    @if $point == desktop {
+      @media (min-width: 1366px) { @content ; }
+   }
+    @else if $point == laptop {
+      @media (min-width: 1280px) { @content ; }
+   }
+     @else if $point == tablet {
+      @media (min-width: 1024px) { @content ; }
+   }
+   @else if $point == mobileonly {
+      @media (max-width: 768px)  { @content ; }
+ 
+   }
+ }
+ 
