@@ -147,6 +147,10 @@
         }
         p {
             color: $grey-v4;
+            a {
+                color: $blue-v1;
+                @extend .u-text-decoration--none;
+            }
             b {
                 font-weight: 700;
                 font-size: inherit;
@@ -223,6 +227,8 @@ input[type="checkbox"]:focus {
     border-radius: 3px;
     border: 1px solid #fff;
     position: relative;
+    margin: 5px 0;
+    overflow: hidden;
     &--error {
         border: 1px solid #D0A1A1;
         background: #FFF5F5;
@@ -233,6 +239,42 @@ input[type="checkbox"]:focus {
             height: 12px;
             display: block;
             background: url(../images/close-error.png) no-repeat 0 0 transparent;
+            font-size: 0;
+            top: 50%;
+            right: 14px;
+            transform: translate(0, -50%);
+            -moz-transform: translate(0, -50%);
+            -webkit-transform: translate(0, -50%);
+        }
+    }
+    &--sucess {
+        background: #F5FFF9;
+        border: 1px solid #68BE8C;
+        color: #20A95B;
+        a {
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            display: block;
+            background: url(../images/close-sucess.png) no-repeat 0 0 transparent;
+            font-size: 0;
+            top: 50%;
+            right: 14px;
+            transform: translate(0, -50%);
+            -moz-transform: translate(0, -50%);
+            -webkit-transform: translate(0, -50%);
+        }
+    }
+    &--notice {
+        background: #F7FCFF;
+        border: 1px solid #2D9CDB;
+        color: #2080B7;
+        a {
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            display: block;
+            background: url(../images/close-notice.png) no-repeat 0 0 transparent;
             font-size: 0;
             top: 50%;
             right: 14px;

@@ -74,13 +74,37 @@ h1 {
         margin: $all-zero;
     }
 }
-
-h2 {
+h2, .h2 {
+    font-size: $all-zero + 39;
+    line-height: $all-zero + 49;
+    margin: $all-zero;
+    @extend .u-normal--font-weight;
+}
+h3, .h3 {
+    font-size: $all-zero + 31;
+    line-height: $all-zero + 39;
+    margin: $all-zero;
+    @extend .u-normal--font-weight;
+}
+h4, .h4 {
     font-size: $all-zero + 25;
     line-height: $all-zero + 31;
     margin: $all-zero;
     @extend .u-normal--font-weight;
 }
+h5, .h5 {
+    font-size: $all-zero + 20;
+    line-height: $all-zero + 25;
+    margin: $all-zero;
+    @extend .u-normal--font-weight;
+}
+h6, .h6 {
+    font-size: $all-zero + 16;
+    line-height: $all-zero + 20;
+    margin: $all-zero;
+    @extend .u-normal--font-weight;
+}
+
 
 p {
     @extend .u-normal--font-weight;

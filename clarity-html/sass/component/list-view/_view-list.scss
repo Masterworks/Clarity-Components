@@ -598,7 +598,7 @@
     }
     &:hover {
         .c-report-list__download {
-            background: #2d9cdb;
+            background: #059CAF;
             svg {
                 transform: scale(1.2,1.2);
                 path {
@@ -609,8 +609,7 @@
     }
     &.c-has-download {
         .c-report-list__title {
-            flex: 0 0 100 - (700/1100)*100 - 6%;
-            
+            flex: 0 0 100 - (700/1100)*100 - 6.81818181818%;
         }
 
     }
@@ -639,7 +638,7 @@
         align-items: center;
     }
     @include e(download){
-        flex: 0 0 6%;
+        flex: 0 0 6.81818181818%;
         text-align: center;
         border-right: 1px dotted #BEC6CE;
         height: 100%;

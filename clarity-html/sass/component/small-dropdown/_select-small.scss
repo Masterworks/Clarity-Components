@@ -138,7 +138,14 @@
         background-image: url(../images/dropdown-arrow-dark.svg  );
         @extend .u-background-norepeat;
         background-position: right 15px top 14px;
-
+        &--error {
+            border: #B13535 solid 1px;
+            color: #B13535;
+        }
+        &--success {
+            color: #0F6E37 !important;
+            border: #0F6E37 solid 1px;
+        }
         &:focus {
             @extend .u-no-outline;
         }
