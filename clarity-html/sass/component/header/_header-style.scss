@@ -56,7 +56,9 @@
     @extend .u-display-inline;
     font-size: $all-zero + 16;
     margin-right: $all-zero + 25;
-
+    &::before{
+        display: none;
+    }
     &:last-child {
         margin-right: $all-zero;
     }
@@ -423,7 +425,9 @@ b {
             @extend .u-display-inline;
             font-size: $all-zero + 16;
             margin-right: $all-zero + 25;
-
+            &::before {
+                display: none;
+            }
             &:last-child {
                 margin-right: $all-zero;
             }
