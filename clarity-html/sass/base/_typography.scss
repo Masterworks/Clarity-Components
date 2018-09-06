@@ -112,3 +112,23 @@ p {
     line-height: 24px;
     font-size: 16px;
 }
+ul {
+    padding: $all-zero $all-zero $all-zero $all-zero + 30;
+    margin: $all-zero $all-zero $all-zero + 15;
+    list-style: none;
+    li {
+        @extend .u-normal--font-weight;
+        @extend .u-normal--font-style;
+        line-height: 24px;
+        font-size: 16px;
+        color: #717A83;
+        &::before {
+            content: "•"; 
+            color: #717A83;
+            display: inline-block; 
+            width: 0.8em; 
+            margin-left: -0.2em;
+            font-size: 20px;
+        }
+    }
+}

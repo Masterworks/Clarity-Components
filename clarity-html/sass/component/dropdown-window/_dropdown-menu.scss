@@ -38,6 +38,9 @@
             line-height: $all-zero + 43;
             border-bottom: $all-zero + 1 solid $grey-v5;
             @extend .u-relative;
+            &::before {
+                display: none;
+              }
 
             &:first-child {
                 border-top: $all-zero + 1 solid $grey-v5;
@@ -99,7 +102,9 @@
         & > li {
             width: 100%; //            height: 40px;
             border-bottom: $all-zero + 1 solid $grey-v5;
-
+            &::before {
+                display: none;
+              }
             &:first-child:hover {
                 border-top: $all-zero + 1 solid $blue-v3;
                 border-right: $all-zero + 1 solid $blue-v3;
@@ -148,6 +153,9 @@
                 background-repeat: no-repeat;
                 background-position: 95% center;
                 border-right: none !important;
+                &::before {
+                    display: none;
+                  }
                 a {
                     color: $blue-v1;
                     font-size: $all-zero + 16;
@@ -226,7 +234,9 @@
             line-height: $all-zero + 43;
             border-bottom: $all-zero + 1 solid $grey-v5;
             @extend .u-relative;
-
+            &::before {
+                display: none;
+              }
             &:first-child {
                 border-top: $all-zero + 1 solid $grey-v5;
                 border-right: $all-zero + 1 solid $grey-v5;
@@ -287,7 +297,9 @@
         & > li {
             width: 100%; //            height: 40px;
             border-bottom: $all-zero + 1 solid $grey-v5;
-
+            &::before {
+                display: none;
+              }
             &:first-child:hover {
                 border-top: $all-zero + 1 solid $blue-v3;
                 border-right: $all-zero + 1 solid $blue-v3;
@@ -336,6 +348,9 @@
                 background-repeat: no-repeat;
                 background-position: 95% center;
                 border-right: none !important;
+                &::before {
+                    display: none;
+                  }
                 a {
                     color: $blue-v1;
                     font-size: $all-zero + 16;

@@ -1,0 +1,39 @@
+.c-radio {
+    margin-top: 15px;
+    .c-input-wrap {
+        @extend .u-display-flex;
+        @extend .u-height-auto;
+        flex-direction: row;
+        margin-bottom: 5px;
+    }
+
+    .c-input-wrap .c-input-wrap__label {
+        @extend .u-display-block;
+        margin-bottom: $all-zero + 5;
+        font-size: $all-zero + 16;
+        color: $dark-v1;
+        letter-spacing: normal;
+        font-family: 'Source Sans Pro';
+        @extend .u-pointer-event-auto;
+        @extend .u-text-transform-none;
+        @extend .u-static;
+    }
+
+    .c-radio-box {
+        margin-right: $all-zero + 12;
+    }
+
+    .c-description-container {
+        width: $all-zero + 363;
+        bottom: $all-zero + 1;
+        @extend .u-relative;
+    }
+
+    .c-radio-box-description {
+        font-family: 'Source Sans Pro';
+        margin-top: $all-zero;
+        line-height: $all-zero + 20;
+        font-size: $all-zero + 14;
+        color: $grey-v4;
+    }
+}

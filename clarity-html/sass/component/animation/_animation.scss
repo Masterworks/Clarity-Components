@@ -7,7 +7,16 @@
     }
 }
 
+
 .u-rotating {
     display: inline-block;
     @include animation('spin-object 2s linear infinite');
+    transform-origin: center center;
+}
+.u-spin-element {
+    svg {
+    display: inline-block;
+    @include animation('spin-object 2s linear infinite');
+    transform-origin: center center;
+    }
 }

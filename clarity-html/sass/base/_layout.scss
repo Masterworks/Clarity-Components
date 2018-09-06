@@ -212,6 +212,31 @@ input[type="checkbox"]:focus {
     box-shadow: none;
 }
 
+input[type="radio"] {
+    @extend .u-pointer-event-cursor;
+    @include appearance (none);
+    background: url('../images/redio.svg') no-repeat 0 0 $white;
+    @extend .u-relative;
+    width: $all-zero + 24;
+    height: $all-zero + 22;
+    border-width: $all-zero;
+    @include transition (all .3s linear);
+    display: inline-block;
+    vertical-align: middle;
+    margin: $all-zero;
+    padding: $all-zero;
+}
+//redio-checked.svg
+
+input[type="radio"]:checked {
+    background: url('../images/redio-checked.svg') no-repeat 0 0 $white;
+}
+
+input[type="radio"]:focus {
+    outline: 0 none;
+    box-shadow: none;
+}
+
 .c {
     &-capabiliti {
         font-size: $all-zero + 16;
@@ -344,6 +369,41 @@ input[type="checkbox"]:focus {
                     @include border-radius(100%);
                     text-align: center;
                 }
+            }
+        }
+    }
+}
+// Refresh bar 
+@include b($bem-component + -refresh-bar) {
+    background: #059CAF;
+    @extend .u-relative;
+    @extend .u-padding-top-8;
+    @extend .u-padding-bottom-8;
+    p {
+        color: #FFF;
+        padding: 5px 0;
+        margin: 0;
+    }
+    @include e(close){
+        @extend .u-absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        font-size: 0;
+    }
+    @include e(btn){
+        background: #007381;
+        padding: $all-zero + 7 $all-zero + 16;
+        @include border-radius(3px);
+        color: #FFF;
+        display: inline-block;
+        font-size: 16px;
+        font-weight: 600;
+        i {
+            float: right;
+            padding-left: 9px;
+            path {
+                stroke: #FFF;
             }
         }
     }

@@ -60,7 +60,9 @@
 
     li {
         display: inline;
-
+        &::before {
+            display: none;
+          }
         &:not(.tag) {
             @extend .u-normal--font-style;
             line-height: $all-zero + 21;
@@ -194,6 +196,9 @@
         border-bottom: $all-zero + 1 solid $grey-v5;
         @extend .u-width-100;
         @extend .u-list-style--none;
+        &::before {
+            display: none;
+          }
         &:first-child {
             border-top: $all-zero + 1 solid $grey-v5;
             border-right: $all-zero + 1 solid $grey-v5;
@@ -319,7 +324,9 @@
 
     li {
         display: inline;
-
+        &::before {
+            display: none;
+          }
         &:not(.c-tag) {
             @extend .u-normal--font-style;
             line-height: $all-zero + 21;
@@ -520,6 +527,9 @@
         border-bottom: $all-zero + 1 solid $grey-v5;
         @extend .u-width-100;
         @extend .u-list-style--none;
+        &::before {
+            display: none;
+          }
         &:first-child {
             border-top: $all-zero + 1 solid $grey-v5;
             border-right: $all-zero + 1 solid $grey-v5;

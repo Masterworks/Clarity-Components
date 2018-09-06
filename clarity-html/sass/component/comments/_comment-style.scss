@@ -72,6 +72,9 @@
                     line-height: $all-zero + 24;
                     @extend .u-margin-bottom-20;
                     top: -5px;
+                    &::before {
+                        display: none;
+                      }
                     &.c-comments__list {
                         &--normal {
                             &:before {

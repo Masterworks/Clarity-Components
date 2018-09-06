@@ -79,7 +79,7 @@
         }
 
         .alert-text {
-            display: none;
+            // display: none;
             @extend .u-width-100;
             height: $all-zero + 20;
             @extend .u-box-module--borderbox;
