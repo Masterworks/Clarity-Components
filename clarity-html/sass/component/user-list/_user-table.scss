@@ -314,7 +314,7 @@
             &--ccp-qtyfield {
                 font-size: $all-zero + 16;
                 width: 8%;
-                padding: $all-zero + 10 $all-zero; 
+                padding: $all-zero + 10 $all-zero;
                 a {
                     @extend .u-text-decoration--none;
                     color: $blue-v1;
@@ -393,7 +393,7 @@
             }
             &--ccp-description2 {
                 font-size: $all-zero + 13;
-                width: 17%;
+                width: 40%;
                 font-weight: 600;
                 letter-spacing: $all-zero + 1;
             }
@@ -402,9 +402,23 @@
                 width: 17%;
                 padding-top: $all-zero + 10;
                 a {
-                    @extend .u-text-decoration--none;
-                    color: $blue-v1;
+                  @extend .u-text-decoration--none;
+                  color: $blue-v1;
                 }
+            }
+            &--ccp-text-center
+            {
+              text-align: center;
+            }
+            &--ccp-listdescriptionfield {
+              font-size: $all-zero + 14;
+              width: 40%;
+              padding-right: 10px;
+              padding-top: $all-zero + 10;
+              a {
+                  @extend .u-text-decoration--none;
+                  color: $blue-v1;
+              }
             }
             &--ccp-qty2 {
                 font-size: $all-zero + 13;
@@ -491,13 +505,27 @@
             }
             &--ccp-list {
                 font-size: $all-zero + 13;
-                width: 15%;
+                width: 17%;
                 font-weight: 600;
                 letter-spacing: $all-zero + 1;
             }
+            &--ccp-comb-input
+            {
+              width: 100% !important;
+            }
+            &--ccp-qty-input
+            {
+              width: 100% !important;
+              input
+              {
+                padding-left: $all-zero + 8 !important;
+              }
+            }
             &--ccp-listfield {
                 font-size: $all-zero + 14;
-                width: 15%;
+                width: 17%;
+                padding-left: $all-zero + 15;
+                padding-right: $all-zero + 15;
                 a {
                     @extend .u-text-decoration--none;
                     color: $blue-v1;
@@ -505,13 +533,14 @@
             }
             &--ccp-merge-prege {
                 font-size: $all-zero + 13;
-                width: 10%;
+                width: 16%;
                 font-weight: 600;
                 letter-spacing: $all-zero + 1;
             }
             &--ccp-merge-pregefield {
                 font-size: $all-zero + 14;
-                width: 10%;
+                text-align: center;
+                width: 16%;
                 padding-top: $all-zero + 10;
                 color:#273A4B;
                 font-family: "Fira Code Regular";
@@ -535,7 +564,7 @@
     color: #2080B7;
     font-size: 20px;
     }
-    
+
 }
 .c-job {
     p {
